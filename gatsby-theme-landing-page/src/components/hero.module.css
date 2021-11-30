@@ -1,0 +1,7 @@
+.root {
+  font-family: var(--font);
+}
+
+.root h1 {
+  font-size: 48px;
+}

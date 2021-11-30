@@ -1,0 +1,8 @@
+.root {
+  --font: system-ui, sans-serif;
+  --text-color: black;
+  --background-color: white;
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
