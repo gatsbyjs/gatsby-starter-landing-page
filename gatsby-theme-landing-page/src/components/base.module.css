@@ -1,8 +1,51 @@
+/* Base styles and custom properties
+ *
+ * This file can be shadowed to customize the built-in components'
+ * fonts, colors, and spacing
+ */
 .root {
+  /* typography */
   --font: system-ui, sans-serif;
+  --font-heading: system-ui, sans-serif;
+  --line-height: 1.5;
+  --font-size-1: 12px;
+  --font-size-2: 14px;
+  --font-size-3: 16px;
+  --font-size-4: 24px;
+  --font-size-5: 32px;
+  --font-size-6: 48px;
+  /* colors */
   --text-color: black;
   --background-color: white;
+  --link-color: #07c;
+  --link-hover-color: #05a;
+  --primary-color: #08d;
+  --secondary-color: #70c;
+  /* layout */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 32px;
+  --space-5: 64px;
+  --max-width: 1024px;
 
+  font-family: var(--font);
+  font-size: var(--font-size-3);
+  line-height: var(--line-height);
   color: var(--text-color);
   background-color: var(--background-color);
+}
+
+.root a {
+  color: var(--link-color);
+}
+
+.root a:hover {
+  color: var(--link-hover-color);
+}
+
+.container {
+  max-width: var(--max-width);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
 }
