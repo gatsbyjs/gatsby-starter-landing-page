@@ -13,8 +13,8 @@ export default function LandingPage(props) {
       <div className={styles.root}>
         <Head {...props.data.page} />
         {sections.map((section) => {
-          const Component = Components[section.component] || Components.Section;
-          return <Component key={section.id} {...section} />;
+          const Component = Components[section.component];
+          return Component ? <Component key={section.id} {...section} /> : null;
         })}
       </div>
     </Layout>
@@ -30,15 +30,17 @@ export const query = graphql`
         gatsbyImageData(layout: CONSTRAINED)
       }
       sections {
+        id
         component
         heading
-        secondaryHeading {
-          childMarkdownRemark {
-            html
-          }
-        }
+        secondaryHeading
         content {
-          primaryText
+          id
+          primaryText {
+            childMarkdownRemark {
+              html
+            }
+          }
           secondaryText {
             childMarkdownRemark {
               html
@@ -48,6 +50,7 @@ export const query = graphql`
             gatsbyImageData(layout: CONSTRAINED)
           }
           links {
+            id
             href
             text
           }
