@@ -1,2 +1,2 @@
-export { default as Hero } from './hero'
-export { default as Section } from './section'
+export { default as Hero } from "./hero";
+export { default as Features } from "./features";
