@@ -1,0 +1,18 @@
+.root {
+  /* ensure footer always appears at the bottom */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* base styles; these could be kept in global styles */
+  font-family: system-ui, sans-serif;
+}
+
+.header {
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+}

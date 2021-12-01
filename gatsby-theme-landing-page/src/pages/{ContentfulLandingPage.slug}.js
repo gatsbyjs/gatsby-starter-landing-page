@@ -2,26 +2,27 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import * as Components from '../components'
 import * as styles from '../components/base.module.css'
+import Head from '../components/head'
+import Layout from '../components/layout'
 
 export default function LandingPage (props) {
-  const {
-    title,
-    description,
-    sections,
-  } = props.data.page
+  const { sections } = props.data.page
 
   return (
-    <div className={styles.root}>
-      {sections.map(section => {
-        const Component = Components[section.component] || Components.Section
-        return (
-          <Component
-            key={section.id}
-            {...section}
-          />
-        )
-      })}
-    </div>
+    <Layout>
+      <div className={styles.root}>
+        <Head {...props.data.page} />
+        {sections.map(section => {
+          const Component = Components[section.component] || Components.Section
+          return (
+            <Component
+              key={section.id}
+              {...section}
+            />
+          )
+        })}
+      </div>
+    </Layout>
   )
 }
 
