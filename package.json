@@ -10,6 +10,7 @@
   "scripts": {
     "start": "gatsby develop",
     "start:refresh": "ENABLE_GATSBY_REFRESH_ENDPOINT=true yarn start",
+    "refresh": "curl -X POST http://localhost:8000/__refresh"
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
