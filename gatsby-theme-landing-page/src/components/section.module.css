@@ -1,3 +1,10 @@
 .root {
-  font-family: var(--font);
+  composes: container from './base.module.css';
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+}
+
+.root h2 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-5);
 }

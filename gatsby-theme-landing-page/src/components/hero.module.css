@@ -1,7 +1,12 @@
 .root {
-  font-family: var(--font);
+  /* this can be moved to an inner div to allow for full-bleed
+   * background colors */
+  composes: container from './base.module.css';
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
 }
 
 .root h1 {
-  font-size: 48px;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-6);
 }
