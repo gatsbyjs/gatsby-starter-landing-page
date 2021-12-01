@@ -4,11 +4,22 @@ module.exports = (opts = {}) => {
     plugins: [
       'gatsby-plugin-image',
       {
-        resolve: 'gatsby-source-contentful',
+        resolve: "gatsby-source-contentful",
         options: {
-          ...opts
-        }
+          ...opts,
+        },
       },
-    ]
-  }
-}
+      `gatsby-plugin-image`,
+      `gatsby-plugin-sharp`,
+      `gatsby-transformer-sharp`, // Needed for dynamic images
+      {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+          footnotes: true,
+          gfm: true,
+          plugins: [],
+        },
+      },
+    ],
+  };
+};
