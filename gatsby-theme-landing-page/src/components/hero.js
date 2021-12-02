@@ -1,7 +1,8 @@
 import * as React from "react";
 import * as styles from "./hero.module.css";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
+import Button from "./button";
+import MarkdownText from "./markdown-text";
 
 export default function Hero({ heading, secondaryHeading, content }) {
   const heroContent = content?.[0];
@@ -38,21 +39,5 @@ function HeroContent({ primaryText, secondaryText, links }) {
         ))}
       </div>
     </div>
-  );
-}
-
-function MarkdownText({ childMarkdownRemark }) {
-  return childMarkdownRemark ? (
-    <div dangerouslySetInnerHTML={{ __html: childMarkdownRemark.html }} />
-  ) : null;
-}
-
-function Button({ href, text, variant = "primary" }) {
-  const buttonStyle =
-    variant === "primary" ? styles.buttonPrimary : styles.buttonSecondary;
-  return (
-    <Link className={buttonStyle} to={href}>
-      {text}
-    </Link>
   );
 }

@@ -1,0 +1,10 @@
+.root {
+}
+
+.root a {
+  color: var(--link-color);
+}
+
+.root a:hover {
+  color: var(--link-hover-color);
+}
