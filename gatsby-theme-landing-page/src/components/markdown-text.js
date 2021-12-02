@@ -31,12 +31,11 @@ export default function MarkdownText({
   childMarkdownRemark,
   as,
   className = "",
-  inline = false,
   ...rest
 }) {
   if (!childMarkdownRemark) return null;
 
-  const shouldUseInline = !!as || inline;
+  const shouldUseInline = !!as;
   const sanitizeOptions = shouldUseInline ? inlineOptions : blockOptions;
   const sanitized = sanitize(childMarkdownRemark.html, sanitizeOptions);
   const Component = as || "div";
