@@ -18,7 +18,6 @@ export default function Copy({ heading, secondaryHeading, content }) {
 }
 
 function CopyContent({ primaryText, secondaryText, image }) {
-  console.info({ primaryText, secondaryText, image });
   return (
     <div className={styles.contentContainer}>
       <div className={styles.imageContainer}>
