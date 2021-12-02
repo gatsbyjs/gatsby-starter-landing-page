@@ -1,0 +1,56 @@
+.root {
+}
+
+.container {
+  composes: container from "./base.module.css";
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+}
+
+.heading {
+  font-size: var(--font-size-5);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.subhead {
+  font-size: var(--font-size-4);
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contentCard {
+}
+
+.contentCard p {
+  margin-top: 0;
+  margin-bottom: var(--space-2);
+}
+
+.contentHeading {
+  font-size: var(--font-size-4);
+  margin-top: 0;
+  margin-bottom: var(--space-2);
+}
+
+.contentImage {
+  margin-bottom: var(--space-3);
+}
+
+@media screen and (min-width: 48em) {
+  .contentContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contentCard {
+    /* ensure cards are equal width */
+    /* 0px unit is included for IE */
+    flex: 1 1 0px;
+  }
+}
