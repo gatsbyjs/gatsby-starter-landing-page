@@ -18,7 +18,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: var(--narrow-width);
+  max-width: var(--narrow-width);
   margin: 0 auto;
 }
 
