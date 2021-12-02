@@ -8,6 +8,7 @@
 }
 
 .header {
+  composes: container from "gatsby-theme-landing-page/src/components/base.module.css";
 }
 
 .main {
