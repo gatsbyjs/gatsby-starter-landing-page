@@ -4,7 +4,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
 export default function Hero({ heading, secondaryHeading, content }) {
-  console.log({ heading, secondaryHeading, content });
   const heroContent = content?.[0];
   const image = getImage(heroContent?.image);
 
