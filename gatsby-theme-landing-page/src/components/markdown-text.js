@@ -17,6 +17,7 @@ const blockOptions = {
     "li",
     "span",
     "div",
+    "iframe",
   ],
   selfClosing: ["img", "hr"],
 };
@@ -31,6 +32,7 @@ export default function MarkdownText({
   as = "div",
   className = "",
   inline = false,
+  ...rest
 }) {
   if (!childMarkdownRemark) return null;
   const sanitizeOptions = inline ? inlineOptions : blockOptions;
@@ -42,6 +44,7 @@ export default function MarkdownText({
     <Component
       className={[styles.root, className].join(" ")}
       dangerouslySetInnerHTML={{ __html: sanitized }}
+      {...rest}
     />
   );
 }
