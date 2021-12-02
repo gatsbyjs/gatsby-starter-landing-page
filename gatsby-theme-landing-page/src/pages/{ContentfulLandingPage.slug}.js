@@ -4,7 +4,7 @@ import * as Components from "../components";
 import * as styles from "../components/base.module.css";
 import Head from "../components/head";
 import Layout from "../components/layout";
-import DevDebug from '../components/dev-debug';
+import DevDebug from "../components/dev-debug";
 
 export default function LandingPage(props) {
   const { sections } = props.data.page;

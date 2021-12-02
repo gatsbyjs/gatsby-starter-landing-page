@@ -1,4 +1,5 @@
-.root {}
+.root {
+}
 
 .root a {
   color: var(--link-color);

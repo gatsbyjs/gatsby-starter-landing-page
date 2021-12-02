@@ -1,6 +1,6 @@
-import * as React from 'react'
+import * as React from "react";
 import { Link } from "gatsby";
-import * as styles from './button.module.css'
+import * as styles from "./button.module.css";
 
 export default function Button({ href, text, children, variant = "primary" }) {
   const buttonStyle =

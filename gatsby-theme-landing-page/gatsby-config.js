@@ -2,7 +2,7 @@
 module.exports = (opts = {}) => {
   return {
     plugins: [
-      'gatsby-plugin-image',
+      "gatsby-plugin-image",
       {
         resolve: "gatsby-source-contentful",
         options: {
