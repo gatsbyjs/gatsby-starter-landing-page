@@ -4,39 +4,7 @@
  * fonts, colors, and spacing
  */
 .root {
-  /* typography */
-  --font: system-ui, sans-serif;
-  --font-heading: system-ui, sans-serif;
-  --line-height: 1.5;
-  --font-size-1: 12px;
-  --font-size-2: 14px;
-  --font-size-3: 16px;
-  --font-size-4: 24px;
-  --font-size-5: 32px;
-  --font-size-6: 48px;
-  --letter-spacing-caps: 0.03em;
-  /* colors */
-  --text-color: black;
-  --background-color: white;
-  --link-color: #07c;
-  --link-hover-color: #05a;
-  --primary-color: #08d;
-  --secondary-color: #70c;
-  --button-color: white;
-  --button-background-color: #07c;
-  --button-hover-color: #05a;
-  --button-secondary-color: #07c;
-  --button-secondary-background-color: white;
-  --button-secondary-hover-color: rgb(215, 232, 250);
-  /* layout */
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 16px;
-  --space-4: 32px;
-  --space-5: 64px;
-  --max-width: 1024px;
-  --border-radius: 4px;
-
+  composes: root from "../variables.module.css";
   font-family: var(--font);
   font-size: var(--font-size-3);
   line-height: var(--line-height);

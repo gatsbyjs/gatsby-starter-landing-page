@@ -4,6 +4,7 @@ import * as Components from "../components";
 import * as styles from "../components/base.module.css";
 import Head from "../components/head";
 import Layout from "../components/layout";
+import DevDebug from '../components/dev-debug';
 
 export default function LandingPage(props) {
   const { sections } = props.data.page;
@@ -13,7 +14,7 @@ export default function LandingPage(props) {
       <div className={styles.root}>
         <Head {...props.data.page} />
         {sections.map((section) => {
-          const Component = Components[section.component];
+          const Component = Components[section.component] || DevDebug;
           return Component ? <Component key={section.id} {...section} /> : null;
         })}
       </div>
