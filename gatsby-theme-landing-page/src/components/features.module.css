@@ -1,10 +1,25 @@
 .root {
-  composes: container from "./base.module.css";
   padding-top: var(--space-5);
   padding-bottom: var(--space-5);
 }
 
-.root h2 {
-  font-family: var(--font-heading);
-  font-size: var(--font-size-5);
+.root h1,
+.root h2,
+.root h3,
+.root h4,
+.root h5,
+.root h6 {
+  margin: 0;
+}
+
+.container {
+  composes: container from "./base.module.css";
+}
+
+.featureContainer {
+  display: flex;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
 }
