@@ -17,11 +17,12 @@ const sanitizeOptions = {
     "li",
     "span",
     "div",
+    "iframe",
   ],
   selfClosing: ["img", "hr"],
 };
 
-export default function MarkdownText({ childMarkdownRemark }) {
+export default function MarkdownText({ childMarkdownRemark, ...rest }) {
   if (!childMarkdownRemark) return null;
 
   const sanitized = sanitize(childMarkdownRemark.html, sanitizeOptions);
@@ -30,6 +31,7 @@ export default function MarkdownText({ childMarkdownRemark }) {
     <div
       className={styles.root}
       dangerouslySetInnerHTML={{ __html: sanitized }}
+      {...rest}
     />
   );
 }

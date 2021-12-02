@@ -3,13 +3,13 @@
   padding-bottom: var(--space-5);
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.root p,
+.root h1,
+.root h2,
+.root h3,
+.root h4,
+.root h5,
+.root h6 {
   margin: 0;
 }
 
@@ -19,7 +19,6 @@ h6 {
   flex-direction: column;
   align-items: center;
   max-width: var(--max-width-narrow);
-  margin: 0 auto;
 }
 
 .heading {
