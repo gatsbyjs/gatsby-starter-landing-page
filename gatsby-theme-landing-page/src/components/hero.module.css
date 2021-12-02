@@ -3,6 +3,18 @@
   padding-bottom: var(--space-5);
 }
 
+.root p,
+.root h1,
+.root h2,
+.root h3,
+.root h4,
+.root h5,
+.root h6,
+.root ul,
+.root ol {
+  margin: 0;
+}
+
 .root h1 {
   font-family: var(--font-heading);
   font-size: var(--font-size-6);

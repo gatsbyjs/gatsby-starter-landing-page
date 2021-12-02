@@ -28,7 +28,7 @@ function Content ({
   links = [],
 }) {
   return (
-    <div>
+    <div className={styles.content}>
       <MarkdownText {...primaryText} />
       <MarkdownText {...secondaryText} />
       <div className={styles.buttons}>
