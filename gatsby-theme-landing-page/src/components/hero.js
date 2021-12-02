@@ -24,7 +24,6 @@ export default function Hero({ heading, secondaryHeading, content }) {
 }
 
 function HeroContent({ primaryText, secondaryText, links }) {
-  // console.log({ primaryText, secondaryText, image, links });
   return (
     <div>
       <MarkdownText {...primaryText} />
