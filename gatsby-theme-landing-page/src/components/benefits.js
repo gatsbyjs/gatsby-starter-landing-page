@@ -13,8 +13,8 @@ export default function Benefits({ heading, secondaryHeading, content }) {
           <h3 className={styles.subhead}>{secondaryHeading}</h3>
         )}
         <div className={styles.contentContainer}>
-          {content.map((c) => (
-            <Content key={c.id} {...c} />
+          {content.map((item) => (
+            <BenefitContent key={item.id} {...item} />
           ))}
         </div>
       </div>
@@ -22,7 +22,7 @@ export default function Benefits({ heading, secondaryHeading, content }) {
   );
 }
 
-function Content({ primaryText, secondaryText, image, links = [] }) {
+function BenefitContent({ primaryText, secondaryText, image, links = [] }) {
   return (
     <div className={styles.contentCard}>
       {image && (
