@@ -36,6 +36,9 @@
   font-size: var(--font-size-4);
 }
 
+.primaryText {
+}
+
 .asideText {
   font-style: italic;
   color: var(--text-color-secondary);
