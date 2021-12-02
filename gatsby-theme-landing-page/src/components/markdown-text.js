@@ -2,7 +2,7 @@ import * as React from "react";
 import * as sanitize from "sanitize-html";
 import * as styles from "./markdown-text.module.css";
 
-const sanitizeOptions = {
+const blockOptions = {
   allowedTags: [
     "p",
     "a",
@@ -21,14 +21,26 @@ const sanitizeOptions = {
   selfClosing: ["img", "hr"],
 };
 
-export default function MarkdownText({ childMarkdownRemark }) {
+const inlineOptions = {
+  allowedTags: ["strong", "b", "i", "em", "a", "span"],
+  selfClosing: [],
+};
+
+export default function MarkdownText({
+  childMarkdownRemark,
+  as = "div",
+  className = "",
+  inline = false,
+}) {
   if (!childMarkdownRemark) return null;
+  const sanitizeOptions = inline ? inlineOptions : blockOptions;
 
   const sanitized = sanitize(childMarkdownRemark.html, sanitizeOptions);
+  const Component = as;
 
   return (
-    <div
-      className={styles.root}
+    <Component
+      className={[styles.root, className].join(" ")}
       dangerouslySetInnerHTML={{ __html: sanitized }}
     />
   );
