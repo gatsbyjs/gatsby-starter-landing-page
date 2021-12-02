@@ -1,0 +1,52 @@
+.root {
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  composes: container from "./base.module.css";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--narrow-width);
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: var(--font-size-5);
+  margin-bottom: var(--space-2);
+}
+
+.secondaryHeading {
+  font-size: var(--font-size-4);
+  color: var(--text-color-secondary);
+}
+
+.contentContainer p {
+  margin-bottom: var(--space-3);
+  font-size: var(--font-size-4);
+}
+
+.asideText {
+  font-style: italic;
+  color: var(--text-color-secondary);
+  padding: var(--space-4);
+  border-radius: var(--border-radius);
+  width: 80%;
+  margin: auto;
+}
+
+.imageContainer {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-5);
+}

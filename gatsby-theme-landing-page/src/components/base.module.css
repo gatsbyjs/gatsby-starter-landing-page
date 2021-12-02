@@ -17,6 +17,7 @@
   --letter-spacing-caps: 0.03em;
   /* colors */
   --text-color: black;
+  --text-color-secondary: #555;
   --background-color: white;
   --link-color: #07c;
   --link-hover-color: #05a;
@@ -35,6 +36,7 @@
   --space-4: 32px;
   --space-5: 64px;
   --max-width: 1024px;
+  --narrow-width: 768px;
   --border-radius: 4px;
 
   font-family: var(--font);
