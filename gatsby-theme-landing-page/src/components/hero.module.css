@@ -39,6 +39,7 @@
   display: flex;
   gap: var(--space-3);
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .buttonContainer {
