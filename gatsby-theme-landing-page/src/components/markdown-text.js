@@ -29,16 +29,17 @@ const inlineOptions = {
 
 export default function MarkdownText({
   childMarkdownRemark,
-  as = "div",
+  as,
   className = "",
   inline = false,
   ...rest
 }) {
   if (!childMarkdownRemark) return null;
-  const sanitizeOptions = inline ? inlineOptions : blockOptions;
 
+  const shouldUseInline = !!as || inline;
+  const sanitizeOptions = shouldUseInline ? inlineOptions : blockOptions;
   const sanitized = sanitize(childMarkdownRemark.html, sanitizeOptions);
-  const Component = as;
+  const Component = as || "div";
 
   return (
     <Component

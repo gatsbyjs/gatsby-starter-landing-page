@@ -34,7 +34,6 @@ function Content({ primaryText, secondaryText, image, links = [] }) {
       )}
       <MarkdownText
         as="h3"
-        inline
         className={styles.contentHeading}
         {...primaryText}
       />
