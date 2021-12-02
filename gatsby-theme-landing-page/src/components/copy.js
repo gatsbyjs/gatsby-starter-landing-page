@@ -33,7 +33,6 @@ function CopyContent({ primaryText, secondaryText, image }) {
 // Placeholder, as we'll extract these types of base components to a common file
 function MarkdownText({ text, ...rest }) {
   const sanitizedHtml = getSanitizedHtml(text);
-  console.info(sanitizedHtml);
   return <div {...rest} dangerouslySetInnerHTML={{ __html: sanitizedHtml }} />;
 }
 
