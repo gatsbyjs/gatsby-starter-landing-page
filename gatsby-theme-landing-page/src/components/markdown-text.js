@@ -1,5 +1,6 @@
 import * as React from 'react'
 import * as sanitize from 'sanitize-html'
+import * as styles from './markdown-text.module.css'
 
 const sanitizeOptions = {
   allowedTags: [
@@ -24,8 +25,14 @@ const sanitizeOptions = {
 }
 
 export default function MarkdownText({ childMarkdownRemark }) {
+  if (!childMarkdownRemark) return null
+
   const sanitized = sanitize(childMarkdownRemark.html, sanitizeOptions)
-  return childMarkdownRemark ? (
-    <div dangerouslySetInnerHTML={{ __html: sanitized }} />
-  ) : null;
+
+  return (
+    <div
+      className={styles.root}
+      dangerouslySetInnerHTML={{ __html: sanitized }}
+    />
+  );
 }

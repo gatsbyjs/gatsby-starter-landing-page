@@ -12,14 +12,17 @@
   background-color: var(--background-color);
 }
 
-/* TODO - update to apply to markdown links only */
-/* .root a {
-  color: var(--link-color);
+.root p,
+.root h1,
+.root h2,
+.root h3,
+.root h4,
+.root h5,
+.root h6,
+.root ul,
+.root ol {
+  margin: 0;
 }
-
-.root a:hover {
-  color: var(--link-hover-color);
-} */
 
 .container {
   width: 100%;

@@ -1,5 +1,6 @@
 import * as React from 'react'
 import * as styles from './call-to-action.module.css'
+import MarkdownText from './markdown-text'
 import Button from './button'
 
 export default function CallToAction ({
@@ -8,12 +9,11 @@ export default function CallToAction ({
   content,
   ...props
 }) {
-  console.log({ heading, secondaryHeading, content, props })
   return (
     <div className={styles.root}>
       <div className={styles.container}>
         <h2>{heading}</h2>
-        {secondaryHeading && <h2>{secondaryHeading}</h2>}
+        {secondaryHeading && <h3>{secondaryHeading}</h3>}
         {content.map(c => (
           <Content key={c.id} {...c} />
         ))}
@@ -29,12 +29,16 @@ function Content ({
 }) {
   return (
     <div>
-      {links.map(link => (
-        <Button
-          key={link.id}
-          {...link}
-        />
-      ))}
+      <MarkdownText {...primaryText} />
+      <MarkdownText {...secondaryText} />
+      <div className={styles.buttons}>
+        {links.map(link => (
+          <Button
+            key={link.id}
+            {...link}
+          />
+        ))}
+      </div>
     </div>
   )
 }

@@ -1,18 +1,6 @@
 .root {
-  /* this can be moved to an inner div to allow for full-bleed
-   * background colors */
   padding-top: var(--space-5);
   padding-bottom: var(--space-5);
-}
-
-.root p,
-.root h1,
-.root h2,
-.root h3,
-.root h4,
-.root h5,
-.root h6 {
-  margin: 0;
 }
 
 .root h1 {
