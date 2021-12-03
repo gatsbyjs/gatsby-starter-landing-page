@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as styles from "./call-to-action.module.css";
-import MarkdownText from "./markdown-text";
-import Button from "./button";
+import MarkdownText from "../base/markdown-text";
+import Button from "../base/button";
 
 export default function CallToAction({ heading, secondaryHeading, content }) {
   return (

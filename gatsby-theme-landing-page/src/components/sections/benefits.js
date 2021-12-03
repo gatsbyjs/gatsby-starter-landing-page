@@ -1,9 +1,9 @@
 import * as React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import * as styles from "./benefits.module.css";
-import MarkdownText from "./markdown-text";
-import Link from "./link";
-import LinkContainer from "./link-container";
+import MarkdownText from "../base/markdown-text";
+import Link from "../base/link";
+import LinkContainer from "../base/link-container";
 
 export default function Benefits({ heading, secondaryHeading, content }) {
   return (
