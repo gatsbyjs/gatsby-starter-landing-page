@@ -2,7 +2,7 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 
 export default function Head({ title, description, image }) {
-  const imageUrl = `https:${image.file.url}`;
+  const imageUrl = image ? `https:${image.file.url}` : "";
   return (
     <Helmet
       htmlAttributes={{
