@@ -1,6 +1,5 @@
 .root {
-  padding-top: var(--space-5);
-  padding-bottom: var(--space-5);
+  composes: section from "./base.module.css";
 }
 
 .root p,

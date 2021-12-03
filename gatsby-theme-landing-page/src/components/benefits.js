@@ -2,7 +2,7 @@ import * as React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import * as styles from "./benefits.module.css";
 import MarkdownText from "./markdown-text";
-import Link from "./link";
+import Link, { LinkContainer } from "./link";
 
 export default function Benefits({ heading, secondaryHeading, content }) {
   return (
@@ -38,9 +38,9 @@ function BenefitContent({ primaryText, secondaryText, image, links = [] }) {
         {...primaryText}
       />
       <MarkdownText {...secondaryText} />
-      <div>
+      <LinkContainer>
         {links && links.map((link) => <Link key={link.id} {...link} />)}
-      </div>
+      </LinkContainer>
     </div>
   );
 }

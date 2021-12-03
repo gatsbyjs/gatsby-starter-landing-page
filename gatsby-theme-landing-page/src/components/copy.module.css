@@ -1,6 +1,5 @@
 .root {
-  padding-top: var(--space-5);
-  padding-bottom: var(--space-5);
+  composes: section from "./base.module.css";
 }
 
 .root p,
@@ -22,13 +21,11 @@
 }
 
 .heading {
-  font-size: var(--font-size-6);
-  margin-bottom: var(--space-2);
+  composes: heading from "./base.module.css";
 }
 
 .secondaryHeading {
-  font-size: var(--font-size-4);
-  color: var(--text-color-secondary);
+  composes: secondaryHeading from "./base.module.css";
 }
 
 .contentContainer p {
