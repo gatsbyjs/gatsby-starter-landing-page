@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import * as Components from "../components";
-import * as styles from "../components/base.module.css";
+import * as Components from "../sections";
+import * as styles from "../styles/base.module.css";
 import Head from "../components/head";
 import Layout from "../components/layout";
 import DevDebug from "../components/dev-debug";

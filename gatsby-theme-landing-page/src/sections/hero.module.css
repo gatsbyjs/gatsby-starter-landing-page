@@ -1,5 +1,5 @@
 .root {
-  composes: section from "./base.module.css";
+  composes: section from "../styles/base.module.css";
 }
 
 .root p,
@@ -34,7 +34,7 @@
 }
 
 .container {
-  composes: container from "./base.module.css";
+  composes: container from "../styles/base.module.css";
   display: flex;
   gap: var(--space-3);
   flex-direction: column;
