@@ -2,7 +2,8 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import * as React from "react";
 import * as styles from "./features.module.css";
 import MarkdownText from "./markdown-text";
-import Link, { LinkContainer } from "./link";
+import Link from "./link";
+import LinkContainer from "./link-container";
 
 export default function Features({ heading, secondaryHeading, content }) {
   return (
