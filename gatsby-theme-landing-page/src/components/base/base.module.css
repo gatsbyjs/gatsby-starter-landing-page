@@ -4,7 +4,7 @@
  * fonts, colors, and spacing
  */
 .root {
-  composes: root from "../variables.module.css";
+  composes: root from "../../variables.module.css";
   font-family: var(--font);
   font-size: var(--font-size-3);
   line-height: var(--line-height);
