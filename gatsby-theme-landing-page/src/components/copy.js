@@ -23,7 +23,7 @@ function CopyContent({ primaryText, secondaryText, image }) {
       <div className={styles.imageContainer}>
         <GatsbyImage image={getImage(image)} />
       </div>
-      <MarkdownText className={styles.primaryText} {...primaryText} />
+      <MarkdownText {...primaryText} />
       <AsideText {...secondaryText} />
     </div>
   );

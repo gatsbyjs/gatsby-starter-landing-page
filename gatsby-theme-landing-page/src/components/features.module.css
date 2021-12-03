@@ -47,7 +47,7 @@
 
 .secondaryText {
   font-size: var(--font-size-4);
-  font-weight: var(--font-weight-heavy);
+  font-weight: var(--font-weight-bold);
 }
 
 .secondaryText strong {
