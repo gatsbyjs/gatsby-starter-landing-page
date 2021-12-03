@@ -7,7 +7,6 @@
 
 .quote {
   font-size: var(--font-size-4);
-  padding: 0 var(--space-5);
   color: var(--text-color);
   font-style: italic;
   border-radius: var(--border-radius);
@@ -34,4 +33,10 @@
 
 .authorInfo strong {
   color: var(--primary-color);
+}
+
+@media screen and (min-width: 1000px) {
+  .quote {
+    padding: 0 var(--space-5);
+  }
 }
