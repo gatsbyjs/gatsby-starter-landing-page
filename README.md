@@ -16,45 +16,46 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
 
 [<img src="https://www.gatsbyjs.com/deploynow.png" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-landing-page)
 
+[View the Demo][demo]
 
-[View the Demo](landingpagestarter.gatsbyjs.io/)
+[demo]: https://landingpagestarter.gatsbyjs.io/
 
 ## Quick start
 
 1. **Create a Gatsby site**
 
-    Use the Gatsby CLI to get started locally:
+   Use the Gatsby CLI to get started locally:
 
-    ```sh
-    npx gatsby new my-landing-page-site https://github.com/gatsbyjs/gatsby-starter-landing-page
-    ```
+   ```sh
+   npx gatsby new my-landing-page-site https://github.com/gatsbyjs/gatsby-starter-landing-page
+   ```
 
 2. **Configure your Contentful space**
 
-    Create a new Contentful space or use an existing one, then upload the `data/sample-data.json` file to your space.
+   Create a new Contentful space or use an existing one, then upload the `data/sample-data.json` file to your space.
 
 3. **Add environment variables**
 
-    Create a `.env` file in the root directory of your site and add the following environment variables. You can copy the `.env.example` file provided. Find the values for these keys in the Contentful web app under _Settings > API Keys_.
+   Create a `.env` file in the root directory of your site and add the following environment variables. You can copy the `.env.example` file provided. Find the values for these keys in the Contentful web app under _Settings > API Keys_.
 
-    ```sh
-    CONTENTFUL_SPACE_ID="<YOUR_SPACE_ID>"
-    CONTENTFUL_DELIVERY_ACCESS_TOKEN="<ACCESS_TOKEN>"
-    ```
+   ```sh
+   CONTENTFUL_SPACE_ID="<YOUR_SPACE_ID>"
+   CONTENTFUL_DELIVERY_ACCESS_TOKEN="<ACCESS_TOKEN>"
+   ```
 
 4. **Start developing**
 
-    Navigate to your new site's directory and start the development server.
-    **Note:** this starter uses Yarn Workspaces and requires Yarn for development.
+   Navigate to your new site's directory and start the development server.
+   **Note:** this starter uses Yarn Workspaces and requires Yarn for development.
 
-    ```sh
-    cs my-landing-page-site
-    yarn && yarn start
-    ```
+   ```sh
+   cs my-landing-page-site
+   yarn && yarn start
+   ```
 
 5. **Open the source code and start editing!**
 
-    Your site should now be running at <http://localhost:8000>
+   Your site should now be running at <http://localhost:8000>
 
 ## What's inside?
 
@@ -106,7 +107,6 @@ TK
 ## Customizing and extending components
 
 TK
-
 
 ## 🎓 Learning Gatsby
 
