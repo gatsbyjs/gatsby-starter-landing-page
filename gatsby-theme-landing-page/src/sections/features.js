@@ -4,23 +4,23 @@ import * as styles from "./features.module.css";
 import MarkdownText from "../components/markdown-text";
 import Link from "../components/link";
 import LinkContainer from "../components/link-container";
+import Section from "../components/section";
+import Heading from "../components/heading";
 
 export default function Features({ heading, secondaryHeading, content }) {
   return (
-    <section className={styles.root}>
-      <div className={styles.container}>
-        <h2 className={styles.heading}>{heading}</h2>
-        <h3 className={styles.secondaryHeading}>{secondaryHeading}</h3>
-        <div>
-          {content.map((item, i) => (
-            <Feature
-              {...item}
-              orientation={i % 2 === 0 ? "default" : "reverse"}
-            />
-          ))}
-        </div>
+    <Section>
+      <Heading>{heading}</Heading>
+      <Heading secondary>{secondaryHeading}</Heading>
+      <div>
+        {content.map((item, i) => (
+          <Feature
+            {...item}
+            orientation={i % 2 === 0 ? "default" : "reverse"}
+          />
+        ))}
       </div>
-    </section>
+    </Section>
   );
 }
 

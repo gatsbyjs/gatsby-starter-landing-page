@@ -4,21 +4,20 @@ import * as styles from "./benefits.module.css";
 import MarkdownText from "../components/markdown-text";
 import Link from "../components/link";
 import LinkContainer from "../components/link-container";
-
+import Section from "../components/section";
+import Heading from "../components/heading";
 export default function Benefits({ heading, secondaryHeading, content }) {
   return (
     <section>
-      <div className={styles.container}>
-        <h2 className={styles.heading}>{heading}</h2>
-        {secondaryHeading && (
-          <h3 className={styles.subhead}>{secondaryHeading}</h3>
-        )}
+      <Section>
+        <Heading>{heading}</Heading>
+        <Heading secondary>{secondaryHeading}</Heading>
         <div className={styles.contentContainer}>
           {content.map((item) => (
             <BenefitContent key={item.id} {...item} />
           ))}
         </div>
-      </div>
+      </Section>
     </section>
   );
 }
