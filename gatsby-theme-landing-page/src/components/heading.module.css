@@ -1,0 +1,12 @@
+.heading {
+  font-size: var(--font-size-6);
+  margin-bottom: var(--space-2);
+  text-align: center;
+}
+
+.secondaryHeading {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-light);
+  color: var(--text-color-secondary);
+  text-align: center;
+}

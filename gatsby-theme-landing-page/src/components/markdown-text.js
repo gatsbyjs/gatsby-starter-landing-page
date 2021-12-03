@@ -18,14 +18,16 @@ const blockOptions = {
     "span",
     "div",
     "iframe",
+    "br",
   ],
-  selfClosing: ["img", "hr"],
+  selfClosing: ["img", "hr", "br"],
 };
 
 const inlineOptions = {
   allowedTags: ["strong", "b", "i", "em", "a", "span"],
   selfClosing: [],
 };
+const newLineRegex = /\n/g;
 
 export default function MarkdownText({
   childMarkdownRemark,
@@ -37,7 +39,8 @@ export default function MarkdownText({
 
   const shouldUseInline = !!as;
   const sanitizeOptions = shouldUseInline ? inlineOptions : blockOptions;
-  const sanitized = sanitize(childMarkdownRemark.html, sanitizeOptions);
+  const html = childMarkdownRemark.html.replaceAll(newLineRegex, "<br />");
+  const sanitized = sanitize(html, sanitizeOptions);
   const Component = as || "div";
 
   return (

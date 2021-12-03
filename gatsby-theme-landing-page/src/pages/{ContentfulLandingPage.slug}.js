@@ -50,6 +50,9 @@ export const query = graphql`
           image {
             gatsbyImageData(layout: CONSTRAINED)
           }
+          avatar: image {
+            gatsbyImageData(layout: FIXED, width: 96, height: 96)
+          }
           links {
             id
             href
