@@ -66,9 +66,9 @@ A quick look at the files and directories included in this project:
 ├── README.md
 ├── gatsby-config.js
 ├── gatsby-theme-landing-page
+│   ├── README.md
 │   ├── gatsby-config.js
 │   ├── index.js
-│   ├── package.json
 │   └── src
 │       ├── components
 │       ├── pages
@@ -82,7 +82,7 @@ A quick look at the files and directories included in this project:
 ```
 
 1. **`gatsby-config.js`**: Gatsby config file for the starter, which includes `gatsby-theme-landing-page` as a plugin.
-1. **`gatsby-theme-landing-page`**: The theme that includes the Contentful source plugin and most of the functionality. See the theme's [`README.md`](gatsby-theme-landing-page/README.md) for more information.
+1. **`gatsby-theme-landing-page`**: The theme that includes the Contentful source plugin and most of the functionality. See the theme's [`README.md`][theme readme] for more information.
 1. **`src/`**: The source directory for the starter. This includes an example of using the [Shadowing API][] to customize landing pages provided by the theme.
 1. **`.env.example`**: Copy this file, rename it to `.env`, and add your Contentful API keys to connect this data to your Contentful space.
 
@@ -90,23 +90,53 @@ A quick look at the files and directories included in this project:
 
 ### Detailed look into the theme
 
-TK
+```
+├── gatsby-theme-landing-page
+│   ├── gatsby-config.js
+│   ├── index.js
+│   └── src
+│       ├── components
+│       ├── pages
+│       ├── sections
+│       └── styles
+```
+
+This starter uses `gatsby-theme-landing-page` to source content from Contentful and create block-based landing pages.
+This theme is included in this repo's Yarn Workspace for local development.
+
+1. **`src/sections`**: Each landing page in Contentful determines which components it uses and controls the order of these sections.
+   The components rendered by the theme are in `src/sections`. Each component in this directory represents one Contentful `LandingPageSection` node.
+1. **`src/components`**: This directory includes shared components, such as buttons, links, head, and other utilities.
+1. **`src/styles`**: This directory includes base styles and CSS custom properties.
+1. **`src/pages`**: This includes one [File System Routing][] page for rendering each landing page.
+1. **`index.js`**: Exports components that can be used independently from the theme.
+
+[file system routing]: https://www.gatsbyjs.com/docs/reference/routing/file-system-route-api/
+
+### Theme updates
+
+You can choose to either leave this directory in your site, or remove it to install and use the published version of the theme from npm.
+If you install the theme from npm, your site can receive upstream updates and bug fixes in the future.
 
 ## Installing the theme in an existing site
 
-TK
+Because this starter is built with a Gatsby theme, you can leverage its functionality in an existing site without cloning this starter.
+For more information, see the theme's [README.md][theme readme].
 
 ## Adding a layout
 
-TK
+By default, the theme's landing pages do not include a wrapping layout. This is to allow you customize the header, footer and other wrapping content to match the rest of your site.
+This starter shadows the theme's layout with the `src/gatsby-theme-landing-page/components/layout.js` file, which renders the `src/components/layout.js` file. Edit this file to customize the shared layout for all landing pages.
 
 ## Customizing the typography and colors
 
-TK
+To customize the built-in components' typography, colors, and layout, edit the `src/gatsby-theme-landing-page/styles/variables.module.css` file.
 
 ## Customizing and extending components
 
-TK
+To customize a landing page section component, create a file in `src/gatsby-theme-landing-page/sections/` with the same name used in the theme. This will shadow the built-in component to completely override it.
+
+To add more components and extend the functionality, create a `src/gatsby-theme-landing-page/sections/index.js` file that exports the named components that you'd like to use. Be sure to update your Contentful space's content model to reflect these changes by ensuring the LandingPageSection's _Component_ field validation includes all possible options.
 
 ## 🎓 Learning Gatsby
 
@@ -120,3 +150,5 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/cloud/)
 
 Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
+
+[theme readme]: gatsby-theme-landing-page/README.md
