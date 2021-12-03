@@ -28,7 +28,9 @@ export const query = graphql`
       title
       description
       image {
-        gatsbyImageData(layout: CONSTRAINED)
+        file {
+          url
+        }
       }
       sections {
         id
