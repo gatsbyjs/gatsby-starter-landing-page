@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as styles from "./hero.module.css";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import Button from "../base/button";
-import MarkdownText from "../base/markdown-text";
+import Button from "../components/button";
+import MarkdownText from "../components/markdown-text";
 
 export default function Hero({ heading, secondaryHeading, content }) {
   const heroContent = content?.[0];

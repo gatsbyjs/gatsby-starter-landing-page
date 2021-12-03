@@ -11,7 +11,7 @@
 }
 
 .container {
-  composes: container from "../base/base.module.css";
+  composes: container from "../styles/base.module.css";
   text-align: center;
   padding-top: var(--space-5);
   padding-bottom: var(--space-5);

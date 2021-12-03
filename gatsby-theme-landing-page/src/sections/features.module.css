@@ -1,5 +1,5 @@
 .root {
-  composes: section from "../base/base.module.css";
+  composes: section from "../styles/base.module.css";
 }
 
 .root h1,
@@ -12,18 +12,18 @@
 }
 
 .container {
-  composes: container from "../base/base.module.css";
+  composes: container from "../styles/base.module.css";
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .heading {
-  composes: heading from "../base/base.module.css";
+  composes: heading from "../styles/base.module.css";
 }
 
 .secondaryHeading {
-  composes: secondaryHeading from "../base/base.module.css";
+  composes: secondaryHeading from "../styles/base.module.css";
 }
 
 .featureContainer {
