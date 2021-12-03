@@ -15,6 +15,9 @@
   --font-size-5: 32px;
   --font-size-6: 48px;
   --letter-spacing-caps: 0.03em;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-heavy: 700;
   /* colors */
   --text-color: black;
   --text-color-secondary: #555;
@@ -39,4 +42,9 @@
   --max-width: 1024px;
   --max-width-narrow: 768px;
   --border-radius: 4px;
+  /* shadows */
+  --box-shadow-raised: 0px 1px 2px rgba(46, 41, 51, 0.08),
+    0px 2px 4px rgba(71, 63, 79, 0.08);
+  --box-shadow-floating: 0px 2px 4px rgba(46, 41, 51, 0.08),
+    0px 4px 8px rgba(71, 63, 79, 0.16);
 }

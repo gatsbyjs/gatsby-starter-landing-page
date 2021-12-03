@@ -1,6 +1,5 @@
 .root {
-  padding-top: var(--space-5);
-  padding-bottom: var(--space-5);
+  composes: section from "./base.module.css";
 }
 
 .root p,
@@ -22,21 +21,16 @@
 }
 
 .heading {
-  font-size: var(--font-size-6);
-  margin-bottom: var(--space-2);
+  composes: heading from "./base.module.css";
 }
 
 .secondaryHeading {
-  font-size: var(--font-size-4);
-  color: var(--text-color-secondary);
+  composes: secondaryHeading from "./base.module.css";
 }
 
 .contentContainer p {
   margin-bottom: var(--space-3);
-  font-size: var(--font-size-4);
-}
-
-.primaryText {
+  font-size: var(--font-size-3);
 }
 
 .asideText {
@@ -49,6 +43,18 @@
 }
 
 .imageContainer {
-  margin-top: var(--space-5);
-  margin-bottom: var(--space-5);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+@media screen and (min-width: 640px) {
+  .contentContainer p {
+    margin-bottom: var(--space-3);
+    font-size: var(--font-size-4);
+  }
+
+  .imageContainer {
+    margin-top: var(--space-5);
+    margin-bottom: var(--space-5);
+  }
 }

@@ -1,10 +1,84 @@
 .root {
-  composes: container from "./base.module.css";
-  padding-top: var(--space-5);
-  padding-bottom: var(--space-5);
+  composes: section from "./base.module.css";
 }
 
-.root h2 {
-  font-family: var(--font-heading);
-  font-size: var(--font-size-5);
+.root h1,
+.root h2,
+.root h3,
+.root h4,
+.root h5,
+.root h6 {
+  margin: 0;
+}
+
+.container {
+  composes: container from "./base.module.css";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  composes: heading from "./base.module.css";
+}
+
+.secondaryHeading {
+  composes: secondaryHeading from "./base.module.css";
+}
+
+.featureContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-1);
+}
+
+.copyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-4);
+  order: 2;
+}
+
+.primaryText {
+  font-size: var(--font-size-3);
+}
+
+.secondaryText {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-heavy);
+}
+
+.secondaryText strong {
+  color: var(--primary-color);
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.imageWrapper {
+  box-shadow: var(--box-shadow-floating);
+}
+
+@media screen and (min-width: 640px) {
+  .featureContainer {
+    flex-direction: row;
+    margin-top: var(--space-5);
+    margin-bottom: var(--space-5);
+  }
+
+  .copyContainer {
+    width: 40%;
+  }
+
+  .imageContainer {
+    width: 60%;
+  }
+
+  .featureReverse {
+    flex-direction: row-reverse;
+  }
 }

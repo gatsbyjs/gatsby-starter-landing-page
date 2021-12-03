@@ -1,3 +1,9 @@
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
 .link {
   color: var(--link-color);
 }
@@ -5,4 +11,10 @@
 .link:hover,
 .link:focus {
   color: var(--link--hover-color);
+}
+
+@media screen and (min-width: 480px) {
+  .linkContainer {
+    flex-direction: row;
+  }
 }

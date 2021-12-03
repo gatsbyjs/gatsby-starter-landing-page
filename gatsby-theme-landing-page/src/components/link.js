@@ -3,6 +3,14 @@ import { Link as GatsbyLink } from "gatsby";
 import isAbsoluteURL from "is-absolute-url";
 import * as styles from "./link.module.css";
 
+export function LinkContainer({ children, className, ...rest }) {
+  return children ? (
+    <div className={`${styles.linkContainer} ${className}`} {...rest}>
+      {children}
+    </div>
+  ) : null;
+}
+
 export default function Link({ href, text, children }) {
   if (isAbsoluteURL(href)) {
     return (
