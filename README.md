@@ -34,7 +34,7 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
 
   <!-- TODO: update these instructions once the JSON file is created -->
 
-    Create a new Contentful space or use an existing one, then upload the `data/sample-data.json` file to your space.
+  Create a new Contentful space or use an existing one, then upload the `data/sample-data.json` file to your space.
 
 3. **Add environment variables**
 
