@@ -2,18 +2,17 @@ import * as React from "react";
 import * as styles from "./call-to-action.module.css";
 import MarkdownText from "../components/markdown-text";
 import Button from "../components/button";
-
+import Section from "../components/section";
+import Heading from "../components/heading";
 export default function CallToAction({ heading, secondaryHeading, content }) {
   return (
-    <section className={styles.root}>
-      <div className={styles.container}>
-        <h2>{heading}</h2>
-        {secondaryHeading && <h3>{secondaryHeading}</h3>}
-        {content.map((c) => (
-          <Content key={c.id} {...c} />
-        ))}
-      </div>
-    </section>
+    <Section>
+      <Heading>{heading}</Heading>
+      <Heading secondary>{secondaryHeading}</Heading>
+      {content.map((c) => (
+        <Content key={c.id} {...c} />
+      ))}
+    </Section>
   );
 }
 

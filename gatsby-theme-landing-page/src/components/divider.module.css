@@ -1,0 +1,19 @@
+.divider {
+  height: 2px;
+  background-color: var(--primary-color);
+  margin: var(--space-4) auto;
+}
+
+.short {
+  width: 25%;
+}
+.half {
+  width: 50%;
+}
+.long {
+  width: 75%;
+}
+
+.full {
+  width: 100%;
+}

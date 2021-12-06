@@ -1,22 +1,3 @@
-.root {
-}
-
-.container {
-  composes: container from "../styles/base.module.css";
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: var(--space-5);
-  padding-bottom: var(--space-5);
-}
-
-.heading {
-  composes: heading from "../styles/base.module.css";
-}
-.subhead {
-  composes: secondaryHeading from "../styles/base.module.css";
-}
-
 .contentContainer {
   display: flex;
   flex-direction: column;

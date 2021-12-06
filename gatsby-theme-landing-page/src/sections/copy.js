@@ -2,18 +2,18 @@ import React from "react";
 import * as styles from "./copy.module.css";
 import MarkdownText from "../components/markdown-text";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Section from "../components/section";
+import Heading from "../components/heading";
 
 export default function Copy({ heading, secondaryHeading, content }) {
   return (
-    <section className={styles.root}>
-      <div className={styles.container}>
-        <h2 className={styles.heading}>{heading}</h2>
-        <h3 className={styles.secondaryHeading}>{secondaryHeading}</h3>
-        {content.map((item) => {
-          return <CopyContent key={item.id} {...item} />;
-        })}
-      </div>
-    </section>
+    <Section>
+      <Heading>{heading}</Heading>
+      <Heading secondary>{secondaryHeading}</Heading>
+      {content.map((item) => {
+        return <CopyContent key={item.id} {...item} />;
+      })}
+    </Section>
   );
 }
 
