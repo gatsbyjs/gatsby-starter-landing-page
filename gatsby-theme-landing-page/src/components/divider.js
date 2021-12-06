@@ -2,10 +2,10 @@ import React from "react";
 import * as styles from "./divider.module.css";
 
 const dividerSize = {
-  S: styles.short,
-  M: styles.half,
+  short: styles.short,
+  medium: styles.half,
   half: styles.half,
-  L: styles.long,
+  long: styles.long,
   full: styles.full,
 };
 

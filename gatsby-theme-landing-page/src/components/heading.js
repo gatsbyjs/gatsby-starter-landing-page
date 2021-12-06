@@ -8,6 +8,10 @@ export default function Heading({
   className,
   ...rest
 }) {
+  if (!children) {
+    return null;
+  }
+
   const baseStyle = !secondary ? styles.heading : styles.secondaryHeading;
 
   /*
@@ -15,9 +19,9 @@ export default function Heading({
    h2 for standard and h3 for secondary
   */
   const Component = as || secondary ? "h3" : "h2";
-  return children ? (
+  return (
     <Component className={`${baseStyle} ${className}`} {...rest}>
       {children}
     </Component>
-  ) : null;
+  );
 }
