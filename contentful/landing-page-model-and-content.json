@@ -2780,7 +2780,7 @@
         "id": "3kf7F5UDU1biOn3nLJdDVX",
         "type": "Entry",
         "createdAt": "2021-12-03T19:42:11.700Z",
-        "updatedAt": "2021-12-03T19:53:24.699Z",
+        "updatedAt": "2021-12-06T23:20:39.523Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2788,8 +2788,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 10,
-        "publishedAt": "2021-12-03T19:53:24.699Z",
+        "publishedVersion": 21,
+        "publishedAt": "2021-12-06T23:20:39.523Z",
         "firstPublishedAt": "2021-12-03T19:50:29.792Z",
         "createdBy": {
           "sys": {
@@ -2802,16 +2802,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SDtqAl8Y6iEC5454bbsbU"
+            "id": "446Kgl618tus4YwDAC9gw9"
           }
         },
-        "publishedCounter": 2,
-        "version": 11,
+        "publishedCounter": 4,
+        "version": 22,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SDtqAl8Y6iEC5454bbsbU"
+            "id": "446Kgl618tus4YwDAC9gw9"
           }
         },
         "contentType": {
@@ -2829,8 +2829,14 @@
         "slug": {
           "en-US": "/"
         },
+        "noIndex": {
+          "en-US": false
+        },
         "title": {
           "en-US": "Gatsby Starter Landing Page"
+        },
+        "description": {
+          "en-US": "The Gatsby Landing Page Starter is the fastest way to set up a landing page-based website using Contentful + Gatsby."
         },
         "sections": {
           "en-US": [
