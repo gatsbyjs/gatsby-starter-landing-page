@@ -99,7 +99,7 @@ The components use CSS Modules with CSS custom properties that can be customized
 }
 ```
 
-**Note:** when shadowing files, you may need to clean cache and restart your Gatsby development server to see new shadow files.
+**Note:** when shadowing files, you may need to clear cache by running `gatsby clean` and restart your Gatsby development server to see new shadow files.
 
 These custom properties are scoped to the pages created by the theme and should not leak out to existing pages on your site.
 To reuse the same CSS custom properties across your site, add a file similar to the one above to your site with a selector on an HTML element that will wrap the theme, such as your site's layout component.
