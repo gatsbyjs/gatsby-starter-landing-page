@@ -205,6 +205,49 @@ export { default as SuperHero } from "../../components/super-hero.js";
 export { default as ContactForm } from "../../components/contact-form.js";
 ```
 
+### GraphQL page query
+
+Each page in the theme uses the following query for data. Use this as a reference for the props passed into each section component.
+
+```graphql
+query ($id: String!) {
+  page: contentfulLandingPage(id: { eq: $id }) {
+    title
+    description
+    image {
+      gatsbyImageData(layout: CONSTRAINED)
+    }
+    sections {
+      id
+      component
+      heading
+      secondaryHeading
+      content {
+        id
+        primaryText {
+          childMarkdownRemark {
+            html
+          }
+        }
+        secondaryText {
+          childMarkdownRemark {
+            html
+          }
+        }
+        image {
+          gatsbyImageData(layout: CONSTRAINED)
+        }
+        links {
+          id
+          href
+          text
+        }
+      }
+    }
+  }
+}
+```
+
 <!-- TODO add screenshot -->
 
 ## 🎓 Learning Gatsby
