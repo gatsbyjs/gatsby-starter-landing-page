@@ -42,20 +42,19 @@ Import the content model and demo data to your Contentful space
 
 1. Install the [Contentful CLI (installation instructions)](https://www.contentful.com/developers/docs/tutorials/cli/installation/)
 
-2. Add your space ID `contentful/import-demo-config.json` and `contentful/import-model-only-config.json`
+2. Add your space ID to `contentful/import-demo-config.json` and `contentful/import-model-only-config.json`
 
 ```json
-// ./contentful/import-demo-config.json
 {
   "spaceId": "SPACE_ID",
   "contentFile": "./contentful/landing-page-model-and-content.json"
 }
 ```
 
-3. Import the demo (content model and sample data)
+3. Import the demo (content model and sample data):
    `yarn import:contentful:demo`
 
-(Optional) If you only want to import the content model and not the demo data, use the command `yarn import:contentful:model`
+(Optional) If you only want to import the content model and not the demo data, use the command: `yarn import:contentful:model`
 
 Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
 
