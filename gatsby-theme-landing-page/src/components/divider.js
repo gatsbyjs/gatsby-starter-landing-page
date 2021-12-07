@@ -11,5 +11,5 @@ const dividerSize = {
 
 export default function Divider({ size }) {
   const widthStyle = dividerSize[size] || styles.half;
-  return <div className={`${styles.divider} ${widthStyle}`} />;
+  return <hr className={`${styles.divider} ${widthStyle}`} />;
 }
