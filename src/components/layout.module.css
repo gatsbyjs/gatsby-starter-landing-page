@@ -15,12 +15,23 @@
   max-width: 1024px;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header {
   composes: container;
+}
+
+.header a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--font-size-4);
+  color: inherit;
+}
+.header a:hover,
+.header a:focus {
+  color: var(--primary-color);
 }
 
 .main {
@@ -29,4 +40,18 @@
 
 .footer {
   composes: container;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--font-size-2);
+  margin-right: 16px;
+  color: inherit;
+}
+
+.footer a:hover,
+.footer a:focus {
+  text-decoration: underline;
+  color: var(--primary-color);
 }
