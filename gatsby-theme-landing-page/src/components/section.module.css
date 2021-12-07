@@ -1,11 +1,10 @@
 .root {
-  composes: section from "../styles/base.module.css";
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-5);
 }
 
-.container {
-  composes: container from "../styles/base.module.css";
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: var(--max-width-narrow);
+@media screen and (min-width: 640px) {
+  .root {
+    padding-top: var(--space-5);
+  }
 }

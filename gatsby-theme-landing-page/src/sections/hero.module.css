@@ -1,5 +1,7 @@
 .root {
-  composes: section from "../styles/base.module.css";
+  display: flex;
+  gap: var(--space-3);
+  flex-direction: column;
 }
 
 .root p,
@@ -33,21 +35,13 @@
   margin-bottom: var(--space-4);
 }
 
-.container {
-  composes: container from "../styles/base.module.css";
-  display: flex;
-  gap: var(--space-3);
-  flex-direction: column;
-  margin: 0 auto;
-}
-
 .buttonContainer {
   display: flex;
   gap: var(--space-3);
 }
 
 @media screen and (min-width: 640px) {
-  .container {
+  .root {
     flex-direction: row;
     align-items: center;
   }

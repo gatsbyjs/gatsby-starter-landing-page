@@ -1,10 +1,5 @@
-/* Base styles and custom properties
- *
- * This file can be shadowed to customize the built-in components'
- * fonts, colors, and spacing
- */
+/* Base layout styles */
 .root {
-  composes: root from "./variables.module.css";
   font-family: var(--font);
   font-size: var(--font-size-3);
   line-height: var(--line-height);

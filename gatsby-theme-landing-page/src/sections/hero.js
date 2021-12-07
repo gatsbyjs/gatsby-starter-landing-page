@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as styles from "./hero.module.css";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Section from "../components/section";
 import Button from "../components/button";
 import MarkdownText from "../components/markdown-text";
 
@@ -9,8 +10,8 @@ export default function Hero({ heading, secondaryHeading, content }) {
   const image = getImage(heroContent?.image);
 
   return (
-    <section className={styles.root}>
-      <div className={styles.container}>
+    <Section>
+      <div className={styles.root}>
         <div className={styles.content}>
           <h2>{secondaryHeading}</h2>
           <h1>{heading}</h1>
@@ -20,7 +21,7 @@ export default function Hero({ heading, secondaryHeading, content }) {
           <GatsbyImage image={image} />
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 
