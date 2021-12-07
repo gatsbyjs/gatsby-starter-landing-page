@@ -20,6 +20,7 @@
 .primaryText {
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-bold);
+  margin: 0;
 }
 
 .primaryText strong {
@@ -40,6 +41,10 @@
     flex-direction: row;
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
+  }
+
+  .primaryText {
+    margin-bottom: var(--space-3);
   }
 
   .copyContainer {

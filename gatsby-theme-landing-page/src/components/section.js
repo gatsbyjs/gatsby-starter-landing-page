@@ -6,7 +6,7 @@ export default function Section({ children, className, ...rest }) {
     return null;
   }
   return (
-    <section className={`${styles.root} ${className}`} {...rest}>
+    <section className={`${styles.root} ${className || ""}`} {...rest}>
       <div className={styles.container}>{children}</div>
     </section>
   );

@@ -14,13 +14,11 @@ export default function Benefits({ heading, secondaryHeading, content }) {
       <Section>
         <Heading>{heading}</Heading>
         <Heading secondary>{secondaryHeading}</Heading>
-        {/* <div className={styles.contentContainer}> */}
         <ContentContainer className={styles.contentContainer}>
           {content.map((item) => (
             <BenefitContent key={item.id} {...item} />
           ))}
         </ContentContainer>
-        {/* </div> */}
       </Section>
     </section>
   );

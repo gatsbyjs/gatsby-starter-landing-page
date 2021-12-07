@@ -7,7 +7,7 @@ export default function ContentContainer({ children, className, ...rest }) {
   }
 
   return (
-    <div className={`${className} ${styles.contentContainer} `} {...rest}>
+    <div className={`${className || ""} ${styles.contentContainer}`} {...rest}>
       {children}
     </div>
   );
