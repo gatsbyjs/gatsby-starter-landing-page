@@ -13,16 +13,16 @@
   order: 2;
 }
 
-.primaryText {
+.secondaryText {
   font-size: var(--font-size-3);
 }
 
-.secondaryText {
+.primaryText {
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-bold);
 }
 
-.secondaryText strong {
+.primaryText strong {
   color: var(--primary-color);
 }
 

@@ -36,12 +36,8 @@ function Feature({
   return (
     <div className={`${styles.featureContainer} ${orientationStyle}`}>
       <div className={styles.copyContainer}>
-        <MarkdownText
-          as="h4"
-          className={styles.secondaryText}
-          {...secondaryText}
-        />
-        <MarkdownText className={styles.primaryText} {...primaryText} />
+        <MarkdownText as="h4" className={styles.primaryText} {...primaryText} />
+        <MarkdownText className={styles.secondaryText} {...secondaryText} />
         <LinkContainer>
           {links && links.map((link) => <Link key={link.id} {...link} />)}
         </LinkContainer>
