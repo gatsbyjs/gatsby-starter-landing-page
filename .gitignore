@@ -2,3 +2,4 @@
 public
 node_modules
 .env
+.contentful/export-model-and-content.json
