@@ -1320,7 +1320,7 @@
         "id": "5n09yPjGZlwluBxzQoxagU",
         "type": "Entry",
         "createdAt": "2021-12-01T18:00:31.143Z",
-        "updatedAt": "2021-12-06T20:40:22.619Z",
+        "updatedAt": "2021-12-07T17:51:50.611Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1328,8 +1328,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 19,
-        "publishedAt": "2021-12-06T20:40:22.619Z",
+        "publishedVersion": 23,
+        "publishedAt": "2021-12-07T17:51:50.611Z",
         "firstPublishedAt": "2021-12-01T18:05:08.718Z",
         "createdBy": {
           "sys": {
@@ -1345,8 +1345,8 @@
             "id": "446Kgl618tus4YwDAC9gw9"
           }
         },
-        "publishedCounter": 5,
-        "version": 20,
+        "publishedCounter": 6,
+        "version": 24,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1367,10 +1367,10 @@
           "en-US": "Demo > Features > Content 1"
         },
         "primaryText": {
-          "en-US": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
+          "en-US": "Feature Heading. Lorem ipsum."
         },
         "secondaryText": {
-          "en-US": "Feature Heading. Lorem ipsum."
+          "en-US": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
         },
         "image": {
           "en-US": {
@@ -2527,7 +2527,7 @@
         "id": "4VU9RBlJz7UJlkcDuKSAhq",
         "type": "Entry",
         "createdAt": "2021-12-02T22:26:30.240Z",
-        "updatedAt": "2021-12-06T20:40:31.297Z",
+        "updatedAt": "2021-12-07T17:52:08.462Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2535,8 +2535,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 19,
-        "publishedAt": "2021-12-06T20:40:31.297Z",
+        "publishedVersion": 22,
+        "publishedAt": "2021-12-07T17:52:08.462Z",
         "firstPublishedAt": "2021-12-02T22:28:46.678Z",
         "createdBy": {
           "sys": {
@@ -2552,8 +2552,8 @@
             "id": "446Kgl618tus4YwDAC9gw9"
           }
         },
-        "publishedCounter": 3,
-        "version": 20,
+        "publishedCounter": 4,
+        "version": 23,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2574,10 +2574,10 @@
           "en-US": "Demo > Features > Content 2"
         },
         "primaryText": {
-          "en-US": "Lorem ipsum dolor sit amet? Consectetur adipiscing elit! Integer nec odio, praesent libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. [Lorem ipsum dolor sit amet](https://gatsbyjs.com \"gatsbyjs.com\"), consectetur adipiscing elit. Integer nec odio. Praesent libero."
+          "en-US": "Another __Feature Heading__. This time with formatting."
         },
         "secondaryText": {
-          "en-US": "Another __Feature Heading__. This time with formatting."
+          "en-US": "Lorem ipsum dolor sit amet? Consectetur adipiscing elit! Integer nec odio, praesent libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. [Lorem ipsum dolor sit amet](https://gatsbyjs.com \"gatsbyjs.com\"), consectetur adipiscing elit. Integer nec odio. Praesent libero."
         },
         "image": {
           "en-US": {
@@ -2780,7 +2780,7 @@
         "id": "3kf7F5UDU1biOn3nLJdDVX",
         "type": "Entry",
         "createdAt": "2021-12-03T19:42:11.700Z",
-        "updatedAt": "2021-12-06T23:20:39.523Z",
+        "updatedAt": "2021-12-07T15:22:36.103Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2788,8 +2788,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 21,
-        "publishedAt": "2021-12-06T23:20:39.523Z",
+        "publishedVersion": 31,
+        "publishedAt": "2021-12-07T15:22:36.103Z",
         "firstPublishedAt": "2021-12-03T19:50:29.792Z",
         "createdBy": {
           "sys": {
@@ -2802,16 +2802,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "446Kgl618tus4YwDAC9gw9"
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 4,
-        "version": 22,
+        "publishedCounter": 9,
+        "version": 32,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "446Kgl618tus4YwDAC9gw9"
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
         "contentType": {
@@ -2846,6 +2846,34 @@
                 "linkType": "Entry",
                 "id": "6crdpqftDUxrYDdk1wKhV6"
               }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "Ttmi0z39mI7aYlUNJEoJU"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5mrNxnCRG8ykMIT5dlpZ35"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1DZkyC8SviEWf8jm3i0kEV"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "bzyeVVs7owcIREfKbjUQo"
+              }
             }
           ]
         }
@@ -2867,7 +2895,7 @@
         "id": "6crdpqftDUxrYDdk1wKhV6",
         "type": "Entry",
         "createdAt": "2021-12-03T19:42:35.902Z",
-        "updatedAt": "2021-12-03T19:50:12.460Z",
+        "updatedAt": "2021-12-07T15:03:39.111Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2875,8 +2903,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2021-12-03T19:50:12.460Z",
+        "publishedVersion": 7,
+        "publishedAt": "2021-12-07T15:03:39.111Z",
         "firstPublishedAt": "2021-12-03T19:50:12.460Z",
         "createdBy": {
           "sys": {
@@ -2892,8 +2920,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2917,6 +2945,9 @@
           "en-US": "Hero"
         },
         "heading": {
+          "en-US": "Create custom landing pages using Gatsby and Contentful"
+        },
+        "secondaryHeading": {
           "en-US": "Gatsby Starter Landing Page"
         },
         "content": {
@@ -2948,7 +2979,7 @@
         "id": "7CKTiKTserFfVf6IWES0h8",
         "type": "Entry",
         "createdAt": "2021-12-03T19:42:53.955Z",
-        "updatedAt": "2021-12-03T23:33:12.485Z",
+        "updatedAt": "2021-12-07T21:43:12.892Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2956,8 +2987,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2021-12-03T23:33:12.485Z",
+        "publishedVersion": 10,
+        "publishedAt": "2021-12-07T21:43:12.892Z",
         "firstPublishedAt": "2021-12-03T19:49:50.892Z",
         "createdBy": {
           "sys": {
@@ -2970,16 +3001,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "446Kgl618tus4YwDAC9gw9"
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 2,
-        "version": 6,
+        "publishedCounter": 4,
+        "version": 11,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "446Kgl618tus4YwDAC9gw9"
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
         "contentType": {
@@ -2993,6 +3024,18 @@
       "fields": {
         "name": {
           "en-US": "Home > Hero > Content"
+        },
+        "primaryText": {
+          "en-US": "This starter-theme combo makes it easy to quickly create custom landing pages in your Gatsby site from Contentful. Use this as a starting point to create custom components that match your visual branding.\n"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1iDgovJNbl5HuJWbYuca7f"
+            }
+          }
         },
         "links": {
           "en-US": [
@@ -3030,7 +3073,7 @@
         "id": "44RybxnsYC9JYE0LBmBXdx",
         "type": "Entry",
         "createdAt": "2021-12-03T19:43:09.602Z",
-        "updatedAt": "2021-12-03T19:49:33.204Z",
+        "updatedAt": "2021-12-07T15:08:33.225Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3038,8 +3081,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2021-12-03T19:49:33.204Z",
+        "publishedVersion": 9,
+        "publishedAt": "2021-12-07T15:08:33.225Z",
         "firstPublishedAt": "2021-12-03T19:49:33.204Z",
         "createdBy": {
           "sys": {
@@ -3055,8 +3098,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 1,
-        "version": 6,
+        "publishedCounter": 2,
+        "version": 10,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3074,10 +3117,10 @@
       },
       "fields": {
         "href": {
-          "en-US": "https://github.com/gatsbyjs/gatsby-starter-landing-page"
+          "en-US": "https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-landing-page"
         },
         "text": {
-          "en-US": "View on GitHub"
+          "en-US": "Deploy to Gatsby"
         }
       }
     },
@@ -3145,6 +3188,1272 @@
         },
         "text": {
           "en-US": "See the demo"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "Ttmi0z39mI7aYlUNJEoJU",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:09:14.022Z",
+        "updatedAt": "2021-12-07T15:12:36.693Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2021-12-07T15:12:36.693Z",
+        "firstPublishedAt": "2021-12-07T15:12:36.693Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageSection"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Features"
+        },
+        "component": {
+          "en-US": "Features"
+        },
+        "heading": {
+          "en-US": "Batteries Included"
+        },
+        "content": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5cw1ICWxv8JONQm1JBd5s6"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "01IEvGXxMqJTb9WkygYWAs"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "10gsmqvVL6jiaQzTSveVDw"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "5cw1ICWxv8JONQm1JBd5s6",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:09:56.985Z",
+        "updatedAt": "2021-12-07T15:11:03.574Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2021-12-07T15:11:03.574Z",
+        "firstPublishedAt": "2021-12-07T15:10:54.259Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageContent"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Features > Theme"
+        },
+        "primaryText": {
+          "en-US": "The Power of a Theme, with the simplicity of a Starter\n"
+        },
+        "secondaryText": {
+          "en-US": "Most of this starter's functionality is built as a Gatsby Theme, meaning you can continue to receive updates and bugfixes after creating your site. Use the starter to quickly suss out a proof-of-concept or start a new project. Use the theme to quickly add landing pages to your existing site.\n"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1iDgovJNbl5HuJWbYuca7f"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "01IEvGXxMqJTb9WkygYWAs",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:11:08.079Z",
+        "updatedAt": "2021-12-07T15:11:42.389Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-12-07T15:11:42.389Z",
+        "firstPublishedAt": "2021-12-07T15:11:42.389Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageContent"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Features > Content Model"
+        },
+        "primaryText": {
+          "en-US": "Content Model Included"
+        },
+        "secondaryText": {
+          "en-US": "Use the included content model JSON files to scaffold your Contentful Space without having to reinvent the wheel."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7kyS27THF2BGPdTYDSg3Kf"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "10gsmqvVL6jiaQzTSveVDw",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:11:46.485Z",
+        "updatedAt": "2021-12-07T15:12:16.530Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-12-07T15:12:16.530Z",
+        "firstPublishedAt": "2021-12-07T15:12:16.530Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageContent"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Features > Lightweight"
+        },
+        "primaryText": {
+          "en-US": "Lightweight"
+        },
+        "secondaryText": {
+          "en-US": "With perfect Lighthouse scores, you can be sure your landing pages are performant, thanks to Gatsby and Gatsby Cloud."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3b7jvhjRxF4NNMiwIQCWz3"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "5mrNxnCRG8ykMIT5dlpZ35",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:13:54.366Z",
+        "updatedAt": "2021-12-07T15:16:45.108Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2021-12-07T15:16:45.108Z",
+        "firstPublishedAt": "2021-12-07T15:16:04.669Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageSection"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Benefits"
+        },
+        "component": {
+          "en-US": "Benefits"
+        },
+        "heading": {
+          "en-US": "Get started in minutes & make it your own"
+        },
+        "content": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1rG7A4Si0bTiab8Wy36hNk"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6Gim6sRfdBxBIC9IHVYVYd"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "53rUXvWLmLKpnhPc90cVsd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "1rG7A4Si0bTiab8Wy36hNk",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:14:21.916Z",
+        "updatedAt": "2021-12-07T15:14:56.372Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-12-07T15:14:56.372Z",
+        "firstPublishedAt": "2021-12-07T15:14:56.372Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageContent"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Benefits > Extensible"
+        },
+        "primaryText": {
+          "en-US": "Extensible"
+        },
+        "secondaryText": {
+          "en-US": "The components included in this starter are meant as a starting point to extend the functionality by building your own custom components."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3SLI5Z5PBvSayqonvFrbRT"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "6Gim6sRfdBxBIC9IHVYVYd",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:15:00.400Z",
+        "updatedAt": "2021-12-07T15:15:31.027Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-12-07T15:15:31.027Z",
+        "firstPublishedAt": "2021-12-07T15:15:31.027Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageContent"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Benefits > Unopinionated"
+        },
+        "primaryText": {
+          "en-US": "Unopinionated"
+        },
+        "secondaryText": {
+          "en-US": "This starter uses as few dependencies as possible to create landing pages with Contentful, making it quick and easy to incorporate your own styles to match the look and feel of your brand."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1iDgovJNbl5HuJWbYuca7f"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "53rUXvWLmLKpnhPc90cVsd",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:15:35.998Z",
+        "updatedAt": "2021-12-07T15:16:01.857Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2021-12-07T15:16:01.857Z",
+        "firstPublishedAt": "2021-12-07T15:16:01.857Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageContent"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Benefits > Themeable"
+        },
+        "primaryText": {
+          "en-US": "Themeable"
+        },
+        "secondaryText": {
+          "en-US": "Customize the typography, colors, and components built into this starter to match your own visual branding."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7kyS27THF2BGPdTYDSg3Kf"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "bzyeVVs7owcIREfKbjUQo",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:17:11.045Z",
+        "updatedAt": "2021-12-07T15:18:59.724Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2021-12-07T15:18:59.724Z",
+        "firstPublishedAt": "2021-12-07T15:18:59.724Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageSection"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > CTA"
+        },
+        "component": {
+          "en-US": "CallToAction"
+        },
+        "heading": {
+          "en-US": "Get started now"
+        },
+        "content": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "pc7yfXVHlEBJtdt5bwysl"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "pc7yfXVHlEBJtdt5bwysl",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:17:36.675Z",
+        "updatedAt": "2021-12-07T15:18:56.312Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2021-12-07T15:18:56.312Z",
+        "firstPublishedAt": "2021-12-07T15:18:56.312Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageContent"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > CTA > Content"
+        },
+        "links": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "39WOlExh5Qo2I25kFQ9a3P"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "10q9VLb0015xbOvftFn5Za"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "39WOlExh5Qo2I25kFQ9a3P",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:17:53.481Z",
+        "updatedAt": "2021-12-07T15:18:16.081Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2021-12-07T15:18:16.081Z",
+        "firstPublishedAt": "2021-12-07T15:18:16.081Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "link"
+          }
+        }
+      },
+      "fields": {
+        "href": {
+          "en-US": "https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-landing-page"
+        },
+        "text": {
+          "en-US": "Deploy to Gatsby"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "10q9VLb0015xbOvftFn5Za",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:18:23.391Z",
+        "updatedAt": "2021-12-07T15:18:47.973Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2021-12-07T15:18:47.973Z",
+        "firstPublishedAt": "2021-12-07T15:18:47.973Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "link"
+          }
+        }
+      },
+      "fields": {
+        "href": {
+          "en-US": "https://github.com/gatsbyjs/gatsby-starter-landing-page"
+        },
+        "text": {
+          "en-US": "GitHub"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "1DZkyC8SviEWf8jm3i0kEV",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:19:42.146Z",
+        "updatedAt": "2021-12-07T15:22:17.080Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2021-12-07T15:22:17.080Z",
+        "firstPublishedAt": "2021-12-07T15:22:17.080Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageSection"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Testimonials"
+        },
+        "component": {
+          "en-US": "Testimonial"
+        },
+        "heading": {
+          "en-US": "What others are saying"
+        },
+        "content": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6Sc0Zh4rYHUgIj4x8WdGN0"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5K73NFCCq7q7CJUF9jG2Px"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2r6HclR2FKNumJB3VCKhXz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "6Sc0Zh4rYHUgIj4x8WdGN0",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:20:09.556Z",
+        "updatedAt": "2021-12-07T15:25:53.520Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2021-12-07T15:25:53.520Z",
+        "firstPublishedAt": "2021-12-07T15:20:39.665Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageContent"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Testimonials > Content Creators"
+        },
+        "primaryText": {
+          "en-US": "\"Contentful allows content creators at Gatsby to quickly create and edit landing pages without having to coordinate with multiple other teams.\""
+        },
+        "secondaryText": {
+          "en-US": "Carrie Contentson"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "5K73NFCCq7q7CJUF9jG2Px",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:20:46.599Z",
+        "updatedAt": "2021-12-07T15:27:39.405Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 20,
+        "publishedAt": "2021-12-07T15:27:39.405Z",
+        "firstPublishedAt": "2021-12-07T15:21:17.273Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 21,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageContent"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Testimonials > It's Good"
+        },
+        "primaryText": {
+          "en-US": "\"The landing page theme makes it painless to update styles and add new functionality that our Marketing team can use.\""
+        },
+        "secondaryText": {
+          "en-US": "Debbie Developson"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "2r6HclR2FKNumJB3VCKhXz",
+        "type": "Entry",
+        "createdAt": "2021-12-07T15:21:31.155Z",
+        "updatedAt": "2021-12-07T15:29:06.388Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2021-12-07T15:29:06.388Z",
+        "firstPublishedAt": "2021-12-07T15:21:57.392Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageContent"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Home > Testimonials > Setup"
+        },
+        "primaryText": {
+          "en-US": "\"This is the landing page setup I never knew I wanted until now.\""
+        },
+        "secondaryText": {
+          "en-US": "Perry Productson"
         }
       }
     }
@@ -3565,6 +4874,678 @@
           }
         },
         "updatedAt": "2021-11-30T21:38:59Z"
+      }
+    }
+  ],
+  "webhooks": [
+    {
+      "name": "Gatsby Cloud",
+      "url": "https://webhook.gatsbyjs.com/hooks/data_source/publish/7cf5e89e-66b7-49b9-b5b6-472b5d946224",
+      "httpBasicUsername": null,
+      "topics": [
+        "*.*"
+      ],
+      "filters": null,
+      "transformation": null,
+      "sys": {
+        "type": "WebhookDefinition",
+        "id": "2RXeEX4KNqr1rw31rg6irE",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "446Kgl618tus4YwDAC9gw9"
+          }
+        },
+        "createdAt": "2021-12-07T20:22:48Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "446Kgl618tus4YwDAC9gw9"
+          }
+        },
+        "updatedAt": "2021-12-07T20:22:48Z"
+      },
+      "headers": [
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "Author",
+      "description": "Allows editing of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "42DXBtt5bR7KF6o3mJhFY9",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "createdAt": "2021-11-30T14:34:16Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedAt": "2021-11-30T14:34:16Z"
+      }
+    },
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "42EpwSO6NOK8gnQTrOJVTL",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "createdAt": "2021-11-30T14:34:16Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedAt": "2021-11-30T14:34:16Z"
+      }
+    },
+    {
+      "name": "Freelancer",
+      "description": "Allows only editing of content they created themselves",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "delete"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "delete"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "42ELwjbfQlkBF0MeH8URIx",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "createdAt": "2021-11-30T14:34:16Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedAt": "2021-11-30T14:34:16Z"
+      }
+    },
+    {
+      "name": "Translator",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "42F9Iy2C1h4x6KPgpfFEjX",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "createdAt": "2021-11-30T14:34:16Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedAt": "2021-11-30T14:34:16Z"
       }
     }
   ]
