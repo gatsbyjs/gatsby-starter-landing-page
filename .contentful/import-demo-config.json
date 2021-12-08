@@ -1,4 +1,4 @@
 {
   "spaceId": "SPACE_ID",
-  "contentFile": "./contentful/landing-page-model-and-content.json"
+  "contentFile": ".contentful/landing-page-model-and-content.json"
 }
