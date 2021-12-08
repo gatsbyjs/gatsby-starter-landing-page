@@ -4,14 +4,18 @@ import MarkdownText from "../components/markdown-text";
 import Button from "../components/button";
 import Section from "../components/section";
 import Heading from "../components/heading";
+import ContentContainer from "../components/content-container";
+
 export default function CallToAction({ heading, secondaryHeading, content }) {
   return (
     <Section>
       <Heading>{heading}</Heading>
       <Heading secondary>{secondaryHeading}</Heading>
-      {content.map((c) => (
-        <Content key={c.id} {...c} />
-      ))}
+      <ContentContainer>
+        {content.map((c) => (
+          <Content key={c.id} {...c} />
+        ))}
+      </ContentContainer>
     </Section>
   );
 }
@@ -19,11 +23,11 @@ export default function CallToAction({ heading, secondaryHeading, content }) {
 function Content({ primaryText, secondaryText, links = [] }) {
   return (
     <div className={styles.content}>
-      <MarkdownText {...primaryText} />
-      <MarkdownText {...secondaryText} />
       <div className={styles.buttons}>
         {links && links.map((link) => <Button key={link.id} {...link} />)}
       </div>
+      <MarkdownText {...primaryText} />
+      <MarkdownText {...secondaryText} />
     </div>
   );
 }

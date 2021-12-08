@@ -3,6 +3,7 @@ import * as styles from "./testimonial.module.css";
 import Section from "../components/section";
 import Heading from "../components/heading";
 import MarkdownText from "../components/markdown-text";
+import ContentContainer from "../components/content-container";
 import Divider from "../components/divider";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
@@ -11,16 +12,18 @@ export default function Testimonial({ heading, secondaryHeading, content }) {
     <Section>
       <Heading>{heading}</Heading>
       <Heading secondary>{secondaryHeading}</Heading>
-      {content.map((item) => (
-        <TestimonialContent {...item} />
-      ))}
+      <ContentContainer className={styles.contentContainer}>
+        {content.map((item) => (
+          <TestimonialContent {...item} />
+        ))}
+      </ContentContainer>
     </Section>
   );
 }
 
 function TestimonialContent({ primaryText, secondaryText, avatar }) {
   return primaryText ? (
-    <div className={styles.testimonialContainer}>
+    <div className={styles.testimonial}>
       <div className={styles.quote}>
         <MarkdownText {...primaryText} />
       </div>

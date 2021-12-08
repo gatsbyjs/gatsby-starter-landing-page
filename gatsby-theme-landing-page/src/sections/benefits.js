@@ -6,17 +6,19 @@ import Link from "../components/link";
 import LinkContainer from "../components/link-container";
 import Section from "../components/section";
 import Heading from "../components/heading";
+import ContentContainer from "../components/content-container";
+
 export default function Benefits({ heading, secondaryHeading, content }) {
   return (
     <section>
       <Section>
         <Heading>{heading}</Heading>
         <Heading secondary>{secondaryHeading}</Heading>
-        <div className={styles.contentContainer}>
+        <ContentContainer className={styles.contentContainer}>
           {content.map((item) => (
             <BenefitContent key={item.id} {...item} />
           ))}
-        </div>
+        </ContentContainer>
       </Section>
     </section>
   );
