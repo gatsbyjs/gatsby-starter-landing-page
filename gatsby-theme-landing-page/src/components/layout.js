@@ -7,7 +7,7 @@ import Head from "./head";
 // in src/gatsby-theme-landing-page/components/layout.js
 export default function Layout(props) {
   return (
-    <div id="Layout-root" className={styles.root}>
+    <div className={styles.root}>
       <Head {...props} />
       {props.children}
     </div>
