@@ -1,7 +1,7 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import * as React from "react";
 import * as styles from "./features.module.css";
-import MarkdownText from "../components/markdown-text";
+import MarkdownText, { getText } from "../components/markdown-text";
 import Link from "../components/link";
 import LinkContainer from "../components/link-container";
 import Section from "../components/section";
@@ -45,7 +45,10 @@ function Feature({
       </div>
       <div className={styles.imageContainer}>
         <div className={styles.imageWrapper}>
-          <GatsbyImage image={getImage(image)} />
+          <GatsbyImage
+            image={getImage(image)}
+            alt={image.title || getText(primaryText)}
+          />
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@ export default function Hero({ heading, secondaryHeading, content }) {
           <HeroContent {...heroContent} />
         </div>
         <div className={styles.image}>
-          <GatsbyImage image={image} />
+          <GatsbyImage image={image} alt={image.title || `Hero Image`} />
         </div>
       </div>
     </section>
