@@ -3,6 +3,7 @@ module.exports = (opts = {}) => {
   return {
     plugins: [
       "gatsby-plugin-image",
+      `gatsby-plugin-react-helmet`,
       {
         resolve: "gatsby-source-contentful",
         options: {

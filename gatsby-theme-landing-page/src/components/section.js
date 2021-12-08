@@ -8,7 +8,7 @@ export default function Section({ children, className = "", ...rest }) {
   }
   return (
     <section className={`${styles.root} ${className}`} {...rest}>
-      <Container className={styles.container}>{children}</Container>
+      <Container>{children}</Container>
     </section>
   );
 }

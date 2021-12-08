@@ -41,6 +41,11 @@
   color: var(--text-color-secondary);
 }
 
+.contentContainer {
+  display: flex;
+  margin: var(--space-4) auto;
+}
+
 @media screen and (min-width: 640px) {
   .section {
     padding-top: var(--space-5);

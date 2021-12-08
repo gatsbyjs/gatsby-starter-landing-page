@@ -6,7 +6,7 @@ export default function LinkContainer({ children, className, ...rest }) {
     return null;
   }
   return (
-    <div className={`${styles.linkContainer} ${className}`} {...rest}>
+    <div className={`${styles.linkContainer} ${className || ""}`} {...rest}>
       {children}
     </div>
   );

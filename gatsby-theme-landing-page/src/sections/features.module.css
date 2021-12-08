@@ -1,8 +1,11 @@
+.contentContainer {
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
 .featureContainer {
   display: flex;
   flex-direction: column;
-  margin-top: var(--space-4);
-  margin-bottom: var(--space-1);
 }
 
 .copyContainer {
@@ -13,16 +16,17 @@
   order: 2;
 }
 
-.primaryText {
+.secondaryText {
   font-size: var(--font-size-3);
 }
 
-.secondaryText {
+.primaryText {
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-bold);
+  margin: 0;
 }
 
-.secondaryText strong {
+.primaryText strong {
   color: var(--primary-color);
 }
 
@@ -36,10 +40,15 @@
 }
 
 @media screen and (min-width: 640px) {
+  .contentContainer {
+    gap: var(--space-5);
+  }
   .featureContainer {
     flex-direction: row;
-    margin-top: var(--space-5);
-    margin-bottom: var(--space-5);
+  }
+
+  .primaryText {
+    margin-bottom: var(--space-3);
   }
 
   .copyContainer {

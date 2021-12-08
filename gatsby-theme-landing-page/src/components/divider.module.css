@@ -1,7 +1,7 @@
 .divider {
-  height: 2px;
-  background-color: var(--primary-color);
-  margin: var(--space-4) auto;
+  border: 0;
+  border-top: 2px solid var(--text-color-secondary);
+  /* margin: var(--space-2) auto; */
 }
 
 .short {
