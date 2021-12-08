@@ -6,20 +6,21 @@ import Link from "../components/link";
 import LinkContainer from "../components/link-container";
 import Section from "../components/section";
 import Heading from "../components/heading";
+import ContentContainer from "../components/content-container";
 
 export default function Features({ heading, secondaryHeading, content }) {
   return (
     <Section>
       <Heading>{heading}</Heading>
       <Heading secondary>{secondaryHeading}</Heading>
-      <div>
+      <ContentContainer className={styles.contentContainer}>
         {content.map((item, i) => (
           <Feature
             {...item}
             orientation={i % 2 === 0 ? "default" : "reverse"}
           />
         ))}
-      </div>
+      </ContentContainer>
     </Section>
   );
 }
