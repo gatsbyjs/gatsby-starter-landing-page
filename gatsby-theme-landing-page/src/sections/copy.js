@@ -23,7 +23,7 @@ export default function Copy({ heading, secondaryHeading, content }) {
 function CopyContent({ primaryText, secondaryText, image }) {
   return (
     <div className={styles.copyContainer}>
-      <div className={styles.imageContainer}>
+      <div>
         <GatsbyImage image={getImage(image)} />
       </div>
       <MarkdownText {...primaryText} />
