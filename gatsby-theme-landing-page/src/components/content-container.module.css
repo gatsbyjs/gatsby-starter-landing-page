@@ -1,3 +1,2 @@
 .contentContainer {
-  composes: contentContainer from "../styles/base.module.css";
 }
