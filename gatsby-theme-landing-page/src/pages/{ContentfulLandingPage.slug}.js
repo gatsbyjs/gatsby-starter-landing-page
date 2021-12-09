@@ -49,9 +49,11 @@ export const query = graphql`
           }
           image {
             gatsbyImageData(layout: CONSTRAINED)
+            title
           }
           avatar: image {
             gatsbyImageData(layout: FIXED, width: 96, height: 96)
+            title
           }
           links {
             id
