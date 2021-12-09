@@ -64,7 +64,7 @@ Your Contentful space will now contain the content model used by the starter, al
 
 Each landing page is represented by a hierarchical content model:
 
-**Landing** **Page**: Represents a single page and its metadata. Landing pages contain a list of content **Sections**.
+**Landing Page**: Represents a single page and its metadata. Landing pages contain a list of content **Sections**.
 
 **Section**: Represents a distinct section of the landing page, its layout and the content it contains. The layout of the section is determined by the **component** field. The components available as drop down options map to the components available in `src/gatsby-theme-landing-pages/src/sections` .
 
