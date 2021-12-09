@@ -2,7 +2,7 @@ import React from "react";
 import * as styles from "./testimonial.module.css";
 import Section from "../components/section";
 import Heading from "../components/heading";
-import MarkdownText from "../components/markdown-text";
+import MarkdownText, { getText } from "../components/markdown-text";
 import ContentContainer from "../components/content-container";
 import Divider from "../components/divider";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
@@ -22,20 +22,25 @@ export default function Testimonial({ heading, secondaryHeading, content }) {
 }
 
 function TestimonialContent({ primaryText, secondaryText, avatar }) {
-  return primaryText ? (
+  if (!primaryText) return;
+
+  return (
     <div className={styles.testimonial}>
       <div className={styles.quote}>
         <MarkdownText {...primaryText} />
       </div>
       <Divider />
       <div className={styles.author}>
-        <div>
+        {avatar && (
           <div className={styles.avatar}>
-            <GatsbyImage image={getImage(avatar)} />
+            <GatsbyImage
+              image={getImage(avatar)}
+              alt={avatar.title || getText(primaryText)}
+            />
           </div>
-        </div>
+        )}
         <MarkdownText className={styles.authorInfo} {...secondaryText} />
       </div>
     </div>
-  ) : null;
+  );
 }

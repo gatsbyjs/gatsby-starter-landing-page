@@ -2,6 +2,9 @@ import * as React from "react";
 import * as sanitize from "sanitize-html";
 import * as styles from "./markdown-text.module.css";
 
+export const getText = (markdownTextNode) =>
+  sanitize(markdownTextNode.childMarkdownRemark.html, { allowedTags: [] });
+
 const blockOptions = {
   allowedTags: [
     "p",

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import * as styles from "./benefits.module.css";
-import MarkdownText from "../components/markdown-text";
+import MarkdownText, { getText } from "../components/markdown-text";
 import Link from "../components/link";
 import LinkContainer from "../components/link-container";
 import Section from "../components/section";
@@ -30,7 +30,7 @@ function BenefitContent({ primaryText, secondaryText, image, links = [] }) {
       {image && (
         <GatsbyImage
           image={getImage(image)}
-          alt={"TODO get alt text"}
+          alt={image.title || getText(primaryText)}
           className={styles.contentImage}
         />
       )}
