@@ -58,6 +58,17 @@ Import the content model and demo data to your Contentful space
 
 Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
 
+## Content model
+
+Each landing page is represented by a hierarchical content model:
+**Landing** **Page**: Represents a single page and its metadata. Landing pages contain a list of content **Sections**.
+
+**Section**: Represents a distinct section of the landing page, its layout and the content it contains. The layout of the section is determined by the **component** field. The components available as drop down options map to the components available in `src/gatsby-theme-landing-pages/src/sections` .
+
+Each section contains up to two headings, and at least one **Content** block*.*
+
+**Content**: which represents the content in a given section. Content blocks contain _primary text, secondary text, an image, and up to two links._ How these content fields are rendered depends on the type of Section (e.g. which component) they belong to.
+
 ## Customizing typography, colors, and layout
 
 To customize the built-in components' typography, colors, and layout, shadow the `variables.module.css` file by creating a file in your site with this path:
@@ -128,6 +139,17 @@ To completely ignore the default CSS custom properties defined in the theme, add
 .root {
 }
 ```
+
+## Section components
+
+There are 5 components available:
+
+- **Hero**: A two-column component with headings, an image, and CTA links. Intended to state the purpose of the landing page.
+- **Copy**: Long form text with blockquotes and full-column images, best for articles and instructions.
+- **CallToAction**: Centered text with CTA links
+- **Features**: large section with image and text side-by-side, often used to list features of a product offering
+- **Benefits**: Tiled cards, often used to list the benefits of a given offering.
+- **Testimonial** Centered text with separate sections for quote and author, often used for social proof.
 
 ## Customizing section components
 
