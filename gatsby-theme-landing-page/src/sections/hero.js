@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Section from "../components/section";
 import Button from "../components/button";
 import MarkdownText from "../components/markdown-text";
+import Heading from "../components/heading";
 
 export default function Hero({ heading, secondaryHeading, content }) {
   const heroContent = content?.[0];
@@ -13,8 +14,10 @@ export default function Hero({ heading, secondaryHeading, content }) {
     <Section>
       <div className={styles.root}>
         <div className={styles.content}>
-          <h2>{secondaryHeading}</h2>
-          <h1>{heading}</h1>
+          <Heading as="h2" className={styles.secondaryHeading}>
+            {secondaryHeading}
+          </Heading>
+          <Heading className={styles.heading}>{heading}</Heading>
           <HeroContent {...heroContent} />
         </div>
         <div className={styles.image}>

@@ -4,6 +4,7 @@
   flex-direction: column;
 }
 
+/*
 .root p,
 .root h1,
 .root h2,
@@ -15,15 +16,16 @@
 .root ol {
   margin: 0;
 }
+*/
 
-.root h1 {
+.root .heading {
   font-family: var(--font-heading);
   font-size: var(--font-size-6);
   margin-top: 0;
   margin-bottom: var(--space-4);
 }
 
-.root h2 {
+.root .secondaryHeading {
   margin-top: 0;
   margin-bottom: var(--space-3);
   font-size: var(--font-size-3);
@@ -31,9 +33,11 @@
   letter-spacing: var(--letter-spacing-caps);
 }
 
+/*
 .root p {
   margin-bottom: var(--space-4);
 }
+*/
 
 .buttonContainer {
   display: flex;

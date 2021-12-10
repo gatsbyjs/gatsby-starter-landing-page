@@ -5,7 +5,7 @@ export default function Heading({
   children,
   as,
   secondary,
-  className,
+  className = "",
   ...rest
 }) {
   if (!children) {
@@ -15,7 +15,7 @@ export default function Heading({
   const baseStyle = !secondary ? styles.heading : styles.secondaryHeading;
 
   /*
-   Uses `as` prop for heading element. If not provided, defaults to 
+   Uses `as` prop for heading element. If not provided, defaults to
    h2 for standard and h3 for secondary
   */
   const Component = as || secondary ? "h3" : "h2";
