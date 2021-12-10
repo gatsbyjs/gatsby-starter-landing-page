@@ -17,7 +17,9 @@ export default function Hero({ heading, secondaryHeading, content }) {
           <Heading as="h2" className={styles.secondaryHeading}>
             {secondaryHeading}
           </Heading>
-          <Heading className={styles.heading}>{heading}</Heading>
+          <Heading as="h1" className={styles.heading}>
+            {heading}
+          </Heading>
           <HeroContent {...heroContent} />
         </div>
         <div className={styles.image}>

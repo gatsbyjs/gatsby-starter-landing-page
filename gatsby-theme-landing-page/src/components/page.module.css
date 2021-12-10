@@ -13,4 +13,5 @@
 .root h5,
 .root h6 {
   font-family: var(--font-heading);
+  line-height: var(--line-height-heading);
 }

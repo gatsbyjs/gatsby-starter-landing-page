@@ -1,4 +1,9 @@
-.contentContainer {
+.secondaryHeading {
+  margin-bottom: var(--space-4);
+}
+
+.content {
+  display: flex;
   flex-direction: column;
   gap: var(--space-5);
 }
@@ -19,7 +24,7 @@
 }
 
 @media screen and (min-width: 48em) {
-  .contentContainer {
+  .content {
     flex-direction: row;
     align-items: flex-start;
     gap: var(--space-4);

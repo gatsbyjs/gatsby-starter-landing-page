@@ -52,7 +52,7 @@ export const query = graphql`
             title
           }
           avatar: image {
-            gatsbyImageData(layout: FIXED, width: 96, height: 96)
+            gatsbyImageData(layout: FIXED, width: 48, height: 48)
             title
           }
           links {
