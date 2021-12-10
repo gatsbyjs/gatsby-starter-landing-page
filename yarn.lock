@@ -5195,7 +5195,7 @@ gatsby-page-utils@^2.3.0:
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-gatsby-plugin-image@^2.2.0, gatsby-plugin-image@^2.3.0:
+gatsby-plugin-image@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.3.0.tgz#126f7a0666016c8879b97246ce4f4e1dd62e3c47"
   integrity sha512-oxG+oZ1kYboX/75jOxHZeV6Xzo5xHZ/8KUQpni58nI1+xaxZRFBthXg1SetSs8nWRsXR5Y+bq8FAf0R0iGjySg==
@@ -5238,7 +5238,7 @@ gatsby-plugin-react-helmet@^5.2.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-gatsby-plugin-sharp@^4.2.0, gatsby-plugin-sharp@^4.3.0:
+gatsby-plugin-sharp@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-4.3.0.tgz#8ae610886fd8e34de4c30f6deece6ff2e0d3be3c"
   integrity sha512-XCHpIQmXa3iH36vxSbedTboImbngEaom+T2UEovURIh/W/4gJN5UwhMtKbXvnNtI1eQ9/ndMJALwzltzHeFyPg==
@@ -5380,7 +5380,7 @@ gatsby-source-contentful@^7.0.0:
     p-queue "^6.6.2"
     retry-axios "^2.6.0"
 
-gatsby-source-filesystem@^4.2.0, gatsby-source-filesystem@^4.3.0:
+gatsby-source-filesystem@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.3.0.tgz#0a4f21cecc0cc942096c11c1b583a698f1edf2d8"
   integrity sha512-vPYq1hcJ2FUc/o9QsMFC/nVLxXVPN/qInfCPWv/FePNfnL8A5EaKhQwSyfTqISeovMkLuJLv4wm+QTKgGVe6Nw==
@@ -5446,7 +5446,7 @@ gatsby-transformer-remark@^5.3.0:
     unist-util-select "^3.0.4"
     unist-util-visit "^2.0.3"
 
-gatsby-transformer-sharp@^4.2.0, gatsby-transformer-sharp@^4.3.0:
+gatsby-transformer-sharp@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-4.3.0.tgz#9158acc9a4b1ecdf067dbb0bb7661dc058be1550"
   integrity sha512-GKIYnbwAvMA8grjDAQIajTtPMHzhYdA1FPfFX6SjEotYRUMpzeC/RXXa/8UoNZEPtNYUk5ghE78Y3/YvmKZuSA==
