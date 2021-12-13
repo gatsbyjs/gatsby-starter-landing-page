@@ -66,6 +66,7 @@ A quick look at the files and directories included in this project:
 .
 ├── README.md
 ├── gatsby-config.js
+├── gatsby-node.js
 ├── gatsby-theme-landing-page
 │   ├── README.md
 │   ├── gatsby-config.js
@@ -83,11 +84,13 @@ A quick look at the files and directories included in this project:
 ```
 
 1. **`gatsby-config.js`**: [Gatsby config][] file for the starter, which includes `gatsby-theme-landing-page` as a plugin.
+1. **`gatsby-node.js`**: [Gatsby Node][] config file for the starter, which includes GraphQL type definitions for the Contentful content model.
 1. **`gatsby-theme-landing-page`**: The [theme][theme docs] that includes the Contentful source plugin and most of the functionality. See the theme's [`README.md`][theme readme] for more information.
 1. **`src/`**: The source directory for the starter. This includes an example of using the [Shadowing API][] to customize landing pages provided by the theme.
 1. **`.env.example`**: Copy this file, rename it to `.env`, and add your Contentful API keys to connect this data to your Contentful space.
 
 [gatsby config]: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
+[gatsby node]: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
 [theme docs]: https://www.gatsbyjs.com/docs/themes/
 [shadowing api]: https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/
 
@@ -250,6 +253,11 @@ query ($id: String!) {
 ```
 
 <!-- TODO add screenshot -->
+
+### Schema Customization API
+
+To prevent errors from occuring when changes are made to the Contentful content model, this starter includes GraphQL type definitions in its [`gatsby-node.js`](gatsby-node.js) file.
+If you decide to make changes to your content model, be sure to update the type definitions in this file, otherwise the starter might not be able to query new or renamed fields.
 
 To read more about customizing, see the theme's [README.md][theme readme].
 
