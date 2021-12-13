@@ -2,63 +2,63 @@
   Gatsby Theme Landing Page
 </h1>
 
-  The official Contentful-backed dynamic landing page theme for Gatsby sites
+The official Contentful-backed dynamic landing page theme for Gatsby sites
 
 ## Getting Started
 
 1. **Install the theme in your Gatsby site.**
 
-    ```sh
-    npm install gatsby-theme-landing-page
-    ```
+   ```sh
+   npm install gatsby-theme-landing-page
+   ```
 
 2. **Add the theme to your `gatsby-config.js`.**
 
-    ```js
-    // gatsby-config.js
-    require("dotenv").config();
+   ```js
+   // gatsby-config.js
+   require("dotenv").config();
 
-    module.exports = {
-      plugins: [
-        {
-          resolve: "gatsby-theme-landing-page",
-          options: {
-            spaceId: process.env.CONTENTFUL_SPACE_ID,
-            accessToken: process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
-            environment: process.env.CONTENTFUL_ENVIRONMENT_ID || "master",
-          },
-        },
-      ],
-    };
-    ```
+   module.exports = {
+     plugins: [
+       {
+         resolve: "gatsby-theme-landing-page",
+         options: {
+           spaceId: process.env.CONTENTFUL_SPACE_ID,
+           accessToken: process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
+           environment: process.env.CONTENTFUL_ENVIRONMENT_ID || "master",
+         },
+       },
+     ],
+   };
+   ```
 
 3. **Create a `.env` file with your Contentful space ID and API keys.**
 
-    ```sh
-    # .env
-    CONTENTFUL_SPACE_ID="<SPACE_ID>"
-    CONTENTFUL_DELIVERY_ACCESS_TOKEN="<ACCESS_TOKEN>"
-    ```
+   ```sh
+   # .env
+   CONTENTFUL_SPACE_ID="<SPACE_ID>"
+   CONTENTFUL_DELIVERY_ACCESS_TOKEN="<ACCESS_TOKEN>"
+   ```
 
 4. **Import the content model and demo data to your Contentful space**
 
-    - Install the [Contentful CLI (installation instructions)](https://www.contentful.com/developers/docs/tutorials/cli/installation/)
+   - Install the [Contentful CLI (installation instructions)](https://www.contentful.com/developers/docs/tutorials/cli/installation/)
 
-    - Add your space ID to `contentful/import-demo-config.json` and `contentful/import-model-only-config.json`
+   - Add your space ID to `contentful/import-demo-config.json` and `contentful/import-model-only-config.json`
 
-      ```json
-      {
-        "spaceId": "SPACE_ID",
-        "contentFile": "./contentful/landing-page-model-and-content.json"
-      }
-      ```
+     ```json
+     {
+       "spaceId": "SPACE_ID",
+       "contentFile": "./contentful/landing-page-model-and-content.json"
+     }
+     ```
 
-    - Import the demo (content model and sample data):
-       `yarn import:contentful:demo`
+   - Import the demo (content model and sample data):
+     `yarn import:contentful:demo`
 
-    - (Optional) If you only want to import the content model and not the demo data, use the command: `yarn import:contentful:model`
+   - (Optional) If you only want to import the content model and not the demo data, use the command: `yarn import:contentful:model`
 
-    Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
+   Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
 
 ## Content model
 
@@ -193,9 +193,9 @@ export default function MyHero(props) {
 }
 ```
 
-### Adding custom section components
+### Adding new section components
 
-To add custom section components or to override the built-in sections, you can shadow the main section component `index.js` file by creating a file at the following path:
+To add new section components, you can shadow the main section component `index.js` file by creating a file at the following path:
 
 ```sh
 src/gatsby-theme-landing/page/components/index.js
@@ -210,7 +210,7 @@ export {
   CallToAction,
   Benefits,
   Testimonials,
-  NewsletterForm, // example custom section component
+  NewsletterForm, // example new section component
 } from "../../components/custom-landing-page-components";
 ```
 
