@@ -74,6 +74,65 @@ Each section contains up to two headings, and at least one **Content** block*.*
 
 **Content**: which represents the content in a given section. Content blocks contain _primary text, secondary text, an image, and up to two links._ How these content fields are rendered depends on the type of Section (e.g. which component) they belong to.
 
+## Components
+
+### Section Components
+
+There are 6 built-in section components available:
+
+- **Hero**: A two-column component with headings, an image, and CTA links. Intended to state the purpose of the landing page.
+- **Copy**: Long form text with blockquotes and full-column images, best for articles and instructions.
+- **CallToAction**: Centered text with CTA links
+- **Features**: large section with image and text side-by-side, often used to list features of a product offering
+- **Benefits**: Tiled cards, often used to list the benefits of a given offering.
+- **Testimonial** Centered text with separate sections for quote and author, often used for social proof.
+
+Content authors can choose any one of these components to render a content _Section_ when creating and editing landing pages.
+
+### Shared Components
+
+These section components use several shared components internally for a consistent look and feel. These components are also exported for use when creating custom section components, custom layouts, or for general use.
+
+#### `MarkdownText` Component
+
+```jsx
+// example usage
+import { MarkdownText } from "gatsby-theme-landing-page";
+
+<MarkdownText {...primaryText} />;
+```
+
+Use the `MarkdownText` component to sanitize and render rich text fields from Contentful.
+
+**Props:**
+
+- `childMarkdownRemark`: HTML returned from `gatsby-source-contentful`
+- `as`: renders this component as a different HTML element and removes block level elements from HTML
+- `className`: pass an additional HTML class attribute, which can be used for styling
+- All other props are passed directly to the root element
+
+#### `Head` Component
+
+```jsx
+// example usage
+import { Head } from "gatsby-theme-landing-page";
+
+<Head>
+  <title>Example</title>
+</Head>;
+```
+
+The `Head` component is a wrapper around [React Helmet][] to add page-level metadata to your pages in your site.
+
+[react helmet]: https://www.gatsbyjs.com/docs/add-page-metadata/
+
+**Props:**
+
+- `title`: sets the page title, as well as Open Graph metadata
+- `description`: sets the page description, as well as Open Graph metadata
+- `image`: sets the Open Graph image
+- `noIndex` (boolean): set this as `true` to prevent search engine indexing
+
 ## Customization
 
 ### Typography, colors, and layout
