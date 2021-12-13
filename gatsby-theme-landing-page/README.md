@@ -1,62 +1,64 @@
-# gatsby-theme-landing-page
+<h1 align="center">
+  Gatsby Theme Landing Page
+</h1>
 
-A Contentful-backed dynamic landing page theme for Gatsby
+The official Contentful-backed dynamic landing page theme for Gatsby sites
 
-## Usage
+## Getting Started
 
-Install the theme in your Gatsby site.
+1. **Install the theme in your Gatsby site.**
 
-```sh
-npm install gatsby-theme-landing-page
-```
+   ```sh
+   npm install gatsby-theme-landing-page
+   ```
 
-Add the theme to your `gatsby-config.js`.
+2. **Add the theme to your `gatsby-config.js`.**
 
-```js
-// gatsby-config.js
-require("dotenv").config();
+   ```js
+   // gatsby-config.js
+   require("dotenv").config();
 
-module.exports = {
-  plugins: [
-    {
-      resolve: "gatsby-theme-landing-page",
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
-        environment: process.env.CONTENTFUL_ENVIRONMENT_ID || "master",
-      },
-    },
-  ],
-};
-```
+   module.exports = {
+     plugins: [
+       {
+         resolve: "gatsby-theme-landing-page",
+         options: {
+           spaceId: process.env.CONTENTFUL_SPACE_ID,
+           accessToken: process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
+           environment: process.env.CONTENTFUL_ENVIRONMENT_ID || "master",
+         },
+       },
+     ],
+   };
+   ```
 
-Create a `.env` file with your Contentful space ID and API keys.
+3. **Create a `.env` file with your Contentful space ID and API keys.**
 
-```sh
-# .env
-CONTENTFUL_SPACE_ID="<SPACE_ID>"
-CONTENTFUL_DELIVERY_ACCESS_TOKEN="<ACCESS_TOKEN>"
-```
+   ```sh
+   # .env
+   CONTENTFUL_SPACE_ID="<SPACE_ID>"
+   CONTENTFUL_DELIVERY_ACCESS_TOKEN="<ACCESS_TOKEN>"
+   ```
 
-Import the content model and demo data to your Contentful space
+4. **Import the content model and demo data to your Contentful space**
 
-1. Install the [Contentful CLI (installation instructions)](https://www.contentful.com/developers/docs/tutorials/cli/installation/)
+   - Install the [Contentful CLI (installation instructions)](https://www.contentful.com/developers/docs/tutorials/cli/installation/)
 
-2. Add your space ID to `contentful/import-demo-config.json` and `contentful/import-model-only-config.json`
+   - Add your space ID to `contentful/import-demo-config.json` and `contentful/import-model-only-config.json`
 
-```json
-{
-  "spaceId": "SPACE_ID",
-  "contentFile": "./contentful/landing-page-model-and-content.json"
-}
-```
+     ```json
+     {
+       "spaceId": "SPACE_ID",
+       "contentFile": "./contentful/landing-page-model-and-content.json"
+     }
+     ```
 
-3. Import the demo (content model and sample data):
-   `yarn import:contentful:demo`
+   - Import the demo (content model and sample data):
+     `yarn import:contentful:demo`
 
-(Optional) If you only want to import the content model and not the demo data, use the command: `yarn import:contentful:model`
+   - (Optional) If you only want to import the content model and not the demo data, use the command: `yarn import:contentful:model`
 
-Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
+   Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
 
 ## Content model
 
@@ -72,7 +74,9 @@ Each section contains up to two headings, and at least one **Content** block*.*
 
 **Content**: which represents the content in a given section. Content blocks contain _primary text, secondary text, an image, and up to two links._ How these content fields are rendered depends on the type of Section (e.g. which component) they belong to.
 
-## Customizing typography, colors, and layout
+## Customization
+
+### Typography, colors, and layout
 
 To customize the built-in components' typography, colors, and layout, shadow the `variables.module.css` file by creating a file in your site with this path:
 
@@ -143,9 +147,9 @@ To completely ignore the default CSS custom properties defined in the theme, add
 }
 ```
 
-## Section components
+### Section components
 
-There are 5 components available:
+There are 6 components available:
 
 - **Hero**: A two-column component with headings, an image, and CTA links. Intended to state the purpose of the landing page.
 - **Copy**: Long form text with blockquotes and full-column images, best for articles and instructions.
@@ -153,8 +157,6 @@ There are 5 components available:
 - **Features**: large section with image and text side-by-side, often used to list features of a product offering
 - **Benefits**: Tiled cards, often used to list the benefits of a given offering.
 - **Testimonial** Centered text with separate sections for quote and author, often used for social proof.
-
-## Customizing section components
 
 To customize any of the built-in section components, add components to your site's `src/gatsby-theme-landing-page/sections` directory. For example, to create a custom Hero section component, create a file at the following path:
 
@@ -190,6 +192,31 @@ export default function MyHero(props) {
   );
 }
 ```
+
+### Adding new section components
+
+To add new section components, you can shadow the main section component `index.js` file by creating a file at the following path:
+
+```sh
+src/gatsby-theme-landing/page/components/index.js
+```
+
+```js
+// example src/gatsby-theme-landing/page/components/index.js
+export {
+  Hero,
+  Features,
+  Copy,
+  CallToAction,
+  Benefits,
+  Testimonials,
+  NewsletterForm, // example new section component
+} from "../../components/custom-landing-page-components";
+```
+
+When adding new custom components, be sure to update your Contentful space's content model to reflect these changes by ensuring the LandingPageSection's _Component_ filed validation includes all possible options.
+
+![contentful component validation](https://user-images.githubusercontent.com/1227297/145876531-b0658f9c-b6ed-428a-be99-1cd29029f0a6.png)
 
 ### GraphQL page query
 
@@ -234,7 +261,7 @@ query ($id: String!) {
 }
 ```
 
-## Customizing buttons, links, and other components
+### Buttons, links, and other components
 
 To custom any of the built-in components used within sections, including headings, links, and buttons, add components to your site's `src/gatsby-theme-landing-page/components` directory.
 For example, to create a custom Button component, create a file at the following path:
@@ -253,32 +280,7 @@ export default function Button(props) {
 }
 ```
 
-## Adding custom section components
-
-To add custom section components or to override the built-in sections, you can shadow the main section component `index.js` file by creating a file at the following path:
-
-```sh
-src/gatsby-theme-landing/page/components/index.js
-```
-
-```js
-// example src/gatsby-theme-landing/page/components/index.js
-export {
-  Hero,
-  Features,
-  Copy,
-  CallToAction,
-  Benefits,
-  Testimonials,
-  NewsletterForm, // example custom section component
-} from "../../components/custom-landing-page-components";
-```
-
-When adding new custom components, be sure to update your Contentful space's content model to reflect these changes by ensuring the LandingPageSection's _Component_ filed validation includes all possible options.
-
-<!-- TODO add screenshot -->
-
-## Using other styling libraries
+### Using other styling libraries
 
 If you'd like to use another styling library instead of CSS Modules, shadow the components as shown above and ensure your site is configured to use whatever styling solution you choose.
 Be sure to shadow `src/gatsby-theme-landing-page/styles/variables.module.css` with a blank CSS rule as well to disable the top-level styles of the landing pages created by the theme.
