@@ -19,12 +19,6 @@
   letter-spacing: var(--letter-spacing-caps);
 }
 
-/*
-.root p {
-  margin-bottom: var(--space-4);
-}
-*/
-
 .buttonContainer {
   display: flex;
   gap: var(--space-3);
