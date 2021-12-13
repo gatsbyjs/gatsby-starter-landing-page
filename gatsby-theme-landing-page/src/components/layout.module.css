@@ -1,0 +1,8 @@
+/* Base layout styles */
+.root {
+  font-family: var(--font);
+  font-size: var(--font-size-3);
+  line-height: var(--line-height);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}

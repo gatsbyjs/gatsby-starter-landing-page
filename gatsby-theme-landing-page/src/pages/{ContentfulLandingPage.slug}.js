@@ -1,23 +1,21 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import * as Components from "../sections";
-import * as styles from "../styles/base.module.css";
-import Head from "../components/head";
 import Layout from "../components/layout";
+import Page from "../components/page";
 import DevDebug from "../components/dev-debug";
 
 export default function LandingPage(props) {
   const { sections } = props.data.page;
 
   return (
-    <Layout>
-      <div className={styles.root}>
-        <Head {...props.data.page} />
+    <Layout {...props.data.page}>
+      <Page>
         {sections.map((section) => {
           const Component = Components[section.component] || DevDebug;
           return Component ? <Component key={section.id} {...section} /> : null;
         })}
-      </div>
+      </Page>
     </Layout>
   );
 }
@@ -54,7 +52,7 @@ export const query = graphql`
             title
           }
           avatar: image {
-            gatsbyImageData(layout: FIXED, width: 96, height: 96)
+            gatsbyImageData(layout: FIXED, width: 48, height: 48)
             title
           }
           links {

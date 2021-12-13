@@ -1,4 +1,4 @@
-.contentContainer {
+.container {
   flex-direction: column;
   gap: var(--space-5);
 }
@@ -7,20 +7,33 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
+  max-width: var(--max-width-narrow);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-4);
 }
 
 .copyContainer p {
-  margin: 0;
   font-size: var(--font-size-3);
+  margin-top: 0;
+  margin-bottom: var(--space-3);
 }
 
 .asideText {
   font-style: italic;
   color: var(--text-color-secondary);
-  padding: 0 var(--space-4);
-  border-radius: var(--border-radius);
-  width: 80%;
-  margin: auto;
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-4);
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+
+.copyContainer blockquote {
+  font-style: italic;
+  color: var(--text-color-secondary);
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-4);
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
 }
 
 @media screen and (min-width: 640px) {

@@ -1,0 +1,17 @@
+.root {
+  font-family: var(--font);
+  font-size: var(--font-size-3);
+  line-height: var(--line-height);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.root h1,
+.root h2,
+.root h3,
+.root h4,
+.root h5,
+.root h6 {
+  font-family: var(--font-heading);
+  line-height: var(--line-height-heading);
+}

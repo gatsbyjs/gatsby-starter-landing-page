@@ -4,32 +4,34 @@ import MarkdownText, { getText } from "../components/markdown-text";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Section from "../components/section";
 import Heading from "../components/heading";
-import ContentContainer from "../components/content-container";
+import Container from "../components/container";
 
 export default function Copy({ heading, secondaryHeading, content }) {
   return (
     <Section>
-      <Heading>{heading}</Heading>
-      <Heading secondary>{secondaryHeading}</Heading>
-      <ContentContainer className={styles.contentContainer}>
+      <Heading center>{heading}</Heading>
+      <Heading secondary center>
+        {secondaryHeading}
+      </Heading>
+      <Container className={styles.container}>
         {content.map((item) => {
           return <CopyContent key={item.id} {...item} />;
         })}
-      </ContentContainer>
+      </Container>
     </Section>
   );
 }
 
 function CopyContent({ primaryText, secondaryText, image }) {
   return (
-    <div className={styles.copyContainer}>
+    <Container className={styles.copyContainer}>
       <GatsbyImage
         image={getImage(image)}
         alt={image.title || getText(primaryText)}
       />
       <MarkdownText {...primaryText} />
       <AsideText {...secondaryText} />
-    </div>
+    </Container>
   );
 }
 

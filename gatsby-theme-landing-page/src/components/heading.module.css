@@ -1,13 +1,16 @@
 .heading {
   font-size: var(--font-size-6);
+  line-height: var(--line-height-heading);
+  margin: 0;
   margin-bottom: var(--space-2);
-  text-align: center;
 }
 
-.secondaryHeading {
+.secondary {
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-light);
   color: var(--text-color-secondary);
-  margin-bottom: var(--space-2);
+}
+
+.center {
   text-align: center;
 }

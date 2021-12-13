@@ -21,6 +21,7 @@ const blockOptions = {
     "span",
     "div",
     "iframe",
+    "blockquote",
     "br",
   ],
   selfClosing: ["img", "hr", "br"],
@@ -42,7 +43,7 @@ export default function MarkdownText({
 
   const shouldUseInline = !!as;
   const sanitizeOptions = shouldUseInline ? inlineOptions : blockOptions;
-  const html = childMarkdownRemark.html.replaceAll(newLineRegex, "<br />");
+  const html = childMarkdownRemark.html;
   const sanitized = sanitize(html, sanitizeOptions);
   const Component = as || "div";
 

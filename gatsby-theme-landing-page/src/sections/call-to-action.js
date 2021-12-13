@@ -4,18 +4,19 @@ import MarkdownText from "../components/markdown-text";
 import Button from "../components/button";
 import Section from "../components/section";
 import Heading from "../components/heading";
-import ContentContainer from "../components/content-container";
 
 export default function CallToAction({ heading, secondaryHeading, content }) {
   return (
-    <Section>
-      <Heading>{heading}</Heading>
-      <Heading secondary>{secondaryHeading}</Heading>
-      <ContentContainer>
+    <Section className={styles.root}>
+      <Heading center>{heading}</Heading>
+      <Heading secondary center>
+        {secondaryHeading}
+      </Heading>
+      <div>
         {content.map((c) => (
           <Content key={c.id} {...c} />
         ))}
-      </ContentContainer>
+      </div>
     </Section>
   );
 }
