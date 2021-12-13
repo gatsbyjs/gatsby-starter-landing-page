@@ -11,8 +11,5 @@ module.exports = {
         environment: process.env.CONTENTFUL_ENVIRONMENT_ID || "master",
       },
     },
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`, // Needed for dynamic images
   ],
 };

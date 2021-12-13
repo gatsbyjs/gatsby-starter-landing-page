@@ -7,6 +7,7 @@ module.exports = (opts = {}) => {
       {
         resolve: "gatsby-source-contentful",
         options: {
+          downloadLocal: true,
           ...opts,
         },
       },
