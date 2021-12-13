@@ -133,6 +133,30 @@ The `Head` component is a wrapper around [React Helmet][] to add page-level meta
 - `image`: sets the Open Graph image
 - `noIndex` (boolean): set this as `true` to prevent search engine indexing
 
+#### `Link` Component
+
+```jsx
+// example usage
+import { Link } from "gatsby-theme-landing-page";
+
+<Link href="/">Home</Link>;
+```
+
+The `Link` component is a wrapper around [Gatsby Link][] with minimal styling.
+
+[gatsby link]: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/
+
+**Props:**
+
+- `href`: URL for the link, which can handle absolute or relative links
+- `children` or `text`: text or React node to render as a link
+
+#### `Button` Component
+
+#### `Container` Component
+
+#### `Heading` Component
+
 ## Customization
 
 ### Typography, colors, and layout
