@@ -10,8 +10,6 @@
   max-width: var(--max-width-narrow);
   margin-top: var(--space-4);
   margin-bottom: var(--space-4);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .copyContainer p {

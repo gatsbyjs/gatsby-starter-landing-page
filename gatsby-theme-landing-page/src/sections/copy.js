@@ -24,14 +24,14 @@ export default function Copy({ heading, secondaryHeading, content }) {
 
 function CopyContent({ primaryText, secondaryText, image }) {
   return (
-    <div className={styles.copyContainer}>
+    <Container className={styles.copyContainer}>
       <GatsbyImage
         image={getImage(image)}
         alt={image.title || getText(primaryText)}
       />
       <MarkdownText {...primaryText} />
       <AsideText {...secondaryText} />
-    </div>
+    </Container>
   );
 }
 
