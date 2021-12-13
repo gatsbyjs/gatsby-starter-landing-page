@@ -40,6 +40,8 @@
 
 .footer {
   composes: container;
+  display: flex;
+  gap: var(--space-3);
 }
 
 .footer a {
