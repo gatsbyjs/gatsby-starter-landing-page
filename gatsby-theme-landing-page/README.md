@@ -62,7 +62,7 @@
 
 ## Content model
 
-    ![content model diagram](https://user-images.githubusercontent.com/1227297/145318779-4b2cca42-4ae9-407c-b8f6-db934628c51c.png)
+![content model diagram](https://user-images.githubusercontent.com/1227297/145318779-4b2cca42-4ae9-407c-b8f6-db934628c51c.png)
 
     Each landing page is represented by a hierarchical content model:
 
