@@ -80,7 +80,9 @@ To customize the built-in components' typography, colors, and layout, shadow the
 src/gatsby-theme-landing-page/styles/variables.module.css
 ```
 
-The components use CSS Modules with CSS custom properties that can be customized.
+The components use [CSS Modules][] with CSS custom properties that can be customized.
+
+[css modules]: https://www.gatsbyjs.com/docs/how-to/styling/css-modules/
 
 ```css
 /* example src/gatsby-theme-landing-page/styles/variables.module.css */
@@ -233,6 +235,8 @@ query ($id: String!) {
   }
 }
 ```
+
+You can read more about querying data in the [Gatsby docs](https://www.gatsbyjs.com/docs/how-to/querying-data/page-query/).
 
 ## Customizing buttons, links, and other components
 
