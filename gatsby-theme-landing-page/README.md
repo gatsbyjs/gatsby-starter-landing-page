@@ -153,9 +153,54 @@ The `Link` component is a wrapper around [Gatsby Link][] with minimal styling.
 
 #### `Button` Component
 
+```jsx
+// example usage
+import { Button } from "gatsby-theme-landing-page";
+
+<Button href="/sign-up">Get Started</Button>;
+```
+
+The `Button` component is similar to the `Link` component, but styled to look like a call-to-action button.
+
+**Props:**
+
+- `href`: URL for the link, which can handle absolute or relative links
+- `children` or `text`: text or React node to render as a link
+- `variant`: string for button style variant, either `primary` or `secondary`
+
 #### `Container` Component
 
+```jsx
+// example usage
+import { Container } from "gatsby-theme-landing-page";
+
+<Container>Centered content</Container>;
+```
+
+The `Container` component is used to set a max-width and center content on the page. It's used internally by the `Section` component that wraps all _Section_ components.
+
+**Props:**
+
+- `className`: pass an additional HTML class attribute, which can be used for styling
+- All other props are passed directly to the root element.
+
 #### `Heading` Component
+
+```jsx
+import { Heading } from "gatsby-theme-landing-page";
+
+<Heading>Hello</Heading>;
+```
+
+The `Heading` component is used to render styled heading elements.
+
+**Props:**
+
+- `as`: renders this component as a different HTML element
+- `secondary` (boolean): renders the heading with styles for subheadings
+- `center` (boolean): sets text-align center
+- `className`: pass an additional HTML class attribute, which can be used for styling
+- All other props are passed directly to the root element.
 
 ## Customization
 
