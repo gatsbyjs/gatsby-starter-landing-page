@@ -216,7 +216,7 @@ export {
 
 When adding new custom components, be sure to update your Contentful space's content model to reflect these changes by ensuring the LandingPageSection's _Component_ filed validation includes all possible options.
 
-<!-- TODO add screenshot -->
+![contentful component validation](https://user-images.githubusercontent.com/1227297/145876531-b0658f9c-b6ed-428a-be99-1cd29029f0a6.png)
 
 ### GraphQL page query
 
