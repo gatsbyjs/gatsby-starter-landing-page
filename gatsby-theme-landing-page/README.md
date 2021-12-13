@@ -64,7 +64,7 @@ The official Contentful-backed dynamic landing page theme for Gatsby sites
 
 ![content model diagram](https://user-images.githubusercontent.com/1227297/145318779-4b2cca42-4ae9-407c-b8f6-db934628c51c.png)
 
-    Each landing page is represented by a hierarchical content model:
+Each landing page is represented by a hierarchical content model:
 
 **Landing Page**: Represents a single page and its metadata. Landing pages contain a list of content **Sections**.
 
