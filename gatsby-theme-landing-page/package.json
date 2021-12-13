@@ -1,11 +1,14 @@
 {
   "name": "gatsby-theme-landing-page",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.0-0",
+  "description": "A Contentful-backed dynamic landing page theme for Gatsby",
   "main": "index.js",
   "scripts": {},
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme"
+  ],
   "license": "MIT",
   "dependencies": {
     "gatsby-plugin-image": "^2.3.0",
