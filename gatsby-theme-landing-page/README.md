@@ -261,7 +261,7 @@ query ($id: String!) {
 }
 ```
 
-### buttons, links, and other components
+### Buttons, links, and other components
 
 To custom any of the built-in components used within sections, including headings, links, and buttons, add components to your site's `src/gatsby-theme-landing-page/components` directory.
 For example, to create a custom Button component, create a file at the following path:
