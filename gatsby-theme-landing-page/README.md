@@ -149,7 +149,7 @@ To completely ignore the default CSS custom properties defined in the theme, add
 
 ### Section components
 
-There are 5 components available:
+There are 6 components available:
 
 - **Hero**: A two-column component with headings, an image, and CTA links. Intended to state the purpose of the landing page.
 - **Copy**: Long form text with blockquotes and full-column images, best for articles and instructions.
