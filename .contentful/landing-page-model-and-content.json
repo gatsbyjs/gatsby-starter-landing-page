@@ -57,8 +57,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "defaultValue": {
             "en-US": "Contentful Page Name"
           },
@@ -88,8 +87,7 @@
           "type": "Boolean",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "defaultValue": {
             "en-US": false
           },
@@ -102,8 +100,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "defaultValue": {
             "en-US": "Page Title"
           },
@@ -116,8 +113,7 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -127,8 +123,7 @@
           "type": "Link",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "linkType": "Asset"
@@ -139,17 +134,14 @@
           "type": "Array",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "items": {
             "type": "Link",
             "validations": [
               {
-                "linkContentType": [
-                  "landingPageSection"
-                ]
+                "linkContentType": ["landingPageSection"]
               }
             ],
             "linkType": "Entry"
@@ -169,7 +161,7 @@
         "id": "landingPageSection",
         "type": "ContentType",
         "createdAt": "2021-11-30T14:44:09.014Z",
-        "updatedAt": "2021-12-03T18:37:50.799Z",
+        "updatedAt": "2021-12-08T19:52:57.478Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -177,8 +169,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 31,
-        "publishedAt": "2021-12-03T18:37:50.799Z",
+        "publishedVersion": 33,
+        "publishedAt": "2021-12-08T19:52:57.478Z",
         "firstPublishedAt": "2021-11-30T14:44:09.191Z",
         "createdBy": {
           "sys": {
@@ -194,8 +186,8 @@
             "id": "446Kgl618tus4YwDAC9gw9"
           }
         },
-        "publishedCounter": 16,
-        "version": 32,
+        "publishedCounter": 17,
+        "version": 34,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -214,8 +206,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -224,7 +215,7 @@
           "name": "Component",
           "type": "Symbol",
           "localized": false,
-          "required": false,
+          "required": true,
           "validations": [
             {
               "in": [
@@ -246,8 +237,7 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -257,8 +247,7 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -268,17 +257,14 @@
           "type": "Array",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "items": {
             "type": "Link",
             "validations": [
               {
-                "linkContentType": [
-                  "landingPageContent"
-                ]
+                "linkContentType": ["landingPageContent"]
               }
             ],
             "linkType": "Entry"
@@ -343,8 +329,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -354,8 +339,7 @@
           "type": "Text",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -365,8 +349,7 @@
           "type": "Text",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -376,8 +359,7 @@
           "type": "Link",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "linkType": "Asset"
@@ -388,17 +370,14 @@
           "type": "Array",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "items": {
             "type": "Link",
             "validations": [
               {
-                "linkContentType": [
-                  "link"
-                ]
+                "linkContentType": ["link"]
               }
             ],
             "linkType": "Entry"
@@ -480,16 +459,14 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         }
       ]
     }
   ],
-  "tags": [
-  ],
+  "tags": [],
   "editorInterfaces": [
     {
       "sys": {
@@ -612,7 +589,7 @@
             "linkType": "Space"
           }
         },
-        "version": 32,
+        "version": 34,
         "createdAt": "2021-11-30T14:44:09.312Z",
         "createdBy": {
           "sys": {
@@ -621,7 +598,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2021-12-03T18:37:51.434Z",
+        "updatedAt": "2021-12-08T19:52:58.103Z",
         "updatedBy": {
           "sys": {
             "id": "446Kgl618tus4YwDAC9gw9",
@@ -836,8 +813,7 @@
   "entries": [
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -967,8 +943,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1058,8 +1033,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1142,8 +1116,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1239,8 +1212,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1306,8 +1278,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1403,8 +1374,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1470,8 +1440,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1554,8 +1523,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1639,8 +1607,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1706,8 +1673,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1773,8 +1739,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1864,8 +1829,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1878,7 +1842,7 @@
         "id": "4pY9yIKw4cfA0ytRX0DRs5",
         "type": "Entry",
         "createdAt": "2021-12-02T18:29:27.515Z",
-        "updatedAt": "2021-12-06T20:43:19.083Z",
+        "updatedAt": "2021-12-13T14:14:30.852Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1886,8 +1850,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 25,
-        "publishedAt": "2021-12-06T20:43:19.083Z",
+        "publishedVersion": 28,
+        "publishedAt": "2021-12-13T14:14:30.852Z",
         "firstPublishedAt": "2021-12-02T18:34:52.631Z",
         "createdBy": {
           "sys": {
@@ -1900,16 +1864,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "446Kgl618tus4YwDAC9gw9"
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 3,
-        "version": 26,
+        "publishedCounter": 4,
+        "version": 29,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "446Kgl618tus4YwDAC9gw9"
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
         "contentType": {
@@ -1925,7 +1889,7 @@
           "en-US": "Demo > Copy > Content 1"
         },
         "primaryText": {
-          "en-US": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. [Lorem ipsum dolor sit amet, consectetur adipiscing elit](https://gatsbyjs.com \"gatsbyjs\")\n\nSed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. \n\nCurabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. \n"
+          "en-US": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. [Lorem ipsum dolor sit amet, consectetur adipiscing elit](https://gatsbyjs.com \"gatsbyjs\")\n\nSed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. \n\n> Inline blockquote demo\n\nCurabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. \n"
         },
         "secondaryText": {
           "en-US": "Secondary copy text is a pullquote! Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -1943,8 +1907,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2022,8 +1985,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2120,8 +2082,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2210,8 +2171,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2300,8 +2260,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2379,8 +2338,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2446,8 +2404,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2513,8 +2470,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2603,8 +2559,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2687,8 +2642,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2701,7 +2655,7 @@
         "id": "7Ate7hE0oDlMENuDzHwLW4",
         "type": "Entry",
         "createdAt": "2021-12-03T18:42:29.541Z",
-        "updatedAt": "2021-12-06T20:49:02.145Z",
+        "updatedAt": "2021-12-13T20:48:42.874Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2709,8 +2663,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 19,
-        "publishedAt": "2021-12-06T20:49:02.145Z",
+        "publishedVersion": 23,
+        "publishedAt": "2021-12-13T20:48:42.874Z",
         "firstPublishedAt": "2021-12-03T19:16:59.974Z",
         "createdBy": {
           "sys": {
@@ -2726,8 +2680,8 @@
             "id": "446Kgl618tus4YwDAC9gw9"
           }
         },
-        "publishedCounter": 3,
-        "version": 20,
+        "publishedCounter": 5,
+        "version": 24,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2751,7 +2705,7 @@
           "en-US": "Honestly, I love lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. I wouldn't know what to do without it!"
         },
         "secondaryText": {
-          "en-US": "Lorem Jean Ipsum\n__Gatsby__"
+          "en-US": "Lorem Jean Ipsum, __Gatsby__"
         },
         "image": {
           "en-US": {
@@ -2766,8 +2720,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2780,7 +2733,7 @@
         "id": "3kf7F5UDU1biOn3nLJdDVX",
         "type": "Entry",
         "createdAt": "2021-12-03T19:42:11.700Z",
-        "updatedAt": "2021-12-07T15:22:36.103Z",
+        "updatedAt": "2021-12-13T23:35:15.763Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2788,8 +2741,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 31,
-        "publishedAt": "2021-12-07T15:22:36.103Z",
+        "publishedVersion": 33,
+        "publishedAt": "2021-12-13T23:35:15.763Z",
         "firstPublishedAt": "2021-12-03T19:50:29.792Z",
         "createdBy": {
           "sys": {
@@ -2802,16 +2755,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SDtqAl8Y6iEC5454bbsbU"
+            "id": "446Kgl618tus4YwDAC9gw9"
           }
         },
-        "publishedCounter": 9,
-        "version": 32,
+        "publishedCounter": 10,
+        "version": 34,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SDtqAl8Y6iEC5454bbsbU"
+            "id": "446Kgl618tus4YwDAC9gw9"
           }
         },
         "contentType": {
@@ -2837,6 +2790,15 @@
         },
         "description": {
           "en-US": "The Gatsby Landing Page Starter is the fastest way to set up a landing page-based website using Contentful + Gatsby."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1xxuY57RpctCE4kM0fsIBl"
+            }
+          }
         },
         "sections": {
           "en-US": [
@@ -2881,8 +2843,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2965,8 +2926,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2979,7 +2939,7 @@
         "id": "7CKTiKTserFfVf6IWES0h8",
         "type": "Entry",
         "createdAt": "2021-12-03T19:42:53.955Z",
-        "updatedAt": "2021-12-07T21:43:12.892Z",
+        "updatedAt": "2021-12-13T16:25:26.296Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2987,8 +2947,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 10,
-        "publishedAt": "2021-12-07T21:43:12.892Z",
+        "publishedVersion": 12,
+        "publishedAt": "2021-12-13T16:25:26.296Z",
         "firstPublishedAt": "2021-12-03T19:49:50.892Z",
         "createdBy": {
           "sys": {
@@ -3004,8 +2964,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 4,
-        "version": 11,
+        "publishedCounter": 5,
+        "version": 13,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3033,7 +2993,7 @@
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "1iDgovJNbl5HuJWbYuca7f"
+              "id": "1xxuY57RpctCE4kM0fsIBl"
             }
           }
         },
@@ -3059,8 +3019,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -3126,8 +3085,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -3193,8 +3151,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -3207,7 +3164,7 @@
         "id": "Ttmi0z39mI7aYlUNJEoJU",
         "type": "Entry",
         "createdAt": "2021-12-07T15:09:14.022Z",
-        "updatedAt": "2021-12-07T15:12:36.693Z",
+        "updatedAt": "2021-12-09T15:15:03.790Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3215,8 +3172,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 8,
-        "publishedAt": "2021-12-07T15:12:36.693Z",
+        "publishedVersion": 11,
+        "publishedAt": "2021-12-09T15:15:03.790Z",
         "firstPublishedAt": "2021-12-07T15:12:36.693Z",
         "createdBy": {
           "sys": {
@@ -3232,8 +3189,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 1,
-        "version": 9,
+        "publishedCounter": 2,
+        "version": 12,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3258,6 +3215,9 @@
         },
         "heading": {
           "en-US": "Batteries Included"
+        },
+        "secondaryHeading": {
+          "en-US": "Everything you need to start creating landing pages today"
         },
         "content": {
           "en-US": [
@@ -3288,8 +3248,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -3302,7 +3261,7 @@
         "id": "5cw1ICWxv8JONQm1JBd5s6",
         "type": "Entry",
         "createdAt": "2021-12-07T15:09:56.985Z",
-        "updatedAt": "2021-12-07T15:11:03.574Z",
+        "updatedAt": "2021-12-13T16:27:29.706Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3310,8 +3269,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 9,
-        "publishedAt": "2021-12-07T15:11:03.574Z",
+        "publishedVersion": 11,
+        "publishedAt": "2021-12-13T16:27:29.706Z",
         "firstPublishedAt": "2021-12-07T15:10:54.259Z",
         "createdBy": {
           "sys": {
@@ -3327,8 +3286,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 2,
-        "version": 10,
+        "publishedCounter": 3,
+        "version": 12,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3359,7 +3318,7 @@
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "1iDgovJNbl5HuJWbYuca7f"
+              "id": "NEOIAqbOkei6pqINYXcB2"
             }
           }
         }
@@ -3367,8 +3326,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -3381,7 +3339,7 @@
         "id": "01IEvGXxMqJTb9WkygYWAs",
         "type": "Entry",
         "createdAt": "2021-12-07T15:11:08.079Z",
-        "updatedAt": "2021-12-07T15:11:42.389Z",
+        "updatedAt": "2021-12-13T16:29:27.121Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3389,8 +3347,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 6,
-        "publishedAt": "2021-12-07T15:11:42.389Z",
+        "publishedVersion": 8,
+        "publishedAt": "2021-12-13T16:29:27.121Z",
         "firstPublishedAt": "2021-12-07T15:11:42.389Z",
         "createdBy": {
           "sys": {
@@ -3406,8 +3364,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 1,
-        "version": 7,
+        "publishedCounter": 2,
+        "version": 9,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3438,7 +3396,7 @@
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "7kyS27THF2BGPdTYDSg3Kf"
+              "id": "1zxDp2JJHTITx1DBBADT94"
             }
           }
         }
@@ -3446,8 +3404,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -3460,7 +3417,7 @@
         "id": "10gsmqvVL6jiaQzTSveVDw",
         "type": "Entry",
         "createdAt": "2021-12-07T15:11:46.485Z",
-        "updatedAt": "2021-12-07T15:12:16.530Z",
+        "updatedAt": "2021-12-13T16:30:51.384Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3468,8 +3425,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 6,
-        "publishedAt": "2021-12-07T15:12:16.530Z",
+        "publishedVersion": 8,
+        "publishedAt": "2021-12-13T16:30:51.384Z",
         "firstPublishedAt": "2021-12-07T15:12:16.530Z",
         "createdBy": {
           "sys": {
@@ -3485,8 +3442,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 1,
-        "version": 7,
+        "publishedCounter": 2,
+        "version": 9,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3517,7 +3474,7 @@
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "3b7jvhjRxF4NNMiwIQCWz3"
+              "id": "3Vw6bHPwXQ9pn1w659hOxh"
             }
           }
         }
@@ -3525,8 +3482,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -3539,7 +3495,7 @@
         "id": "5mrNxnCRG8ykMIT5dlpZ35",
         "type": "Entry",
         "createdAt": "2021-12-07T15:13:54.366Z",
-        "updatedAt": "2021-12-07T15:16:45.108Z",
+        "updatedAt": "2021-12-13T16:33:45.076Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3547,8 +3503,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 9,
-        "publishedAt": "2021-12-07T15:16:45.108Z",
+        "publishedVersion": 11,
+        "publishedAt": "2021-12-10T19:53:26.956Z",
         "firstPublishedAt": "2021-12-07T15:16:04.669Z",
         "createdBy": {
           "sys": {
@@ -3564,8 +3520,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 2,
-        "version": 10,
+        "publishedCounter": 3,
+        "version": 13,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3591,15 +3547,11 @@
         "heading": {
           "en-US": "Get started in minutes & make it your own"
         },
+        "secondaryHeading": {
+          "en-US": "Flexible enough for any project"
+        },
         "content": {
           "en-US": [
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "1rG7A4Si0bTiab8Wy36hNk"
-              }
-            },
             {
               "sys": {
                 "type": "Link",
@@ -3613,6 +3565,13 @@
                 "linkType": "Entry",
                 "id": "53rUXvWLmLKpnhPc90cVsd"
               }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1rG7A4Si0bTiab8Wy36hNk"
+              }
             }
           ]
         }
@@ -3620,8 +3579,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -3634,7 +3592,7 @@
         "id": "1rG7A4Si0bTiab8Wy36hNk",
         "type": "Entry",
         "createdAt": "2021-12-07T15:14:21.916Z",
-        "updatedAt": "2021-12-07T15:14:56.372Z",
+        "updatedAt": "2021-12-13T16:33:35.750Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3642,8 +3600,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 6,
-        "publishedAt": "2021-12-07T15:14:56.372Z",
+        "publishedVersion": 10,
+        "publishedAt": "2021-12-13T16:33:35.750Z",
         "firstPublishedAt": "2021-12-07T15:14:56.372Z",
         "createdBy": {
           "sys": {
@@ -3659,8 +3617,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 1,
-        "version": 7,
+        "publishedCounter": 3,
+        "version": 11,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3691,7 +3649,7 @@
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "3SLI5Z5PBvSayqonvFrbRT"
+              "id": "51iUFOyNqrQwJ4tibPmlSZ"
             }
           }
         }
@@ -3699,8 +3657,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -3713,7 +3670,7 @@
         "id": "6Gim6sRfdBxBIC9IHVYVYd",
         "type": "Entry",
         "createdAt": "2021-12-07T15:15:00.400Z",
-        "updatedAt": "2021-12-07T15:15:31.027Z",
+        "updatedAt": "2021-12-13T16:33:51.770Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3721,8 +3678,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 6,
-        "publishedAt": "2021-12-07T15:15:31.027Z",
+        "publishedVersion": 8,
+        "publishedAt": "2021-12-13T16:33:51.770Z",
         "firstPublishedAt": "2021-12-07T15:15:31.027Z",
         "createdBy": {
           "sys": {
@@ -3738,8 +3695,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 1,
-        "version": 7,
+        "publishedCounter": 2,
+        "version": 9,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3770,7 +3727,7 @@
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "1iDgovJNbl5HuJWbYuca7f"
+              "id": "4KhcCaA5AZVT2RF9yVVl6d"
             }
           }
         }
@@ -3778,8 +3735,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -3792,7 +3748,7 @@
         "id": "53rUXvWLmLKpnhPc90cVsd",
         "type": "Entry",
         "createdAt": "2021-12-07T15:15:35.998Z",
-        "updatedAt": "2021-12-07T15:16:01.857Z",
+        "updatedAt": "2021-12-13T16:34:39.716Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3800,8 +3756,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2021-12-07T15:16:01.857Z",
+        "publishedVersion": 7,
+        "publishedAt": "2021-12-13T16:34:39.716Z",
         "firstPublishedAt": "2021-12-07T15:16:01.857Z",
         "createdBy": {
           "sys": {
@@ -3817,8 +3773,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 1,
-        "version": 6,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3849,7 +3805,7 @@
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "7kyS27THF2BGPdTYDSg3Kf"
+              "id": "2KFYTvA6E4symmixrZsrA9"
             }
           }
         }
@@ -3857,8 +3813,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -3871,7 +3826,7 @@
         "id": "bzyeVVs7owcIREfKbjUQo",
         "type": "Entry",
         "createdAt": "2021-12-07T15:17:11.045Z",
-        "updatedAt": "2021-12-07T15:18:59.724Z",
+        "updatedAt": "2021-12-10T19:56:31.946Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3879,8 +3834,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2021-12-07T15:18:59.724Z",
+        "publishedVersion": 7,
+        "publishedAt": "2021-12-10T19:56:31.946Z",
         "firstPublishedAt": "2021-12-07T15:18:59.724Z",
         "createdBy": {
           "sys": {
@@ -3896,8 +3851,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3923,6 +3878,9 @@
         "heading": {
           "en-US": "Get started now"
         },
+        "secondaryHeading": {
+          "en-US": "Deploy to Gatsby Cloud or read more in the docs"
+        },
         "content": {
           "en-US": [
             {
@@ -3938,8 +3896,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4020,8 +3977,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4087,8 +4043,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4154,8 +4109,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4249,8 +4203,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4263,7 +4216,7 @@
         "id": "6Sc0Zh4rYHUgIj4x8WdGN0",
         "type": "Entry",
         "createdAt": "2021-12-07T15:20:09.556Z",
-        "updatedAt": "2021-12-07T15:25:53.520Z",
+        "updatedAt": "2021-12-13T16:35:23.728Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -4271,8 +4224,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 9,
-        "publishedAt": "2021-12-07T15:25:53.520Z",
+        "publishedVersion": 13,
+        "publishedAt": "2021-12-13T16:35:23.728Z",
         "firstPublishedAt": "2021-12-07T15:20:39.665Z",
         "createdBy": {
           "sys": {
@@ -4288,8 +4241,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 3,
-        "version": 10,
+        "publishedCounter": 5,
+        "version": 14,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -4314,13 +4267,21 @@
         },
         "secondaryText": {
           "en-US": "Carrie Contentson"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6adEsVw3yFKvQA1dKR39G7"
+            }
+          }
         }
       }
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4333,7 +4294,7 @@
         "id": "5K73NFCCq7q7CJUF9jG2Px",
         "type": "Entry",
         "createdAt": "2021-12-07T15:20:46.599Z",
-        "updatedAt": "2021-12-07T15:27:39.405Z",
+        "updatedAt": "2021-12-13T16:35:40.348Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -4341,8 +4302,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 20,
-        "publishedAt": "2021-12-07T15:27:39.405Z",
+        "publishedVersion": 25,
+        "publishedAt": "2021-12-13T16:35:40.348Z",
         "firstPublishedAt": "2021-12-07T15:21:17.273Z",
         "createdBy": {
           "sys": {
@@ -4358,8 +4319,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 4,
-        "version": 21,
+        "publishedCounter": 6,
+        "version": 26,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -4384,13 +4345,21 @@
         },
         "secondaryText": {
           "en-US": "Debbie Developson"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6adEsVw3yFKvQA1dKR39G7"
+            }
+          }
         }
       }
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4403,7 +4372,7 @@
         "id": "2r6HclR2FKNumJB3VCKhXz",
         "type": "Entry",
         "createdAt": "2021-12-07T15:21:31.155Z",
-        "updatedAt": "2021-12-07T15:29:06.388Z",
+        "updatedAt": "2021-12-13T16:36:15.633Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -4411,8 +4380,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 10,
-        "publishedAt": "2021-12-07T15:29:06.388Z",
+        "publishedVersion": 14,
+        "publishedAt": "2021-12-13T16:36:15.633Z",
         "firstPublishedAt": "2021-12-07T15:21:57.392Z",
         "createdBy": {
           "sys": {
@@ -4428,8 +4397,8 @@
             "id": "4SDtqAl8Y6iEC5454bbsbU"
           }
         },
-        "publishedCounter": 3,
-        "version": 11,
+        "publishedCounter": 5,
+        "version": 15,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -4454,6 +4423,15 @@
         },
         "secondaryText": {
           "en-US": "Perry Productson"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6zLCmCxnrSMjKaex7N0ZyC"
+            }
+          }
         }
       }
     }
@@ -4461,8 +4439,7 @@
   "assets": [
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4535,8 +4512,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4609,8 +4585,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4683,8 +4658,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4757,8 +4731,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -4828,6 +4801,663 @@
           }
         }
       }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "1xxuY57RpctCE4kM0fsIBl",
+        "type": "Asset",
+        "createdAt": "2021-12-13T16:24:04.702Z",
+        "updatedAt": "2021-12-13T16:25:20.637Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2021-12-13T16:25:20.637Z",
+        "firstPublishedAt": "2021-12-13T16:25:20.637Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Hero Illustration"
+        },
+        "description": {
+          "en-US": "Illustration of a person using computer, a dog, and various things coming out of a box"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4ou0pg3hoyg9/1xxuY57RpctCE4kM0fsIBl/1566f029f1a31528e280c2f2a2b14c8b/hero-illustration.png",
+            "details": {
+              "size": 52995,
+              "image": {
+                "width": 1184,
+                "height": 886
+              }
+            },
+            "fileName": "hero-illustration.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "NEOIAqbOkei6pqINYXcB2",
+        "type": "Asset",
+        "createdAt": "2021-12-13T16:26:19.900Z",
+        "updatedAt": "2021-12-13T16:27:23.007Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2021-12-13T16:27:23.007Z",
+        "firstPublishedAt": "2021-12-13T16:27:23.007Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Theme Illustration"
+        },
+        "description": {
+          "en-US": "A representative Venn diagram with Gatsby on the left and the Gatsby Theme Landing Page on the right"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4ou0pg3hoyg9/NEOIAqbOkei6pqINYXcB2/a7c3d15c95cdcd8064fda55fc92b4470/feature-theme.png",
+            "details": {
+              "size": 71882,
+              "image": {
+                "width": 1184,
+                "height": 884
+              }
+            },
+            "fileName": "feature-theme.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "1zxDp2JJHTITx1DBBADT94",
+        "type": "Asset",
+        "createdAt": "2021-12-13T16:27:42.752Z",
+        "updatedAt": "2021-12-13T16:29:23.790Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2021-12-13T16:29:23.790Z",
+        "firstPublishedAt": "2021-12-13T16:29:23.790Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Content Illustration"
+        },
+        "description": {
+          "en-US": "Illustration of a person with a scroll floating in front of them. The scroll includes the Gatsby logo, Contentful logo, and the words page, content, section, link, and example content."
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4ou0pg3hoyg9/1zxDp2JJHTITx1DBBADT94/f3fb1b45ac55047e75af7ff29f0e53c7/feature-content.png",
+            "details": {
+              "size": 54188,
+              "image": {
+                "width": 1184,
+                "height": 840
+              }
+            },
+            "fileName": "feature-content.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "3Vw6bHPwXQ9pn1w659hOxh",
+        "type": "Asset",
+        "createdAt": "2021-12-13T16:29:50.538Z",
+        "updatedAt": "2021-12-13T16:30:48.261Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2021-12-13T16:30:48.261Z",
+        "firstPublishedAt": "2021-12-13T16:30:48.261Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Performant Illustration"
+        },
+        "description": {
+          "en-US": "An illustration of the Gatsby Cloud web interface with the text \"Built in 5 seconds, Deployed in 6 seconds\" highlighted"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4ou0pg3hoyg9/3Vw6bHPwXQ9pn1w659hOxh/0bfda8daeb9454c893a61492fd7d4a2b/feature-performant.png",
+            "details": {
+              "size": 63423,
+              "image": {
+                "width": 1184,
+                "height": 770
+              }
+            },
+            "fileName": "feature-performant.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "4KhcCaA5AZVT2RF9yVVl6d",
+        "type": "Asset",
+        "createdAt": "2021-12-13T16:31:15.716Z",
+        "updatedAt": "2021-12-13T16:32:08.403Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2021-12-13T16:32:08.403Z",
+        "firstPublishedAt": "2021-12-13T16:32:08.403Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Simple cube illustration"
+        },
+        "description": {
+          "en-US": "An illustration of an outlined cube"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4ou0pg3hoyg9/4KhcCaA5AZVT2RF9yVVl6d/00394d616888f32b303e4701de99be58/benefit-unopinionated.png",
+            "details": {
+              "size": 5332,
+              "image": {
+                "width": 768,
+                "height": 484
+              }
+            },
+            "fileName": "benefit-unopinionated.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "51iUFOyNqrQwJ4tibPmlSZ",
+        "type": "Asset",
+        "createdAt": "2021-12-13T16:32:38.950Z",
+        "updatedAt": "2021-12-13T16:33:32.716Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2021-12-13T16:33:32.716Z",
+        "firstPublishedAt": "2021-12-13T16:33:32.716Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Abstract plus sign illustration"
+        },
+        "description": {
+          "en-US": "An abstract illustration of a cube shape created with plus symbols"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4ou0pg3hoyg9/51iUFOyNqrQwJ4tibPmlSZ/78754e9b216ac16b3292669b1aaf392a/benefit-extensible.png",
+            "details": {
+              "size": 10070,
+              "image": {
+                "width": 768,
+                "height": 484
+              }
+            },
+            "fileName": "benefit-extensible.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "2KFYTvA6E4symmixrZsrA9",
+        "type": "Asset",
+        "createdAt": "2021-12-13T16:34:02.065Z",
+        "updatedAt": "2021-12-13T16:34:36.215Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2021-12-13T16:34:36.215Z",
+        "firstPublishedAt": "2021-12-13T16:34:36.215Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Nested cube illustration"
+        },
+        "description": {
+          "en-US": "An abstract illustration of a cube with another cube nested inside"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4ou0pg3hoyg9/2KFYTvA6E4symmixrZsrA9/55cab0aa8b41042b89a967d57ae7f682/benefit-themeable.png",
+            "details": {
+              "size": 7576,
+              "image": {
+                "width": 768,
+                "height": 484
+              }
+            },
+            "fileName": "benefit-themeable.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "6adEsVw3yFKvQA1dKR39G7",
+        "type": "Asset",
+        "createdAt": "2021-12-13T16:34:53.811Z",
+        "updatedAt": "2021-12-13T16:35:20.072Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-12-13T16:35:20.072Z",
+        "firstPublishedAt": "2021-12-13T16:35:20.072Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Avatar Illustration 1"
+        },
+        "description": {
+          "en-US": "An illustration of a persons face"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4ou0pg3hoyg9/6adEsVw3yFKvQA1dKR39G7/e81238a619c2c90d9ee728095458adbe/avatar-1.png",
+            "details": {
+              "size": 1860,
+              "image": {
+                "width": 96,
+                "height": 96
+              }
+            },
+            "fileName": "avatar-1.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4ou0pg3hoyg9"
+          }
+        },
+        "id": "6zLCmCxnrSMjKaex7N0ZyC",
+        "type": "Asset",
+        "createdAt": "2021-12-13T16:35:49.704Z",
+        "updatedAt": "2021-12-13T16:36:12.049Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-12-13T16:36:12.049Z",
+        "firstPublishedAt": "2021-12-13T16:36:12.049Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SDtqAl8Y6iEC5454bbsbU"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Avatar Illustration 2"
+        },
+        "description": {
+          "en-US": "An illustration of a persons face"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4ou0pg3hoyg9/6zLCmCxnrSMjKaex7N0ZyC/c2d3683b630a7b4d6370fe70a2c29644/avatar-2.png",
+            "details": {
+              "size": 1708,
+              "image": {
+                "width": 96,
+                "height": 96
+              }
+            },
+            "fileName": "avatar-2.png",
+            "contentType": "image/png"
+          }
+        }
+      }
     }
   ],
   "locales": [
@@ -4882,11 +5512,10 @@
       "name": "Gatsby Cloud",
       "url": "https://webhook.gatsbyjs.com/hooks/data_source/publish/7cf5e89e-66b7-49b9-b5b6-472b5d946224",
       "httpBasicUsername": null,
-      "topics": [
-        "*.*"
-      ],
+      "topics": ["*.*"],
       "filters": null,
       "transformation": null,
+      "active": true,
       "sys": {
         "type": "WebhookDefinition",
         "id": "2RXeEX4KNqr1rw31rg6irE",
@@ -4915,8 +5544,7 @@
         },
         "updatedAt": "2021-12-07T20:22:48Z"
       },
-      "headers": [
-      ]
+      "headers": []
     }
   ],
   "roles": [
@@ -4926,9 +5554,7 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": [
-            "create"
-          ],
+          "actions": ["create"],
           "constraint": {
             "and": [
               {
@@ -4944,9 +5570,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -4962,9 +5586,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -4980,9 +5602,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "create"
-          ],
+          "actions": ["create"],
           "constraint": {
             "and": [
               {
@@ -4998,9 +5618,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -5016,9 +5634,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -5034,19 +5650,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
@@ -5115,19 +5724,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
@@ -5164,9 +5766,7 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": [
-            "create"
-          ],
+          "actions": ["create"],
           "constraint": {
             "and": [
               {
@@ -5182,9 +5782,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "create"
-          ],
+          "actions": ["create"],
           "constraint": {
             "and": [
               {
@@ -5200,9 +5798,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -5226,9 +5822,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -5259,9 +5853,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "delete"
-          ],
+          "actions": ["delete"],
           "constraint": {
             "and": [
               {
@@ -5285,9 +5877,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -5311,9 +5901,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -5344,9 +5932,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "delete"
-          ],
+          "actions": ["delete"],
           "constraint": {
             "and": [
               {
@@ -5370,19 +5956,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
@@ -5419,9 +5998,7 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -5437,9 +6014,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -5455,9 +6030,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -5480,9 +6053,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -5505,19 +6076,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
