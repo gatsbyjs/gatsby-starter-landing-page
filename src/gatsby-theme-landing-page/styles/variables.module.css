@@ -1,0 +1,44 @@
+/* CSS custom properties (variables) for customization
+ *
+ * This file shadows the theme file
+ */
+.root {
+  /* typography */
+  --font: "Inter", system-ui, sans-serif;
+  --font-heading: "Inter", system-ui, sans-serif;
+  --line-height: 1.5;
+  --line-height-heading: 1.25;
+  --font-size-1: 12px;
+  --font-size-2: 14px;
+  --font-size-3: 16px;
+  --font-size-4: 24px;
+  --font-size-5: 32px;
+  --font-size-6: 48px;
+  --letter-spacing-caps: 0.03em;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  /* colors */
+  --text-color: black;
+  --text-color-secondary: black;
+  --background-color: white;
+  --link-color: black;
+  --link-hover-color: black;
+  --primary-color: black;
+  --secondary-color: black;
+  --button-color: white;
+  --button-background-color: black;
+  --button-hover-color: black;
+  --button-secondary-color: black;
+  --button-secondary-background-color: white;
+  --button-secondary-hover-color: white;
+  /* layout */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 32px;
+  --space-5: 64px;
+  --space-6: 128px;
+  --max-width: 1280px;
+  --max-width-narrow: 768px;
+  --border-radius: 4px;
+}
