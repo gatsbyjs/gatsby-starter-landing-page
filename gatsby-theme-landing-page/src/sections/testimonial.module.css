@@ -18,7 +18,6 @@
   border-radius: var(--border-radius);
   max-width: 80%;
   position: relative;
-  font-weight: var(--font-weight-light);
 }
 
 .author {
