@@ -32,10 +32,9 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
 
 2. **Configure your Contentful space**
 
-   Create a new Contentful space or use an existing one, then upload the `data/sample-data.json` file to your space.
-   <!-- TODO: update these instructions once the JSON file is created -->
+   Create a new Contentful space or use an existing one.
 
-3. **Add environment variables**
+3. **Create a `.env` file with your Contentful space ID and API keys.**
 
    Create a `.env` file in the root directory of your site and add the following environment variables. You can copy the `.env.example` file provided. Find the values for these keys in the Contentful web app under _Settings > API Keys_.
 
@@ -44,7 +43,27 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
    CONTENTFUL_DELIVERY_ACCESS_TOKEN="<ACCESS_TOKEN>"
    ```
 
-4. **Start developing**
+4. **Import the content model and demo data to your Contentful space**
+
+   - Install the [Contentful CLI (installation instructions)](https://www.contentful.com/developers/docs/tutorials/cli/installation/)
+
+   - Add your space ID to `contentful/import-demo-config.json` and `contentful/import-model-only-config.json`
+
+     ```json
+     {
+       "spaceId": "<YOUR_SPACE_ID>",
+       "contentFile": "./contentful/landing-page-model-and-content.json"
+     }
+     ```
+
+   - Import the demo (content model and sample data):
+     `yarn import:contentful:demo`
+
+   - (Optional) If you only want to import the content model and not the demo data, use the command: `yarn import:contentful:model`
+
+   Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
+
+5. **Start developing**
 
    Navigate to your new site's directory and start the development server.
    **Note:** this starter uses Yarn Workspaces and requires Yarn for development.
@@ -54,7 +73,7 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
    yarn && yarn start
    ```
 
-5. **Open the source code and start editing!**
+6. **Open the source code and start editing!**
 
    Your site should now be running at <http://localhost:8000>
 
