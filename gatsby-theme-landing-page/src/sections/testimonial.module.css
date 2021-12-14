@@ -17,10 +17,10 @@
 .quote {
   font-size: var(--font-size-4);
   font-style: normal;
+  font-weight: var(--font-weight-semi-bold);
   border-radius: var(--border-radius);
   max-width: 80%;
   position: relative;
-  font-weight: var(--font-weight-light);
   margin-bottom: var(--space-3);
 }
 
