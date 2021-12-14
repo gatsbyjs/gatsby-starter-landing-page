@@ -5,8 +5,8 @@
  */
 .root {
   /* typography */
-  --font: "Inter", system-ui, sans-serif;
-  --font-heading: "Inter", system-ui, sans-serif;
+  --font: system-ui, sans-serif;
+  --font-heading: system-ui, sans-serif;
   --line-height: 1.5;
   --line-height-heading: 1.25;
   --font-size-1: 12px;
@@ -18,22 +18,21 @@
   --letter-spacing-caps: 0.03em;
   --font-weight-light: 300;
   --font-weight-normal: 400;
-  --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
   /* colors */
   --text-color: black;
-  --text-color-secondary: black;
+  --text-color-secondary: #555;
   --background-color: white;
-  --link-color: black;
-  --link-hover-color: black;
-  --primary-color: black;
-  --secondary-color: black;
+  --link-color: #07c;
+  --link-hover-color: #05a;
+  --primary-color: #08d;
+  --secondary-color: #70c;
   --button-color: white;
-  --button-background-color: black;
-  --button-hover-color: black;
-  --button-secondary-color: black;
+  --button-background-color: #07c;
+  --button-hover-color: #05a;
+  --button-secondary-color: #07c;
   --button-secondary-background-color: white;
-  --button-secondary-hover-color: white;
+  --button-secondary-hover-color: rgb(215, 232, 250);
   /* layout */
   --space-1: 4px;
   --space-2: 8px;
