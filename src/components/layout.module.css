@@ -31,7 +31,7 @@
 }
 .header a:hover,
 .header a:focus {
-  color: var(--primary-color);
+  color: var(--link-hover-color);
 }
 
 .main {
@@ -53,5 +53,5 @@
 .footer a:hover,
 .footer a:focus {
   text-decoration: underline;
-  color: var(--primary-color);
+  color: var(--link-hover-color);
 }
