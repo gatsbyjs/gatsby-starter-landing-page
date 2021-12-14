@@ -37,14 +37,20 @@ function Feature({
 
   return (
     <div className={`${styles.featureContainer} ${orientationStyle}`}>
-      <div className={styles.copyContainer}>
-        <MarkdownText as="h4" className={styles.primaryText} {...primaryText} />
-        <MarkdownText className={styles.secondaryText} {...secondaryText} />
-        <LinkContainer>
-          {links && links.map((link) => <Link key={link.id} {...link} />)}
-        </LinkContainer>
+      <div className={styles.copyColumn}>
+        <div className={styles.copyContainer}>
+          <MarkdownText
+            as="h4"
+            className={styles.primaryText}
+            {...primaryText}
+          />
+          <MarkdownText className={styles.secondaryText} {...secondaryText} />
+          <LinkContainer>
+            {links && links.map((link) => <Link key={link.id} {...link} />)}
+          </LinkContainer>
+        </div>
       </div>
-      <div className={styles.imageContainer}>
+      <div className={styles.imageColumn}>
         <GatsbyImage
           image={getImage(image)}
           alt={image.title || getText(primaryText)}
