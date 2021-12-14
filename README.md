@@ -252,7 +252,6 @@ query ($id: String!) {
 }
 ```
 
-<!-- TODO add screenshot -->
 
 ### Schema Customization API
 
