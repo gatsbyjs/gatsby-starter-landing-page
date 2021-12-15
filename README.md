@@ -47,7 +47,8 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
 
    - Install the [Contentful CLI (installation instructions)](https://www.contentful.com/developers/docs/tutorials/cli/installation/)
 
-   - Add your space ID to `contentful/import-demo-config.json` and `contentful/import-model-only-config.json`
+   - Add your space ID to `.contentful/import-demo-config.json`
+   - Add your space ID to `.contentful/import-model-only-config.json`
 
      ```json
      {
@@ -69,7 +70,7 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
    **Note:** this starter uses Yarn Workspaces and requires Yarn for development.
 
    ```sh
-   cs my-landing-page-site
+   cd my-landing-page-site
    yarn && yarn start
    ```
 
