@@ -11,7 +11,7 @@
     "start": "gatsby develop",
     "start:refresh": "ENABLE_GATSBY_REFRESH_ENDPOINT=true yarn start",
     "refresh": "curl -X POST http://localhost:8000/__refresh",
-    "setup": "node .contentful setup.js",
+    "setup": "node .contentful/setup.js",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
