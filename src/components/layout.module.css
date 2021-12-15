@@ -4,7 +4,7 @@
   flex-direction: column;
   min-height: 100vh;
   /* base styles; these could be kept in global styles */
-  font-family: system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 .container {
@@ -31,7 +31,7 @@
 }
 .header a:hover,
 .header a:focus {
-  color: var(--primary-color);
+  color: var(--link-hover-color);
 }
 
 .main {
@@ -54,5 +54,5 @@
 .footer a:hover,
 .footer a:focus {
   text-decoration: underline;
-  color: var(--primary-color);
+  color: var(--link-hover-color);
 }
