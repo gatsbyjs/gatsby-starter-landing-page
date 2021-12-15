@@ -11,13 +11,18 @@
   margin-bottom: var(--space-4);
 }
 
+.copyColumn {
+  display: flex;
+  order: 2;
+}
+
 .copyContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: var(--space-4);
   padding-bottom: var(--space-4);
-  order: 2;
+  max-width: 512px;
 }
 
 .secondaryText {
@@ -38,7 +43,7 @@
   color: var(--primary-color);
 }
 
-.imageContainer {
+.imageColumn {
   display: flex;
   align-items: center;
 }
@@ -56,11 +61,15 @@
     flex-direction: row-reverse;
   }
 
-  .copyContainer {
-    width: 40%;
+  .featureContainer.reverse .copyColumn {
+    justify-content: flex-end;
   }
 
-  .imageContainer {
-    width: 60%;
+  .copyColumn {
+    width: 50%;
+  }
+
+  .imageColumn {
+    width: 50%;
   }
 }
