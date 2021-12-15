@@ -56,8 +56,9 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
        "contentFile": "./contentful/landing-page-model-and-content.json"
      }
      ```
+   - Authenticate `contentful-cli` with the command `contentful login`
 
-   - Import the demo (content model and sample data):
+   - Once authenticated, import the demo (content model and sample data):
      `yarn import:contentful:demo`
 
    - (Optional) If you only want to import the content model and not the demo data, use the command: `yarn import:contentful:model`
