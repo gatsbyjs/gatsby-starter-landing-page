@@ -3,7 +3,7 @@ const demoContentFile = require("./landing-page-model-and-content.json");
 const inquirer = require("inquirer");
 const chalk = require("chalk");
 const path = require("path");
-const { writeFileSync } = require("fs");
+const { writeFileSync, appendFileSync } = require("fs");
 
 const argv = require("yargs-parser")(process.argv.slice(2));
 
@@ -54,15 +54,30 @@ const questions = [
       !process.env.CONTENTFUL_DELIVERY_TOKEN,
     message: "Your Content Delivery API access token",
   },
+  {
+    name: "usePreview",
+    type: "confirm",
+    when: !argv.previewToken && !process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN,
+    message: "Do you want to enable Contentful Preview?",
+  },
+  {
+    name: "previewToken",
+    when: (answers) =>
+      !argv.previewToken &&
+      !process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN &&
+      answers.usePreview,
+    message: "Your Content Preview API access token",
+  },
 ];
 
 inquirer
   .prompt(questions)
-  .then(({ spaceId, managementToken, accessToken }) => {
+  .then(({ spaceId, managementToken, accessToken, previewToken }) => {
     const {
       CONTENTFUL_SPACE_ID,
       CONTENTFUL_ACCESS_TOKEN,
       CONTENTFUL_DELIVERY_TOKEN,
+      CONTENTFUL_PREVIEW_ACCESS_TOKEN,
     } = process.env;
 
     // env vars are given precedence followed by args provided to the setup
@@ -81,24 +96,37 @@ inquirer
       argv.deliveryToken ||
       accessToken;
 
+    previewToken =
+      CONTENTFUL_PREVIEW_ACCESS_TOKEN || argv.previewToken || previewToken;
+
     console.log("Writing config file...");
     const configFiles = [`.env.development`, `.env.production`].map((file) =>
       path.join(__dirname, "..", file)
     );
 
-    const fileContents =
-      [
-        `# All environment variables will be sourced`,
-        `# and made available to gatsby-config.js, gatsby-node.js, etc.`,
-        `# Do NOT commit this file to source control`,
-        `CONTENTFUL_SPACE_ID='${spaceId}'`,
-        `CONTENTFUL_ACCESS_TOKEN='${accessToken}'`,
-      ].join("\n") + "\n";
+    const fileContents = [
+      `# All environment variables will be sourced`,
+      `# and made available to gatsby-config.js, gatsby-node.js, etc.`,
+      `# Do NOT commit this file to source control`,
+      `CONTENTFUL_SPACE_ID='${spaceId}'`,
+      `CONTENTFUL_ACCESS_TOKEN='${accessToken}'`,
+      !!previewToken && `CONTENTFUL_PREVIEW_ACCESS_TOKEN='${previewToken}'`,
+    ]
+      .filter(Boolean)
+      .join("\n");
 
     configFiles.forEach((file) => {
       writeFileSync(file, fileContents, "utf8");
       console.log(`Config file ${chalk.yellow(file)} written`);
     });
+
+    if (previewToken) {
+      appendFileSync(
+        `.env.development`,
+        `\nCONTENTFUL_HOST='preview.contentful.com'`
+      );
+    }
+
     return { spaceId, managementToken };
   })
   .then(({ spaceId, managementToken }) =>
