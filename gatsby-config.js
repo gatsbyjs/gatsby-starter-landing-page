@@ -4,9 +4,7 @@ require("dotenv").config({
 
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
-  accessToken:
-    process.env.CONTENTFUL_ACCESS_TOKEN ||
-    process.env.CONTENTFUL_DELIVERY_TOKEN,
+  accessToken: process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
   environment: process.env.CONTENTFUL_ENVIRONMENT_ID || "master",
 };
 

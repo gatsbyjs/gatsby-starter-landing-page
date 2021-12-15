@@ -51,7 +51,7 @@ const questions = [
       !argv.accessToken &&
       !process.env.CONTENTFUL_ACCESS_TOKEN &&
       !argv.deliveryToken &&
-      !process.env.CONTENTFUL_DELIVERY_TOKEN,
+      !process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
     message: "Your Content Delivery API access token",
   },
   {
@@ -76,7 +76,7 @@ inquirer
     const {
       CONTENTFUL_SPACE_ID,
       CONTENTFUL_ACCESS_TOKEN,
-      CONTENTFUL_DELIVERY_TOKEN,
+      CONTENTFUL_DELIVERY_ACCESS_TOKEN,
       CONTENTFUL_PREVIEW_ACCESS_TOKEN,
     } = process.env;
 
@@ -91,7 +91,7 @@ inquirer
     // will work.
     accessToken =
       CONTENTFUL_ACCESS_TOKEN ||
-      CONTENTFUL_DELIVERY_TOKEN ||
+      CONTENTFUL_DELIVERY_ACCESS_TOKEN ||
       argv.accessToken ||
       argv.deliveryToken ||
       accessToken;
@@ -109,7 +109,7 @@ inquirer
       `# and made available to gatsby-config.js, gatsby-node.js, etc.`,
       `# Do NOT commit this file to source control`,
       `CONTENTFUL_SPACE_ID='${spaceId}'`,
-      `CONTENTFUL_ACCESS_TOKEN='${accessToken}'`,
+      `CONTENTFUL_DELIVERY_ACCESS_TOKEN='${accessToken}'`,
       !!previewToken && `CONTENTFUL_PREVIEW_ACCESS_TOKEN='${previewToken}'`,
     ]
       .filter(Boolean)
