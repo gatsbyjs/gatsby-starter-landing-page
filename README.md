@@ -27,13 +27,13 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
 You will need a new or existing Contentful space to use this Starter. During installation, you will be asked for the following:
 
 - Contentful Space ID
-  --[Directions to find your Space ID](https://www.contentful.com/help/find-space-id/)
+  - [Directions to find your Space ID](https://www.contentful.com/help/find-space-id/)
 - Contentful Management API Token
-  -- [Directions to generate a Personal Access Token](https://www.contentful.com/faq/personal-access-tokens/)
+  - [Directions to generate a Personal Access Token](https://www.contentful.com/faq/personal-access-tokens/)
 - Contentful Delivery API Key and (optional) Preview API Key
-  -- In your Contentful space, go to Settings > API Keys.
-  -- On the Content delivery / preview tokens tab, click the Add API Key button.
-  -- Give the API Key an appropriate name and description.
+  - In your Contentful space, go to Settings > API Keys.
+  - On the Content delivery / preview tokens tab, click the Add API Key button.
+  - Give the API Key an appropriate name and description.
 
 When you have these available, you will be ready to begin installation
 
@@ -50,13 +50,13 @@ When you have these available, you will be ready to begin installation
 2. **Run the Contentful setup command**
    From your site's root directory, run the following command:
 
-```sh
-yarn setup
-```
+    ```sh
+    yarn setup
+    ```
 
-This will run the Contentful setup script. The script requests your Contentful Space ID, Management Token, and Delivery/Preview API Keys, sets up your local environment variables, and imports the Landing Page content model and demo data to your Contentful space.
-
-Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
+    This will run the Contentful setup script. The script requests your Contentful Space ID, Management Token, and Delivery/Preview API Keys, sets up your local environment variables, and imports the Landing Page content model and demo data to your Contentful space.
+  
+    Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
 
 3. **Start developing**
 
