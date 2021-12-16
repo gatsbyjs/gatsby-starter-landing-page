@@ -22,6 +22,22 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
 
 ## Quick start
 
+### Prerequisites
+
+You will need a new or existing Contentful space to use this Starter. During installation, you will be asked for the following:
+
+- Contentful Space ID -![Directions to find your Space ID](https://www.contentful.com/help/find-space-id/)
+- Contentful Management API Token
+  - ![Directions to generate a Personal Access Token](https://www.contentful.com/faq/personal-access-tokens/)
+- Contentful Delivery API Key and (optional) Preview API Key
+  -- In your Contentful space, go to Settings > API Keys.
+  -- On the Content delivery / preview tokens tab, click the Add API Key button.
+  -- Give the API Key an appropriate name and description.
+
+When you have these available, you will be ready to begin installation
+
+### Installation
+
 1. **Create a Gatsby site**
 
    Use the Gatsby CLI to get started locally:
@@ -30,40 +46,18 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
    npx gatsby new my-landing-page-site https://github.com/gatsbyjs/gatsby-starter-landing-page
    ```
 
-2. **Configure your Contentful space**
+2. **Run the Contentful setup command**
+   From your site's root directory, run the following command:
 
-   Create a new Contentful space or use an existing one.
+```sh
+yarn setup
+```
 
-3. **Create a `.env` file with your Contentful space ID and API keys.**
+This will run the Contentful setup script. The script requests your Contentful Space ID, Management Token, and Delivery/Preview API Keys, sets up your local environment variables, and imports the Landing Page content model and demo data to your Contentful space.
 
-   Create a `.env` file in the root directory of your site and add the following environment variables. You can copy the `.env.example` file provided. Find the values for these keys in the Contentful web app under _Settings > API Keys_.
+Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
 
-   ```sh
-   CONTENTFUL_SPACE_ID="<YOUR_SPACE_ID>"
-   CONTENTFUL_DELIVERY_ACCESS_TOKEN="<ACCESS_TOKEN>"
-   ```
-
-4. **Import the content model and demo data to your Contentful space**
-
-   - Install the [Contentful CLI (installation instructions)](https://www.contentful.com/developers/docs/tutorials/cli/installation/)
-
-   - Add your space ID to `contentful/import-demo-config.json` and `contentful/import-model-only-config.json`
-
-     ```json
-     {
-       "spaceId": "<YOUR_SPACE_ID>",
-       "contentFile": "./contentful/landing-page-model-and-content.json"
-     }
-     ```
-
-   - Import the demo (content model and sample data):
-     `yarn import:contentful:demo`
-
-   - (Optional) If you only want to import the content model and not the demo data, use the command: `yarn import:contentful:model`
-
-   Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
-
-5. **Start developing**
+3. **Start developing**
 
    Navigate to your new site's directory and start the development server.
    **Note:** this starter uses Yarn Workspaces and requires Yarn for development.
@@ -73,7 +67,7 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
    yarn && yarn start
    ```
 
-6. **Open the source code and start editing!**
+4. **Open the source code and start editing!**
 
    Your site should now be running at <http://localhost:8000>
 
@@ -270,7 +264,6 @@ query ($id: String!) {
   }
 }
 ```
-
 
 ### Schema Customization API
 
