@@ -7,7 +7,7 @@
 
 .secondary {
   font-size: var(--font-size-4);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-normal);
   color: var(--text-color-secondary);
 }
 

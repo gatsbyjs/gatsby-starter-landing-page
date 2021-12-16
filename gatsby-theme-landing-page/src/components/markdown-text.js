@@ -31,7 +31,6 @@ const inlineOptions = {
   allowedTags: ["strong", "b", "i", "em", "a", "span"],
   selfClosing: [],
 };
-const newLineRegex = /\n/g;
 
 export default function MarkdownText({
   childMarkdownRemark,
