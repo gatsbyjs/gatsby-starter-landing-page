@@ -209,11 +209,20 @@ To customize the built-in components' typography, colors, and layout, edit the `
 }
 ```
 
-## Customizing and extending components
+If you decide to use a different webfont, be sure to also update `gatsby-browser.js` to load the font files you need and remove any you don't need.
+
+## Customizing section components
 
 To customize a landing page section component, create a file in `src/gatsby-theme-landing-page/sections/` with the same name used in the theme. This will shadow the built-in component to completely override it.
 
-To add more components and extend the functionality, create a `src/gatsby-theme-landing-page/sections/index.js` file that exports the named components that you'd like to use. Be sure to update your Contentful space's content model to reflect these changes by ensuring the LandingPageSection's _Component_ field validation includes all possible options.
+As an example to get you started, see `src/gatsby-theme-landing-page/sections/call-to-action.js`, which is a customized version of the CallToAction component built into the theme.
+Feel free to edit this component directly or follow this pattern to customize other section components.
+
+## Adding new section components
+
+To add more components and extend the functionality, edit the `src/gatsby-theme-landing-page/sections/index.js` file
+and add named exports for the additional components you'd like to use.
+This starter includes an example section component in `src/components/super-hero.js`. Feel free to edit, rename, or use this as an reference when creating other custom section components.
 
 ```js
 // example src/gatsby-theme-landing-page/sections/index.js
@@ -227,6 +236,10 @@ export { default as Benefits } from "./benefits";
 export { default as SuperHero } from "../../components/super-hero.js";
 export { default as ContactForm } from "../../components/contact-form.js";
 ```
+
+Be sure to update your Contentful space's content model to reflect these changes by ensuring the LandingPageSection's _Component_ field validation includes all possible options.
+
+![contentful component validation](https://user-images.githubusercontent.com/1227297/145876531-b0658f9c-b6ed-428a-be99-1cd29029f0a6.png)
 
 ### GraphQL page query
 
@@ -270,7 +283,6 @@ query ($id: String!) {
   }
 }
 ```
-
 
 ### Schema Customization API
 
