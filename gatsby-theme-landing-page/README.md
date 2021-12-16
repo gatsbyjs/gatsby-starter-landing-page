@@ -57,7 +57,7 @@ The official Contentful-backed dynamic landing page theme for Gatsby sites
 
    - Install the [Contentful CLI (installation instructions)](https://www.contentful.com/developers/docs/tutorials/cli/installation/)
 
-   - Download [the Landing Page content model JSON](https://github.com/gatsbyjs/gatsby-starter-landing-page/blob/import-script/.contentful/https://github.com/gatsbyjs/gatsby-starter-landing-page/blob/import-script/.contentful/landing-page-model-and-content.json) to a local directory
+   - Download [the Landing Page content model JSON](https://github.com/gatsbyjs/gatsby-starter-landing-page/blob/import-script/.contentful/landing-page-model-and-content.json) to a local directory
 
    - From that directory, run the following command:
 
