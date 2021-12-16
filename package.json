@@ -11,8 +11,7 @@
     "start": "gatsby develop",
     "start:refresh": "ENABLE_GATSBY_REFRESH_ENDPOINT=true yarn start",
     "refresh": "curl -X POST http://localhost:8000/__refresh",
-    "import:contentful:demo": "contentful space import --config .contentful/import-demo-config.json",
-    "import:contentful:model": "contentful space import --config .contentful/import-model-only-config.json",
+    "setup": "node .contentful/setup.js",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -37,7 +36,10 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "chalk": "^4.0.0",
+    "contentful-import": "^8.2.28",
     "husky": ">=6",
+    "inquirer": "^8.2.0",
     "lint-staged": ">=10",
     "prettier": "^2.5.0"
   },
