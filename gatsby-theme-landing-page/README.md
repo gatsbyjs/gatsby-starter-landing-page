@@ -184,6 +184,22 @@ The `Container` component is used to set a max-width and center content on the p
 - `className`: pass an additional HTML class attribute, which can be used for styling
 - All other props are passed directly to the root element.
 
+#### `Section` Component
+
+```jsx
+// example usage
+import { Section } from "gatsby-theme-landing-page";
+
+<Section>Hello</Section>;
+```
+
+The `Section` component is used as the root element in all built-in section components, adding vertical padding and using the `Container` component to control max-width.
+
+**Props:**
+
+- `className`: pass an additional HTML class attribute, which can be used for styling
+- All other props are passed directly to the root element.
+
 #### `Heading` Component
 
 ```jsx
