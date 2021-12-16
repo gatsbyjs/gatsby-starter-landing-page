@@ -18,15 +18,25 @@ The official Contentful-backed dynamic landing page theme for Gatsby sites
    // gatsby-config.js
    require("dotenv").config();
 
+   const contentfulConfig = {
+     spaceId: process.env.CONTENTFUL_SPACE_ID,
+     accessToken: process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
+   };
+
+   // Use preview env vars in development
+   if (
+     process.env.NODE_ENV === "development" &&
+     !!process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN
+   ) {
+     contentfulConfig.accessToken = process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN;
+     contentfulConfig.host = process.env.CONTENTFUL_HOST;
+   }
+
    module.exports = {
      plugins: [
        {
          resolve: "gatsby-theme-landing-page",
-         options: {
-           spaceId: process.env.CONTENTFUL_SPACE_ID,
-           accessToken: process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
-           environment: process.env.CONTENTFUL_ENVIRONMENT_ID || "master",
-         },
+         options: contentfulConfig,
        },
      ],
    };
@@ -38,27 +48,24 @@ The official Contentful-backed dynamic landing page theme for Gatsby sites
    # .env
    CONTENTFUL_SPACE_ID="<SPACE_ID>"
    CONTENTFUL_DELIVERY_ACCESS_TOKEN="<ACCESS_TOKEN>"
+   # Optional env vars for use with Contentful Preview API
+   CONTENTFUL_PREVIEW_ACCESS_TOKEN="<ACCESS_TOKEN>"
+   CONTENTFUL_HOST="preview.contentful.com"
    ```
 
-4. **Import the content model and demo data to your Contentful space**
+4. **Import the content model to your Contentful space**
 
    - Install the [Contentful CLI (installation instructions)](https://www.contentful.com/developers/docs/tutorials/cli/installation/)
 
-   - Add your space ID to `contentful/import-demo-config.json` and `contentful/import-model-only-config.json`
+   - Download [the Landing Page content model JSON](https://github.com/gatsbyjs/gatsby-starter-landing-page/blob/import-script/.contentful/https://github.com/gatsbyjs/gatsby-starter-landing-page/blob/import-script/.contentful/landing-page-model-and-content.json) to a local directory
 
-     ```json
-     {
-       "spaceId": "SPACE_ID",
-       "contentFile": "./contentful/landing-page-model-and-content.json"
-     }
-     ```
+   - From that directory, run the following command:
 
-   - Import the demo (content model and sample data):
-     `yarn import:contentful:demo`
+   ```sh
+   contentful space import --content-model-only --config landing-page-model-and-content.json
+   ```
 
-   - (Optional) If you only want to import the content model and not the demo data, use the command: `yarn import:contentful:model`
-
-   Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
+   Your Contentful space will now contain the content model used by the starter. You can begin creating landing pages in Contentful!
 
 ## Content model
 
