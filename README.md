@@ -24,7 +24,7 @@ Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
 
 ### Prerequisites
 
-You will need a new or existing Contentful space to use this Starter. During installation, you will be asked for the following:
+You will need a [new or existing Contentful space](https://www.contentful.com/help/contentful-101/#step-2-create-a-space) to use this Starter. During installation, you will be asked for the following:
 
 - Contentful Space ID
   - [Directions to find your Space ID](https://www.contentful.com/help/find-space-id/)
@@ -50,13 +50,13 @@ When you have these available, you will be ready to begin installation
 2. **Run the Contentful setup command**
    From your site's root directory, run the following command:
 
-    ```sh
-    yarn setup
-    ```
+   ```sh
+   yarn setup
+   ```
 
-    This will run the Contentful setup script. The script requests your Contentful Space ID, Management Token, and Delivery/Preview API Keys, sets up your local environment variables, and imports the Landing Page content model and demo data to your Contentful space.
-  
-    Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
+   This will run the Contentful setup script. The script requests your Contentful Space ID, Management Token, and Delivery/Preview API Keys, sets up your local environment variables, and imports the Landing Page content model and demo data to your Contentful space.
+
+   Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
 
 3. **Start developing**
 
@@ -101,7 +101,6 @@ A quick look at the files and directories included in this project:
 1. **`gatsby-node.js`**: [Gatsby Node][] config file for the starter, which includes GraphQL type definitions for the Contentful content model.
 1. **`gatsby-theme-landing-page`**: The [theme][theme docs] that includes the Contentful source plugin and most of the functionality. See the theme's [`README.md`][theme readme] for more information.
 1. **`src/`**: The source directory for the starter. This includes an example of using the [Shadowing API][] to customize landing pages provided by the theme.
-1. **`.env.example`**: Copy this file, rename it to `.env`, and add your Contentful API keys to connect this data to your Contentful space.
 
 [gatsby config]: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
 [gatsby node]: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
