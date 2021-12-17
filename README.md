@@ -45,6 +45,7 @@ When you have these available, you will be ready to begin installation
    From your site's root directory, run the following command:
 
    ```sh
+   cd my-landing-page-site
    yarn setup
    ```
 
@@ -58,7 +59,6 @@ When you have these available, you will be ready to begin installation
    **Note:** this starter uses Yarn Workspaces and requires Yarn for development.
 
    ```sh
-   cd my-landing-page-site
    yarn && yarn start
    ```
 
