@@ -12,10 +12,6 @@
 Create custom landing pages using Gatsby and Contentful with this starter-theme combo.
 This starter demonstrates how to use Contentful to build dynamic and customizable landing pages with Gatsby and can serve as a starting-point for creating your own custom landing page components that match your visual brand.
 
-Deploy now to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
-
-[<img src="https://www.gatsbyjs.com/deploynow.png" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-landing-page)
-
 [View the Demo][demo]
 
 [demo]: https://landingpagestarter.gatsbyjs.io/
@@ -71,6 +67,12 @@ When you have these available, you will be ready to begin installation
 4. **Open the source code and start editing!**
 
    Your site should now be running at <http://localhost:8000>
+
+## Deployment
+
+Once your content model and data are available in Contentful, deploy your site to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
+
+[<img src="https://www.gatsbyjs.com/deploynow.png" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-landing-page)
 
 ## What's inside?
 
@@ -214,26 +216,41 @@ Feel free to edit this component directly or follow this pattern to customize ot
 
 ## Adding new section components
 
-To add more components and extend the functionality, edit the `src/gatsby-theme-landing-page/sections/index.js` file
-and add named exports for the additional components you'd like to use.
+To add more components and extend the functionality, follow these steps:
+
+1. Edit the `src/gatsby-theme-landing-page/sections/index.js` file
+   and add named exports for the additional components you'd like to use. In the below example, we add a new hero component called SuperHero
+
+   ```js
+   // src/gatsby-theme-landing-page/sections/index.js
+   // This file shadows gatsby-theme-landing-page's sections index.
+   export { default as Hero } from "gatsby-theme-landing-page/src/sections/hero";
+   export { default as Features } from "gatsby-theme-landing-page/src/sections/features";
+   export { default as Copy } from "gatsby-theme-landing-page/src/sections/copy";
+   export { default as CallToAction } from "gatsby-theme-landing-page/src/sections/call-to-action";
+   export { default as Benefits } from "gatsby-theme-landing-page/src/sections/benefits";
+   export { default as Testimonial } from "gatsby-theme-landing-page/src/sections/testimonial";
+
+   // This is a new section component that extends the functionality of the theme.
+   export { default as SuperHero } from "../../components/super-hero";
+   ```
+
+2. Create your component in `src/components`
+
+   ```js
+   // src/components/super-hero.js
+   export default function SuperHero({ heading, secondaryHeading, content }) {
+     return (
+       // {Component code}
+     );
+   }
+   ```
+
+3. Update your Contentful space's content model to reflect these changes by ensuring the LandingPageSection's _Component_ field validation includes the new component name.
+
+   ![contentful component validation](https://user-images.githubusercontent.com/1227297/145876531-b0658f9c-b6ed-428a-be99-1cd29029f0a6.png)
+
 This starter includes an example section component in `src/components/super-hero.js`. Feel free to edit, rename, or use this as an reference when creating other custom section components.
-
-```js
-// example src/gatsby-theme-landing-page/sections/index.js
-export { default as Hero } from "./hero";
-export { default as Features } from "./features";
-export { default as Copy } from "./copy";
-export { default as CallToAction } from "./call-to-action";
-export { default as Benefits } from "./benefits";
-
-// custom components
-export { default as SuperHero } from "../../components/super-hero.js";
-export { default as ContactForm } from "../../components/contact-form.js";
-```
-
-Be sure to update your Contentful space's content model to reflect these changes by ensuring the LandingPageSection's _Component_ field validation includes all possible options.
-
-![contentful component validation](https://user-images.githubusercontent.com/1227297/145876531-b0658f9c-b6ed-428a-be99-1cd29029f0a6.png)
 
 ### GraphQL page query
 
