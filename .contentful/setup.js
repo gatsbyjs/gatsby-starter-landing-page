@@ -109,7 +109,7 @@ inquirer
       `# and made available to gatsby-config.js, gatsby-node.js, etc.`,
       `# Do NOT commit this file to source control`,
       `CONTENTFUL_SPACE_ID='${spaceId}'`,
-      `CONTENTFUL_DELIVERY_ACCESS_TOKEN='${accessToken}'`,
+      `CONTENTFUL_ACCESS_TOKEN='${accessToken}'`,
       !!previewToken && `CONTENTFUL_PREVIEW_ACCESS_TOKEN='${previewToken}'`,
     ]
       .filter(Boolean)
