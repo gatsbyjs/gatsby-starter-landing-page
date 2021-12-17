@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-landing-page",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Contentful-backed dynamic landing page theme for Gatsby",
   "main": "index.js",
   "scripts": {},
