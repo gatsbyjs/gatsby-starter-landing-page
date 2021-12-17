@@ -7,14 +7,12 @@
   Gatsby Starter Landing Page
 </h1>
 
-**This is a work-in-progress and not ready for general use**
-
 Create custom landing pages using Gatsby and Contentful with this starter-theme combo.
 This starter demonstrates how to use Contentful to build dynamic and customizable landing pages with Gatsby and can serve as a starting-point for creating your own custom landing page components that match your visual brand.
 
 [View the Demo][demo]
 
-[demo]: https://landingpagestarter.gatsbyjs.io/
+[demo]: https://landingpagestarter.gatsbyjs.com/
 
 ## Quick start
 
