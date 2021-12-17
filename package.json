@@ -30,6 +30,7 @@
   "dependencies": {
     "@fontsource/inter": "^4.5.1",
     "gatsby": "^4.2.0",
+    "gatsby-plugin-manifest": "^4.4.0",
     "gatsby-source-contentful": "^7.2.0",
     "gatsby-theme-landing-page": "1.0.0-0",
     "react": "^17.0.2",

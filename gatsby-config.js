@@ -23,10 +23,27 @@ if (!spaceId || !accessToken) {
 
 // starter config
 module.exports = {
+  siteMetadata: {
+    title: "Gatsby Starter Landing Page",
+    description:
+      "Create custom landing pages using Gatsby and Contentful with this Gatsby Starter",
+  },
   plugins: [
     {
-      resolve: "gatsby-theme-landing-page",
+      resolve: `gatsby-theme-landing-page`,
       options: contentfulConfig,
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gatsby Starter Landing Page`,
+        short_name: `Gatsby Starter Landing Page`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#000`,
+        display: `browser`,
+        icon: `src/assets/gatsby-monogram.png`,
+      },
     },
   ],
 };

@@ -5425,6 +5425,17 @@ gatsby-plugin-image@^2.3.0:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.7.2"
 
+gatsby-plugin-manifest@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.4.0.tgz#c27a6d63a5c74a117f8099dac4c6df324e4a605c"
+  integrity sha512-gEC1Boat/oaBILXOlfNsUVDkxU1e79rsZBuatCmer+FlhN6EpTB9U4mKwMd0c2lUVl9PHXzqkDrVio8sJRBsag==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    gatsby-core-utils "^3.4.0"
+    gatsby-plugin-utils "^2.4.0"
+    semver "^7.3.5"
+    sharp "^0.29.3"
+
 gatsby-plugin-page-creator@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.3.0.tgz#5d15182a82443f5be68926bd3903e6e6d6db4997"
@@ -10491,7 +10502,7 @@ shallow-compare@^1.2.2:
   resolved "https://registry.yarnpkg.com/shallow-compare/-/shallow-compare-1.2.2.tgz#fa4794627bf455a47c4f56881d8a6132d581ffdb"
   integrity sha512-LUMFi+RppPlrHzbqmFnINTrazo0lPNwhcgzuAXVVcfy/mqPDrQmHAyz5bvV0gDAuRFrk804V0HpQ6u9sZ0tBeg==
 
-sharp@^0.29.2:
+sharp@^0.29.2, sharp@^0.29.3:
   version "0.29.3"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.29.3.tgz#0da183d626094c974516a48fab9b3e4ba92eb5c2"
   integrity sha512-fKWUuOw77E4nhpyzCCJR1ayrttHoFHBT2U/kR/qEMRhvPEcluG4BKj324+SCO1e84+knXHwhJ1HHJGnUt4ElGA==
