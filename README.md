@@ -39,7 +39,7 @@ Use Deploy Now to get started in [Gatsby Cloud](https://gatsbyjs.com/products/cl
 
 [<img src="https://www.gatsbyjs.com/deploynow.png" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-landing-page)
 
-If you use Deploy Now, Gatsby Cloud will run the `gatsby-provision` script on your behalf if you choose after you Quick Connected to your empty Contentful Space.
+If you use Deploy Now, Gatsby Cloud will run the `gatsby-provision` script on your behalf if you choose after you Quick Connected to your empty Contentful Space. That script will add the necessary content models and content to support this site.
 
 ### Locally
 
