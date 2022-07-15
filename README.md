@@ -53,10 +53,11 @@ If you use Deploy Now, Gatsby Cloud will run the `gatsby-provision` script on yo
 
 2. **Run the `gatsby-provision` command**
 
-   If you got started locally, go to your site's root directory, and run the following command:
+   Go to your site's root directory, and run the following command:
 
    ```sh
    cd my-landing-page-site
+   yarn
    yarn gatsby-provision
    ```
 
@@ -70,7 +71,7 @@ If you use Deploy Now, Gatsby Cloud will run the `gatsby-provision` script on yo
    **Note:** this starter uses Yarn Workspaces and requires Yarn for development.
 
    ```sh
-   yarn && yarn start
+   yarn start
    ```
 
 4. **Open the source code and start editing!**
