@@ -33,13 +33,15 @@ When you have these available, you will be ready to begin installation
 
 ## Installation
 
+You can choose to get going with this starter immediately by deploying to Gatsby Cloud or begin locally on your machine and deploy later.
+
 ### Gatsby Cloud
 
 Use Deploy Now to get started in [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
 
 [<img src="https://www.gatsbyjs.com/deploynow.png" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-landing-page)
 
-If you use Deploy Now, Gatsby Cloud will run the `gatsby-provision` script on your behalf if you choose after you Quick Connected to your empty Contentful Space. That script will add the necessary content models and content to support this site.
+This repository uses the `gatsby-provision` convention to allow for automatic CMS content provisioning during the Deploy Now flow in Gatsby Cloud. After you Quick Connect Contentful to your site, you will be given the option to run the `gatsby-provision` script to populate the selected Contentful space with the site's associated content model and content.
 
 ### Locally
 
@@ -77,16 +79,6 @@ If you use Deploy Now, Gatsby Cloud will run the `gatsby-provision` script on yo
 4. **Open the source code and start editing!**
 
    Your site should now be running at <http://localhost:8000>
-
-## Deployment
-
-Deploy your site to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
-
-[<img src="https://www.gatsbyjs.com/deploynow.png" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-landing-page)
-
-This repository uses the `gatsby-provision` convention to allow for automatic CMS content provisioning during the Deploy Now flow in Gatsby Cloud. After you Quick Connect Contentful to your site, you will be given the option to run the `gatsby-provision` script to populate the selected Contentful space with the site's associated content model and content.
-
-Otherwise, you can always set up your content in Contentful manually before deploying to Gatsby Cloud.
 
 ## What's inside?
 
