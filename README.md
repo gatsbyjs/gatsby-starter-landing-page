@@ -311,7 +311,7 @@ query ($id: String!) {
 
 ### Schema Customization API
 
-To prevent errors from occuring when changes are made to the Contentful content model, this starter includes GraphQL type definitions in its [`gatsby-node.js`](gatsby-node.js) file.
+To prevent errors from occurring when changes are made to the Contentful content model, this starter includes GraphQL type definitions in its [`gatsby-node.js`](gatsby-node.js) file.
 If you decide to make changes to your content model, be sure to update the type definitions in this file, otherwise the starter might not be able to query new or renamed fields.
 
 To read more about customizing, see the theme's [README.md][theme readme].
