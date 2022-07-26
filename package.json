@@ -12,6 +12,7 @@
     "start:refresh": "ENABLE_GATSBY_REFRESH_ENDPOINT=true yarn start",
     "refresh": "curl -X POST http://localhost:8000/__refresh",
     "setup": "node .contentful/setup.js",
+    "gatsby-provision": "gatsby-provision-contentful --contentful-data-path='./.contentful/landing-page-model-and-content.json'",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -39,6 +40,7 @@
   "devDependencies": {
     "chalk": "^4.0.0",
     "contentful-import": "^8.2.28",
+    "gatsby-provision-contentful": "^0.0.3",
     "husky": ">=6",
     "inquirer": "^8.2.0",
     "lint-staged": ">=10",

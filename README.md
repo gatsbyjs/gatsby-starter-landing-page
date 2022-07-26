@@ -31,7 +31,19 @@ You will need a [new or existing Contentful space](https://www.contentful.com/he
 
 When you have these available, you will be ready to begin installation
 
-### Installation
+## Installation
+
+You can choose to get going with this starter immediately by deploying to Gatsby Cloud or begin locally on your machine and deploy later.
+
+### Gatsby Cloud
+
+Use Deploy Now to get started in [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
+
+[<img src="https://www.gatsbyjs.com/deploynow.png" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-landing-page)
+
+This repository uses the `gatsby-provision` convention to allow for automatic CMS content provisioning during the Deploy Now flow in Gatsby Cloud. After you Quick Connect Contentful to your site, you will be given the option to run the `gatsby-provision` script to populate the selected Contentful space with the site's associated content model and content.
+
+### Locally
 
 1. **Create a Gatsby site**
 
@@ -41,15 +53,17 @@ When you have these available, you will be ready to begin installation
    npx gatsby new my-landing-page-site https://github.com/gatsbyjs/gatsby-starter-landing-page
    ```
 
-2. **Run the Contentful setup command**
-   From your site's root directory, run the following command:
+2. **Run the `gatsby-provision` command**
+
+   Go to your site's root directory, and run the following command:
 
    ```sh
    cd my-landing-page-site
-   yarn setup
+   yarn
+   yarn gatsby-provision
    ```
 
-   This will run the Contentful setup script. The script requests your Contentful Space ID, Management Token, and Delivery/Preview API Keys, sets up your local environment variables, and imports the Landing Page content model and demo data to your Contentful space.
+   This will run the `gatsby-provision` script. The script requests your Contentful Space ID, Management Token, and Delivery/Preview API Keys, sets up your local environment variables, and imports the Landing Page content model and demo data to your Contentful space.
 
    Your Contentful space will now contain the content model used by the starter, along with demo content that demonstrates how to use the various content types and landing page components.
 
@@ -59,18 +73,12 @@ When you have these available, you will be ready to begin installation
    **Note:** this starter uses Yarn Workspaces and requires Yarn for development.
 
    ```sh
-   yarn && yarn start
+   yarn start
    ```
 
 4. **Open the source code and start editing!**
 
    Your site should now be running at <http://localhost:8000>
-
-## Deployment
-
-Once your content model and data are available in Contentful, deploy your site to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
-
-[<img src="https://www.gatsbyjs.com/deploynow.png" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-landing-page)
 
 ## What's inside?
 
@@ -295,7 +303,7 @@ query ($id: String!) {
 
 ### Schema Customization API
 
-To prevent errors from occuring when changes are made to the Contentful content model, this starter includes GraphQL type definitions in its [`gatsby-node.js`](gatsby-node.js) file.
+To prevent errors from occurring when changes are made to the Contentful content model, this starter includes GraphQL type definitions in its [`gatsby-node.js`](gatsby-node.js) file.
 If you decide to make changes to your content model, be sure to update the type definitions in this file, otherwise the starter might not be able to query new or renamed fields.
 
 To read more about customizing, see the theme's [README.md][theme readme].
