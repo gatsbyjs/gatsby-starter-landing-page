@@ -30,9 +30,9 @@
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-landing-page#readme",
   "dependencies": {
     "@fontsource/inter": "^4.5.1",
-    "gatsby": "^5.0.0-next.14",
-    "gatsby-plugin-manifest": "^5.0.0-next.4",
-    "gatsby-source-contentful": "^8.0.0-next.4",
+    "gatsby": "^5.0.0",
+    "gatsby-plugin-manifest": "^5.0.0",
+    "gatsby-source-contentful": "^8.0.0",
     "gatsby-theme-landing-page": "1.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
