@@ -3728,24 +3728,6 @@ contentful-batch-libs@^9.4.2:
     lodash.clonedeep "^4.5.0"
     uuid "^8.3.2"
 
-contentful-import@^8.2.28:
-  version "8.5.4"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.5.4.tgz#a52c2fd1b02eae7096142bd81b05eabeb7282932"
-  integrity sha512-5oJhbggAxcd4KPc9xkrhtgqGTyQAwWZnO/+t2mNvzDAp2GQjQ+2BtRFxf1FlWwbFq6R6xCi9v/T6pNHl33B9tg==
-  dependencies:
-    bluebird "^3.5.1"
-    cli-table3 "^0.6.0"
-    contentful-batch-libs "^9.4.2"
-    contentful-management "^10.19.1"
-    date-fns "^2.29.3"
-    joi "^17.7.0"
-    listr "^0.14.1"
-    listr-update-renderer "^0.5.0"
-    listr-verbose-renderer "^0.6.0"
-    lodash "^4.17.10"
-    p-queue "^6.6.2"
-    yargs "^17.6.2"
-
 contentful-import@^8.5.21:
   version "8.5.21"
   resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.5.21.tgz#364b77ffe6f94c2fc903c97c91b6eab0b8912d84"
@@ -3763,17 +3745,6 @@ contentful-import@^8.5.21:
     lodash "^4.17.10"
     p-queue "^6.6.2"
     yargs "^17.6.2"
-
-contentful-management@^10.19.1:
-  version "10.19.1"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-10.19.1.tgz#efedaf3eabfb077149252f5e92aff4c6c9119db3"
-  integrity sha512-NrHyqhAG9IT2oPH91KhNbMwZSflQWyhF410C7LSMhTT0jx3/1yWI2u0XerN/Or1sDwmTioFJAm8JSecFoslSgw==
-  dependencies:
-    "@types/json-patch" "0.0.30"
-    axios "^0.27.1"
-    contentful-sdk-core "^7.0.1"
-    fast-copy "^2.1.1"
-    lodash.isplainobject "^4.0.6"
 
 contentful-management@^10.26.0:
   version "10.26.0"
@@ -5015,7 +4986,7 @@ external-editor@^3.0.3:
     iconv-lite "^0.4.24"
     tmp "^0.0.33"
 
-fast-copy@^2.1.1, fast-copy@^2.1.7:
+fast-copy@^2.1.7:
   version "2.1.7"
   resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-2.1.7.tgz#affc9475cb4b555fb488572b2a44231d0c9fa39e"
   integrity sha512-ozrGwyuCTAy7YgFCua8rmqmytECYk/JYAMXcswOcm0qvGoE3tPb7ivBeIHTOK2DiapBhDZgacIhzhQIKU5TCfA==
